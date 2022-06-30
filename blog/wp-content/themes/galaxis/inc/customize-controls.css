@@ -1,0 +1,36 @@
+.control-section-galaxis-button .accordion-section-title:focus,
+.control-section-galaxis-button .accordion-section-title:hover {
+	background-color: #fff;
+}
+.control-section-galaxis-button .accordion-section-title .button {
+	margin-top: -4px;
+	margin-left: 8px;
+	font-weight: 600;
+}
+.rtl .control-section-galaxis-button .accordion-section-title .button {
+	margin-left: 0;
+	margin-right: 8px;
+}
+li#accordion-section-galaxis_premium .accordion-section-title,
+li#accordion-section-galaxis_premium.control-section-galaxis-button:hover .accordion-section-title {
+	color: #e55221;
+}
+li#accordion-section-galaxis_premium.control-section-galaxis-button {
+	border-top: 1px solid #e55221;
+	border-bottom: 1px solid #e55221;
+}
+.customize-control-galaxis-addon {
+	margin-top: 10px;
+}
+.customize-control-galaxis-addon:before {
+	content: "";
+	height: 1px;
+	width: 44px;
+	display: block;
+	margin-bottom: 10px;
+	background: rgba(0,0,0,.1);
+}
+.customize-control-galaxis-addon .description {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
