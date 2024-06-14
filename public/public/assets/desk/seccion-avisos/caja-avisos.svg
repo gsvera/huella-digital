@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="498" viewBox="0 0 1920 498">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_931" data-name="Rectángulo 931" width="1920" height="498" transform="translate(0 239)" fill="#f7c90b"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_17" data-name="Enmascarar grupo 17" transform="translate(0 -239)" clip-path="url(#clip-path)">
+    <g id="Grupo_238" data-name="Grupo 238" transform="translate(82.036)">
+      <g id="CAJA-SLIDER" transform="translate(1843.964 737) rotate(180)">
+        <g id="Grupo_233" data-name="Grupo 233">
+          <path id="Trazado_617" data-name="Trazado 617" d="M0,0H1942V498H0Z" transform="translate(0.001)" fill="#d90452"/>
+          <path id="Trazado_605" data-name="Trazado 605" d="M3501.6-3138.455s228.343,8.719,639.926-195.3,724.5-160.422,975.395-101.135,303.794,125.548,326.68,169.141V-3492.6h-1942Z" transform="translate(-3501.6 3492.603)" fill="#740646" opacity="0.27"/>
+          <path id="Trazado_606" data-name="Trazado 606" d="M3885.76-3492.6c-23.61,134.77-141.23,237.21-282.77,237.21a286.283,286.283,0,0,1-101.39-18.42V-3492.6Z" transform="translate(-3501.6 3492.603)" fill="#ff7171" opacity="0.41"/>
+          <g id="Grupo_231" data-name="Grupo 231" transform="translate(1445.9 152.603)">
+            <path id="Trazado_607" data-name="Trazado 607" d="M4787.17-3292a422.393,422.393,0,0,0-165.47,33.41,423.662,423.662,0,0,0-135.12,91.1,423.517,423.517,0,0,0-91.11,135.12,420.875,420.875,0,0,0-25.97,85.77h1.01a421.107,421.107,0,0,1,25.88-85.38,422.564,422.564,0,0,1,90.89-134.8,422.717,422.717,0,0,1,134.81-90.89A421.386,421.386,0,0,1,4787.17-3291a425.3,425.3,0,0,1,78.43,7.22v-1.02A427.115,427.115,0,0,0,4787.17-3292Z" transform="translate(-4369.5 3292)" fill="#fbe8f3"/>
+          </g>
+          <g id="Grupo_232" data-name="Grupo 232" transform="translate(0 0.003)">
+            <path id="Trazado_608" data-name="Trazado 608" d="M4019.38-3492.6q-2.4,2.475-4.84,4.92a422.6,422.6,0,0,1-134.81,90.89,421.314,421.314,0,0,1-165.08,33.33,421.385,421.385,0,0,1-165.08-33.33,423.121,423.121,0,0,1-47.97-23.96v1.16a426.08,426.08,0,0,0,47.58,23.73,422.562,422.562,0,0,0,165.47,33.4,422.562,422.562,0,0,0,165.47-33.4,423.894,423.894,0,0,0,135.13-91.11c1.86-1.86,3.71-3.74,5.52-5.63Z" transform="translate(-3501.6 3492.6)" fill="#fbe8f3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
