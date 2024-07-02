@@ -57,7 +57,8 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item"><strong class="text-secondary">Nombre: {{$item['nombre']}}</strong><br>nombre de la</li>
             <li class="list-group-item"><strong class="text-secondary">Email: </strong><br>{{$item['email']}}</li>
-            <li class="list-group-item"><strong class="text-secondary">Telefono: </strong><br>{{$item['celPhone']}}}</li>
+            <li class="list-group-item"><strong class="text-secondary">Telefono: </strong><br>{{$item['celPhone']}}</li>
+            <li class="list-group-item"><strong class="text-secondary">Servicio: </strong><br>{{$item['service']}}</li>
         </ul>
         <div class="card-body">
             <p><strong class="text-secondary">Mensaje</strong></p>

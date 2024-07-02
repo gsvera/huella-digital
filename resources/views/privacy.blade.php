@@ -1,13 +1,13 @@
-@extends('layouts.layout3')
+@extends('layouts.layout-huella-2')
 @section('content')
-<div class="banner-privacy">
-    <h1 class="text-avisos text-center FivoSans-Heavy">AVISOS DE PRIVACIDAD</h1>
+<div class="content-page text-center">
+    <div class="col-md-7 text-center mx-auto">
+        <h1 class="font-weight-bold">Aviso de privacidad</h1>
+    </div>
 </div>
-<div class="section-avisos">
-    <h2 class="text-center FivoSans-Heavy title-mobile">PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL</h2>
-    <img class="img-line display-max" src="/assets/desk/general/linea-unica.svg" alt="Linea rosa">
-    <img class="img-line-left display-max" src="/assets/desk/general/linea-unica.svg" alt="Linea rosa">
-    <p class="FivoSans-Medium text-mobile text-justify">
+<div class="content-page">
+    <h2 class="mt-5">Protección de datos de carácter personal</h2>
+    <p class="mt-4">
         En aplicación de la normativa vigente en materia de protección de datos de carácter personal, 
         informa que los datos personales que se recogen a través de los formularios del Sitio web: 
         huella-digital.mx, se incluyen en los ficheros automatizados específicos de usuarios de los 
@@ -44,21 +44,20 @@
         Protección de Datos Personales.
         <br><br>
         Huella Digital compromete a su personal que tiene acceso a datos personales en el ejercicio de sus funciones 
-        o intervención en cualquier fase del tratamiento, a mantener confidencialidad respecto de dicha información.
+        o intervención en cualquier fase del tratamiento, a mantener confidencialidad respecto de dicha información...
     </p>
-    <h3 class="font-weight-bold mt-5 FivoSans-Bold subtitle-mobile">¿Con qué finalidad trataremos tus datos personales?</h3>
-    <img class="img-line-doble display-max" src="/assets/desk/general/lines.png" alt="Lineas decorativas">
-    <p class="FivoSans-Medium text-mobile text-justify">
+    <h3 class="font-weight-bold mt-5">¿Con qué finalidad trataremos tus datos personales?</h3>
+    <p class="">
         Nos reservamos el derecho de suscribir a todos los contactos a nuestro boletín de carácter mensual para 
-        recibir comunicaciones comerciales de promociones, publicidad o artículos de nuestro blog
+        recibir comunicaciones comerciales de promociones, publicidad o artículos de nuestro blog...
     </p>
-    <h3 class="font-weight-bold FivoSans-Bold subtitle-mobile">¿Por cuánto tiempo se conservan los datos personales recabados?</h3>
-    <p class="FivoSans-Medium text-mobile text-justify">
+    <h3 class="font-weight-bold mt-5">¿Por cuánto tiempo se conservan los datos personales recabados?</h3>
+    <p class="">
         Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial o no 
-        solicites su supresión y durante el plazo por el cuál pudieran derivarse responsabilidades legales por los servicios prestados.
+        solicites su supresión y durante el plazo por el cuál pudieran derivarse responsabilidades legales por los servicios prestados...
     </p>
-    <h3 class="font-weight-bold FivoSans-Bold subtitle-mobile">INAI</h3>
-    <p class="FivoSans-Medium text-mobile text-justify">
+    <h3 class="font-weight-bold mt-5">INAI</h3>
+    <p class="mb-5">
         En caso de que el Titular considere que su derecho de protección de los Datos Personales ha sido lesionado 
         por el tratamiento indebido de los mismos, podrá interponer queja o denuncia correspondiente ante el INAI, 
         por lo que podrá consultar el sitio web www.inai.org.mx para mayor información.

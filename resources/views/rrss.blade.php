@@ -1,194 +1,104 @@
-@extends('layouts.layout')
+@extends('layouts.layout-huella')
 @section('content')
-<div class="cont-sli-head">
-    <div class="content-slider flex-banner">
-        <div class="flex head-sli-item banner-mob-rrss">
-            <div class="col h1-absolute">
-                <p class="line-vertical-yellow line-vertical-white pl-2 FivoSans-Regular">Sacamos el máximo provecho <br> de tus medios digitales</p>
-                <h1 class="title-rrss fs-banner FivoSans-Heavy">AGENCIA DE REDES <br> SOCIALES EN CANCÚN</h1>
-            </div>
-            <img class="slider-header col display-max" src="/assets/desk/seccion-rrss/slider/frame.svg" alt="Slider principal">
-        </div>
-        <div class="flex slide-home-two banner-rrss" style="display:none;">
-            <div class="h1-absolute-m text-center-desk">
-                <p class="text-white fs-medium-1 FivoSans-Bold">EL 32% DE LAS EMPRESAS MEXICANAS</p>
-                <p class="text-white size-text"><span class="FivoSans-Light">aseguran que los elementos visuales <br>son la forma de contenido </span><br><span class="FivoSans-Medium">más importante dentro de su<br> estrategia de comercialización.</span></p>
-            </div>
-        </div>
+<div class="content-page d-flex-responsive p-0" style="align-items: center">
+    <div class="col-12 col-md-7 mb-5 only-pr-3">
+        <span class="slogan">AGENCIA DE REDES SOCIALES EN CANCÚN</span>
+        <h1 class="title">Sacamos el máximo provecho de tus medios digitales</h1>
+        <p>Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
+        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
     </div>
-</div>
-<div class="text-center">
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider1" checked><label for="bullet-slider1"></label>
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider2"><label for="bullet-slider2"></label>
-</div>
-<div class="section d-flex-row flex-reverse">
-    <div class="col-xs-12 col-sm-12 col-m-6 col-xl-6 col-lg-6 text-center-mobile">
-        <img class="img-section" src="/assets/desk/seccion-rrss/imagenes/imagen-seccion-rrss.png" alt="Imagen seccion redes sociales">
+    <div class="col-12 col-md-5 mb-5 p-0">
+        <img class="img-responsive" src="/assets/img/servicio/servicio-redes-sociales.svg" alt="Servicio de redes sociales">
     </div>
-    <div class="col-xs-12 col-sm-12 col-m-6 col-xl-6 col-lg-6 padding-top-50 over-hide">
-        <div id="item-s">
-            <h2 class="line-yellow pl-2 fs-medium-1 FivoSans-Bold text-center-mobile">GESTIÓN DE REDES SOCIALES</h2>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                Durante la administración de Redes Sociales realizadas en Huella Digital, participan expertos creativos en el 
-                desarrollo de contenido que combinan lazos emocionales y habilidosas tácticas de venta digital, de esta manera 
-                aseguramos que tu inversión en social media tenga un potencial retorno de inversión.
-            </p>
-            <p class="color-yellow font-weight-bold FivoSans-Bold text-center-mobile">En internet el contenido es el rey y generar conversación es la reina</p>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                El futuro digital es hoy y lo estamos creando. Vivimos en un mundo que ha empezado a girar alrededor de las redes sociales, 
-                en la gestión de la información y en el intercambio sin fronteras gracias a Internet. Las redes sociales son entonces, el 
-                camino ideal para que tu empresa sea reconocida y así mismo, aumente sus ventas.
-            </p>
-        </div>
-        <div style="display:none;" id="item-s-two">
-            <h2 class="line-yellow pl-2 fs-medium-1 font-weight-bold FivoSans-Bold text-center-mobile">GESTIÓN DE REDES SOCIALES</h2>            
-            <p class="FivoSans-Regular text-mobile text-justify">
-                En Huella Digital somos fieles creyentes que toda estrategia de mercadotecnia viene acompañada de una sólida presencia en 
-                medios sociales, Facebook, Instagram, Titok, etc, por eso, como parte de nuestro servicio de administración de redes 
-                sociales en Cancún, Quintana Roo le creamos a tu negocio el perfil social adecuado y alineado a su imagen corporativa, 
-                definiremos tu buyer persona, es decir, quién es tu cliente ideal para comprar los ejes de comunicación y de contenido 
-                creativo y relevante para difundir en los medios digitales seleccionados con el objetivo de atraer nuevos prospectos y 
-                generarte mayores ingresos medibles en ventas.
-                <br><br>
-                No solo aportamos estrategias creativas y datos analíticos, también contamos 
-                con servicios complementarios de contenido basados en material gráfico y de video para conseguir una correcta viralización 
-                de tus objetivos empresariales.
-            </p>
-            <p class="color-yellow FivoSans-Bold fs-medium-3 text-center">
-                Hacemos que más personas conozcan tu marca.
-            </p>
-        </div>
-        <div class="div-bullets">
-            <input class="bullet" type="radio" name="bullet-slider-dos" id="bullet-1" checked><label for="bullet-1"></label>
-            <input class="bullet" type="radio" name="bullet-slider-dos" id="bullet-2"><label for="bullet-2"></label>
-        </div>  
-    </div>
-</div>
-<div class="section-gray">
-    <h2 class="line-yellow line-yellow-mob pl-2 fs-medium-1 font-weight-bold mg-subtitle FivoSans-Bold">SERVICIOS INCLUIDOS</h2>
-    <div class="wave display-max">
-        <div class="row">
-            <div class="circle-wave-yellow postion-one">
-                <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/iman-icon.svg" alt="Icono de iman">
-                <div class="ballon-text padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Estrategias <br class="display-max"> Inbound Marketing
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-yellow postion-two">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Desarrollo de contenido estratégico
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/mano-icon.svg" alt="Icono de mano">
-            </div>
-            <div class="circle-wave-yellow postion-three">
-                <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/ads-icon.svg" alt="Icono de ads">
-                <div class="ballon-text padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Gestión de <br class="display-max"> campañas de publicidad
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-yellow postion-four">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item padd-top-5 FivoSans-Bold">
-                        Servicio de <br> Community Manager
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/pantalla-icon.svg" alt="Icono de pantalla">
-            </div>
-            <div class="circle-wave-yellow postion-five">
-                <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/lap-icon.svg" alt="Icono de laptop">
-                <div class="ballon-text ballon-item">
-                    <div class="text-center mar-5-15 FivoSans-Bold">
-                        Atención a <br class="display-max"> mensajes
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-yellow postion-six">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Reporte de <br class="display-max"> resultados
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/flecha-icon.svg" alt="Icono de flecha">
-            </div>
-        </div>
-    </div>
-    <!-- SECTION SERVICES MOBILE -->
-    <div class="display-min">
-        <div class="d-flex-row display-min mt-4 ">
-            <div class="col-6 justify-content-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/iman-icon.svg" alt="Icono de iman">
-                </div>
-                <div class="ballon-text-mob-yellow padd-top-35">
-                        <div class="text-center ballon-item FivoSans-Bold">
-                            Estrategias Inbound Marketing
-                        </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/mano-icon.svg" alt="Icono de mano">
-                </div>
-                <div class="ballon-text-mob-yellow padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Desarrollo de <br> contenido estratégico
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">        
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/ads-icon.svg" alt="Icono de ads">
-                </div>
-                <div class="ballon-text-mob-yellow padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Gestión de campañas <br> de publicidad
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/pantalla-icon.svg" alt="Icono de pantalla">
-                </div>
-                <div class="ballon-text-mob-yellow padd-top-35">
-                    <div class="text-center ballon-item padd-top-5 FivoSans-Bold">
-                        Servicio de <br> Community Manager
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/lap-icon.svg" alt="Icono de laptop">
-                </div>
-                <div class="ballon-text-mob-yellow padd-top-35">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Atención a mensajes
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-rrss/servicios/flecha-icon.svg" alt="Icono de flecha">
-                </div>
-                <div class="ballon-text-mob-yellow padd-top-35">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Reporte de resultados
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- END SECTION SERVICES MOBILE -->
-</div>
-<div class="text-center">
-    <a href="{{url('/garantia')}}"><img class="stamp-pink" src="/assets/desk/general/sello-garantia.png" alt="Sello de garantia"></a>
 </div>
 
+<div class="content-page">
+    <div class="mb-4 text-center">
+        <h4>Servicios incluidos</h4>
+    </div>
+    <div class="row m-0">
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de resultados">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Reporte de resultados</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-servicec-inbound.svg" alt="Icono estrategias inbound">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Estrategias inbound Marketing</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-produccion.svg" alt="Icono de desarrollo de contenido">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Desarrollo de contenido estratégico</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-gestion-anuncio.svg" alt="Icono gestion de campañas">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Gestión de campañas de publicidad</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-comunidad.svg" alt="Icono comunidad">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Servicio de Community Manager</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-mensaje.svg" alt="Icono de mensaje">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Atención a mensajes</h5></div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="content-page mt-5">
+    <div class="d-flex-responsive">
+        <div class="col-12 col-md-6 pr-4 p-0">
+            <h4 class="mb-4">Gestión de redes sociales</h4>
+            <p>
+                Durante la administración de Redes Sociales en Huella Digital, expertos creativos desarrollan contenido que combina lazos emocionales y tácticas de venta digital para garantizar un retorno de inversión potencial. <span class="text-c-pink">En internet, el contenido es clave y generar conversación es fundamental.</span> El futuro digital es ahora, y en Huella Digital estamos creándolo. Vivimos en un mundo centrado en las redes sociales y el intercambio sin fronteras en Internet. 
+            </p>
+            <p class="text-secondary">
+                Las redes sociales son el camino ideal para que tu empresa sea reconocida y aumente sus ventas. 
+            </p>
+            <p>
+                En Huella Digital creemos firmemente en la importancia de una sólida presencia en medios sociales como Facebook, Instagram, TikTok, etc., como parte integral de toda estrategia de mercadotecnia. Por eso, como parte de nuestro servicio de administración de redes sociales en Cancún, Quintana Roo, <span class="text-c-pink">creamos el perfil social adecuado para tu negocio alineado con su imagen corporativa.</span>
+            </p>
+        </div>
+        <div class="col-12 col-md-6 aling-start-end p-0">
+            <p>
+                Definimos tu buyer persona para establecer los ejes de comunicación y contenido creativo a difundir en los medios digitales, atrayendo nuevos prospectos y generando mayores ingresos medibles en ventas.
+            </p>
+            <p>
+                Además de estrategias creativas y datos analíticos, ofrecemos servicios de contenido basados en material gráfico y de video para lograr una correcta viralización de tus objetivos empresariales, <span class="text-c-pink">haciendo que más personas conozcan tu marca.</span>
+            </p>
+            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
+        </div>
+    </div>
+</div>
+
+<div class="content-page d-flex justify-center">
+    <img class="img-responsive display-min my-banner" src="/assets/img/servicio/banner-garantia-mobile.svg" alt="Banner de garantia huella digital">
+    <img class="img-responsive display-max my-banner" src="/assets/img/servicio/banner-garantia.svg" alt="Banner de garantia huella digital">
+</div>
+
+<x-servicios-marketing-digital className="mb-80" service="publicidad"/>
 
 @endsection

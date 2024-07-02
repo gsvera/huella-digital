@@ -22,7 +22,7 @@ class SendmailController extends Controller
      
         $regex = "/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/" ;
         
-        if($request->nombre != null && $request->celPhone !=null && $request->message != null){
+        if($request->name != null && $request->celphone !=null && $request->message != null){
             if(preg_match($regex,$request->email)){
     
                 $configCaptcha = new SettingRecaptcha();
@@ -40,7 +40,8 @@ class SendmailController extends Controller
     
                 $datosMessage = ["nombre"=>$request->nombre,
                                 "email"=>$request->email,
-                                "celPhone"=>$request->celPhone,
+                                "celPhone"=>$request->celphone,
+                                "service"=>$request->service,
                                 "message"=>$request->message];
                     Mail::send('viewMail.sendMail',['item'=>$datosMessage],function($mensaje){
                     $mensaje->to("programacion@huella-digital.mx")->subject("Solicitud de información");

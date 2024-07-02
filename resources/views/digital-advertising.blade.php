@@ -1,200 +1,104 @@
-@extends('layouts.layout')
+@extends('layouts.layout-huella')
 @section('content')
-<div class="cont-sli-head">
-    <div class="content-slider flex-banner">
-        <div class="flex head-sli-item banner-mob-advertising">
-            <div class="col h1-absolute">
-                <p class="line-vertical-purple line-vertical-white pl-2 FivoSans-Regular">La estrategia perfecta para potenciar <br> tu alcance</p>
-                <h1 class="title-advertising fs-banner FivoSans-Heavy">AGENCIA DE PUBLICIDAD DIGITAL EN CANCÚN</h1>
+<div class="content-page d-flex-responsive p-0" style="align-items: center">
+    <div class="col-12 col-md-7 mb-5 only-pr-3">
+        <span class="slogan">AGENCIA DE PUBLICIDAD DIGITAL EN CANCÚN</span>
+        <h1 class="title">La estrategia perfecta para potenciar tu alcance</h1>
+        <p>Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
+        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
+    </div>
+    <div class="col-12 col-md-5 mb-5 p-0">
+        <img class="img-responsive" src="/assets/img/servicio/servicio-publicidad-digital.svg" alt="Servicio de publicidad digital">
+    </div>
+</div>
+
+<div class="content-page">
+    <div class="mb-4 text-center">
+        <h4>Servicios incluidos</h4>
+    </div>
+    <div class="row m-0">
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de resultados">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Informe de resultados</h5></div>
             </div>
-            <img class="slider-header col display-max" src="/assets/desk/seccion-publicidad/slider/frame.svg" alt="Slider principal">
         </div>
-        <div class="flex slide-home-two banner-publicidad" style="display:none;">
-            <div class="h1-absolute-m text-center-desk">
-                <p class="text-white fs-medium-1 FivoSans-Bold">El 60% de los consumidores hace clic</p>
-                <p class="text-white size-text FivoSans-Medium">en anuncios para dispositivos móviles</p>
-                <p class="text-white size-text FivoSans-Medium">de forma semanal.</p>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-estrategia.svg" alt="Icono estrategias de publicidad">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Estrategias de desarrollo publicitario</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-analisis-competencia.svg" alt="Icono de analisis de competencia">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Análisis de competencia digital</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-gestion-anuncio.svg" alt="Icono gestion de anuncios">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Gestión de anuncios en internet</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-presupuesto.svg" alt="Icono presupuesto">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Desarrollo de presupuestos</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-optimizacion.svg" alt="Icono de optimizacion">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Optimización de campañas</h5></div>
             </div>
         </div>
     </div>
 </div>
-<div class="text-center">
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider1" checked><label for="bullet-slider1"></label>
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider2"><label for="bullet-slider2"></label>
-</div>
-<div class="section d-flex-row flex-reverse">
-    <div class="col-xs-12 col-sm-12 col-m-6 col-xl-6 col-lg-6 text-center-mobile">
-        <img class="img-section" src="/assets/desk/seccion-publicidad/imagenes/imagen-pub.png" alt="Imagen seccion publicidad">
-    </div>
-    <div class="col-xs-12 col-sm-12 col-m-6 col-xl-6 col-lg-6 padding-top-50 over-hide">
-        <div id="item-s">
-            <h2 class="line-purple pl-2 fs-medium-1 FivoSans-Bold text-center-mobile">PUBLICIDAD EN REDES SOCIALES Y SEM</h2>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                Una agencia de publicidad digital en Cancún, Quintana Roo debe ofrecerte visibilidad inmediata y resultados a corto plazo. 
-                Gracias a las diferentes posibilidades de segmentación, las campañas publicitarias en Internet te aportan tráfico cualificado, 
-                además de poder ampliar tus anuncios fuera del mercado local. 
-                <br><br>
-                En Huella Digital te aseguramos que, como anunciante, solo pagarás cuando un cliente potencial haga clic en tu anuncio o realice 
-                alguna acción relevante para tu empresa, asegurando el mayor resultado posible por cada peso invertido.
+
+<div class="content-page mt-5">
+    <div class="d-flex-responsive">
+        <div class="col-12 col-md-6 pr-4 p-0">
+            <h4 class="mb-4">Publicidad en redes sociales y SEM</h4>
+            <p>
+                Una agencia de publicidad digital en Cancún que te ofrece visibilidad inmediata y resultados a corto plazo. Gracias a la segmentación, las campañas en Internet atraen tráfico cualificado y amplían tus anuncios más allá del mercado local. 
             </p>
-            <p class="color-purple font-weight-bold FivoSans-Bold text-center-mobile">
-                Garantizamos cada inversión
+            <p>
+                En Huella Digital, solo pagas cuando un cliente potencial interactúa con tu anuncio, <span class="text-c-pink">garantizando el mejor resultado por cada peso invertido.</span> 
             </p>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                ¿Tienes claro qué podemos hacer por ti como agencia SEM en Cancún?. Contamos con más de 5 años asesorando proyectos digitales y 
-                campañas de publicidad online. Hemos trabajado distintos territorios del Marketing Digital para todo tipo de sectores y clientes 
-                ajustándonos a sus necesidades. En Huella Digital creamos y administramos tus campañas de publicidad para conseguir su máxima 
-                rentabilidad.
+            <p>
+                Con más de 5 años de experiencia, creamos y administramos tus campañas para obtener la máxima rentabilidad. Aprovecha la oportunidad de generar ventas con un bajo costo de adquisición.
             </p>
-            <p class="color-purple font-weight-bold text-center fs-medium-3 FivoSans-Bold">
-                Aprovecha la oportunidad de generar ventas con un bajo costo de adquisición
+            <p>
+                Te ayudamos en la planificación de tus campañas digitales: seleccionamos el canal adecuado, fijamos objetivos, desarrollamos presupuestos, redactamos mensajes efectivos, investigamos palabras clave, identificamos el público correcto, damos seguimiento y optimizamos campañas en tiempo real. 
             </p>
         </div>
-        <div style="display:none;" id="item-s-two">
-        <h2 class="line-purple pl-2 fs-medium-1 FivoSans-Bold text-center-mobile">PUBLICIDAD EN REDES SOCIALES Y SEM</h2>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                Te ayudaremos en todo el proceso de planificación de tus campañas digitales: desde la selección performance del canal 
-                adecuado, fijar objetivos, desarrollar presupuestos a invertir, redactar los mensajes más efectivos, investigar palabras 
-                clave, identificar el público correcto, dar seguimiento a contratiempos y optimizar campañas en tiempo real. 
-                <br><br>
-                En Huella Digital te aseguramos que, como anunciante, solo pagarás cuando un cliente potencial haga clic en tu anuncio o 
-                realice alguna acción relevante para tu empresa, asegurando el mayor resultado posible por cada peso invertido.
+        <div class="col-12 col-md-6 aling-start-end p-0">
+            <p>
+                Todas tus campañas en línea están alineadas con los objetivos de tu empresa. Las campañas en redes sociales como Facebook, Twitter, Instagram, Linkedin, Pinterest, TikTok, Youtube y Google son efectivas para exponer tus productos y servicios a nichos de clientes potenciales, aumentar la presencia de tu marca y mejorar tu posicionamiento en Internet.
             </p>
-            <p class="color-purple font-weight-bold FivoSans-Bold text-center-mobile">Toda tu publicidad en internet va alineada a cumplir con los objetivos de tu empresa</p>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                Las campañas publicitarias en Redes Sociales como <strong class="FivoSans-Bold">Facebook, Twitter, Instagram, Linkedin, Pinterest, TikTok, Youtube y Google</strong> 
-                son realmente efectivas para exponer tus productos y servicios a nichos de clientes potenciales, además contar con anuncios en social media te 
-                permitirte aumentar la presencia de tu marca y mejorar tu posicionamiento en Internet.
-            </p>
-        </div>
-        <div class="div-bullets">
-            <input class="bullet" type="radio" name="bullet-slider-dos" id="bullet-1" checked><label for="bullet-1"></label>
-            <input class="bullet" type="radio" name="bullet-slider-dos" id="bullet-2"><label for="bullet-2"></label>
-        </div>  
-    </div>
-</div>
-<div class="section-gray">
-    <h2 class="line-purple line-purple-mob pl-2 fs-medium-1 mg-subtitle FivoSans-Bold">SERVICIOS INCLUIDOS</h2>
-    <div class="wave display-max">
-        <div class="row">
-            <div class="circle-wave-purple postion-one">
-                <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/rompecabezas-icon.svg" alt="Icono de rompecabezas">
-                <div class="ballon-text padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Estrategia de <br class="display-max"> desarollo publicitario
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-purple postion-two">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Análisis de competencia digital
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/grafica-icon.svg" alt="Icono de grafica">
-            </div>
-            <div class="circle-wave-purple postion-three">
-                <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/ads-icon.svg" alt="Icono de ads">
-                <div class="ballon-text padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Gestión de <br class="display-max"> anuncios en internet
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-purple postion-four">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item padd-top-5 FivoSans-Bold">
-                        Desarrollo de presupuestos
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/dinero-icon.svg" alt="Icono de dinero">
-            </div>
-            <div class="circle-wave-purple postion-five">
-                <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/like-icon.svg" alt="Icono de like">
-                <div class="ballon-text ballon-item">
-                    <div class="text-center mar-5-15 FivoSans-Bold">
-                        Optimización de <br> campañas
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-purple postion-six">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Informe de <br class="display-max"> resultados
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/flecha-icon.svg" alt="Icono de flecha">
-            </div>
+            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
         </div>
     </div>
-    <!-- SECTION SERVICES MOBILE -->
-    <div class="display-min">
-        <div class="d-flex-row display-min mt-4 ">
-            <div class="col-6 justify-content-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/rompecabezas-icon.svg" alt="Icono de rompecabezas">
-                </div>
-                <div class="ballon-text-mob-purple padd-top-35">
-                        <div class="text-center ballon-item FivoSans-Bold">
-                            Estrategia de <br> desarollo publicitario
-                        </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/grafica-icon.svg" alt="Icono de grafica">
-                </div>
-                <div class="ballon-text-mob-purple padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Análisis de <br> competencia digital
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">        
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/ads-icon.svg" alt="Icono de ads">
-                </div>
-                <div class="ballon-text-mob-purple padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Gestión de anuncios <br> en internet
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/dinero-icon.svg" alt="Icono de dinero">
-                </div>
-                <div class="ballon-text-mob-purple padd-top-35">
-                    <div class="text-center ballon-item padd-top-5 FivoSans-Bold">
-                        Desarrollo de presupuestos
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/like-icon.svg" alt="Icono de like">
-                </div>
-                <div class="ballon-text-mob-purple padd-top-35">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Optimización de <br> campañas
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-publicidad/servicios/flecha-icon.svg" alt="Icono de flecha">
-                </div>
-                <div class="ballon-text-mob-purple padd-top-35">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Informe de resultados
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- END SECTION SERVICES MOBILE -->
 </div>
-<div class="text-center">
-    <a href="{{url('/garantia')}}"><img class="stamp-pink" src="/assets/desk/general/sello-garantia.png" alt="Sello de garantia"></a>
+
+<div class="content-page d-flex justify-center">
+    <img class="img-responsive display-min my-banner" src="/assets/img/servicio/banner-garantia-mobile.svg" alt="Banner de garantia huella digital">
+    <img class="img-responsive display-max my-banner" src="/assets/img/servicio/banner-garantia.svg" alt="Banner de garantia huella digital">
 </div>
+
+<x-servicios-marketing-digital className="mb-80" service="seo"/>
+
 @endsection

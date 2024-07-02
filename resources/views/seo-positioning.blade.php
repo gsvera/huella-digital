@@ -1,199 +1,110 @@
-@extends('layouts.layout')
+@extends('layouts.layout-huella')
 @section('content')
-<div class="cont-sli-head">
-    <div class="content-slider flex-banner">
-        <div class="flex head-sli-item banner-mob-seo">
-            <div class="col h1-absolute">
-                <p class="line-vertical-cian line-vertical-white pl-2 FivoSans-Regular">La estrategia digital perfecta para aumentar tu alcance y lograr que más prospectos te encuentren</p>
-                <h1 class="title-seo fs-banner FivoSans-Heavy">AGENCIA SEO - POSICIONAMIENTO WEB EN CANCÚN</h1>
+<div class="content-page d-flex-responsive p-0" style="align-items: center">
+    <div class="col-12 col-md-7 mb-5 only-pr-3">
+        <span class="slogan">AGENCIA DE SEO- POSICIONAMIENTO EN CANCÚN</span>
+        <h1 class="title">La estrategia digital perfecta para aumentar tu alcance y lograr que más prospectos te encuentren</h1>
+        <p>Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
+        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
+    </div>
+    <div class="col-12 col-md-5 mb-5 p-0">
+        <img class="img-responsive" src="/assets/img/servicio/servicio-posicionamiento-seo.svg" alt="Servicio de posicionamiento seo">
+    </div>
+</div>
+
+<div class="content-page">
+    <div class="mb-4 text-center">
+        <h4>Servicios incluidos</h4>
+    </div>
+    <div class="row m-0">
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de posicionamiento">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Reporte de posicionamiento</h5></div>
             </div>
-            <img class="slider-header col display-max" src="/assets/desk/seccion-seo/slider/frame.svg" alt="Slider principal">
         </div>
-        <div class="flex slide-home-two banner-seo" style="display:none;">
-            <div class="h1-absolute-m text-center-desk">
-                <p class="text-white size-text FivoSans-Bold mt-5">Los 5 primeros resultados en Google</p>
-                <p class="text-white fs-medium-1 FivoSans-Light">se llevan el 60% de los clicks</p>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-estrategia.svg" alt="Icono estrategias posicionamiento web">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Estrategia de posicionamiento web</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-analisis-competencia.svg" alt="Icono analisis">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Análisis de posicionamiento digital</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-gestion-anuncio.svg" alt="Icono gestion de anuncio">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Planeación de palabras clave</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-web.svg" alt="Icono de wen">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Optimización de página web</h5></div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 p-0 mb-card-service">
+            <div class="card-service-include">
+                <div>
+                    <img style="width: 27px;" src="/assets/icon/services/icon-service-redaccion.svg" alt="Icono de servicio de redaccion">
+                </div>
+                <div class="font-weight-bold ml-2"><h5>Redacción de artículos blog</h5></div>
             </div>
         </div>
     </div>
 </div>
-<div class="text-center">
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider1" checked><label for="bullet-slider1"></label>
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider2"><label for="bullet-slider2"></label>
-</div>
-<div class="section d-flex-row flex-reverse">
-    <div class="col-xs-12 col-sm-12 col-m-6 col-xl-6 col-lg-6 text-center-mobile">
-        <img class="img-section" src="/assets/desk/seccion-seo/imagenes/imagen-seo.png" alt="Imagen seccion seo">
-    </div>
-    <div class="col-xs-12 col-sm-12 col-m-6 col-xl-6 col-lg-6 padding-top-50 over-hide">
-        <div id="item-s">
-            <h2 class="line-cian pl-2 fs-medium-1 FivoSans-Bold text-center-mobile">ESPECIALISTAS EN SEO</h2>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                Somos una agencia SEO, especialista en posicionamiento web en Cancún, Quintana Roo. Si quieres que tus 
-                prospectos y clientes te encuentren en Internet, ponemos a tu disposición a nuestro equipo de expertos 
-                en SEO comprometidos a asesorarte para desarrollar una efectiva estrategia de posicionamiento web con 
-                el objetivo de conseguirte más visitas, atraer nuevos clientes y volver más rentable tu empresa.
-                <br><br>
-                En Huella Digital también contamos con servicio de consultoría para decirte cuál es el estatus de tu 
-                empresa a nivel digital, ofrecemos campañas de publicidad en Google Adwords, desarrollamos páginas web 
-                y de comercio electrónico para que puedas tener tu tienda en línea, somos expertos en Administración 
-                de Redes Sociales y Marketing Digital, que aseguran el mayor resultado de cada peso invertido.
+
+<div class="content-page mt-5">
+    <div class="d-flex-responsive">
+        <div class="col-12 col-md-6 pr-4 p-0">
+            <h4 class="mb-4">Especialistas en SEO</h4>
+            <p>
+                Somos una agencia SEO especializada en posicionamiento web en Cancún, Quintana Roo. Nuestro equipo de expertos en SEO está comprometido en asesorarte para desarrollar una estrategia efectiva que te ayude a conseguir más visitas, atraer nuevos clientes y aumentar la rentabilidad de tu empresa en Internet.
             </p>
-            <p class="color-cian font-weight-bold FivoSans-Bold text-center-mobile"> Mejora tu ventas en línea en Cancún</p>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                ¿Sabías qué el 35% de las personas sólo hacen clic en el primer resultado de Google?
-                <br><br>
-                ¿Y que el 75% de las personas ni siquiera pasan a la segunda página?
+            <p>
+                En Huella Digital también ofrecemos servicios de consultoría para evaluar el estatus digital de tu empresa, campañas de publicidad en Google Adwords, desarrollo de páginas web y tiendas en línea, así como administración de redes sociales y marketing digital. <span class="text-c-pink">Nuestros servicios aseguran el mejor resultado por cada peso invertido.</span>
             </p>
+            <p class="text-secondary">
+                Mejora tus ventas en línea en Cancún con nosotros.
+            </p>
+            <p>
+                ¿Sabías que el 35% de las personas solo hacen clic en el primer resultado de Google? ¿Y que el 75% ni siquiera pasan a la segunda página?
+            </p>
+
         </div>
-        <div style="display:none;" id="item-s-two">
-            <h2 class="line-cian pl-2 fs-medium-1 FivoSans-Bold text-center-mobile">ESPECIALISTAS EN SEO</h2>            
-            <p class="FivoSans-Regular text-mobile text-justify">
-                En pocas palabras, si tu sitio web no aparece en el top 10 para las palabras clave más usadas 
-                de tu sector, clientes potenciales acabarán visitando y comprando en la página de tu competencia. 
-                Si necesitas mejorar tu posicionamiento web en los motores de búsqueda, queremos ser la solución 
-                a tus problemas; somos tu agencia SEO en Cancún.
+        <div class="col-12 col-md-6 aling-start-end p-0">
+            <p>
+                Definimos tu buyer persona para establecer los ejes de comunicación y contenido creativo a difundir en los medios digitales, atrayendo nuevos prospectos y generando mayores ingresos medibles en ventas.
             </p>
-            <p class="color-cian font-weight-bold FivoSans-Bold text-center-mobile">
-                ¿QUÉ ES UNA AGENCIA SEO?
+            <p>
+                Además de estrategias creativas y datos analíticos, ofrecemos servicios de contenido basados en material gráfico y de video para lograr una correcta viralización de tus objetivos empresariales, <span class="text-c-pink">haciendo que más personas conozcan tu marca.</span>
+
             </p>
-            <p class="FivoSans-Regular text-mobile text-justify">
-                Una agencia SEO es aquella que a través de un conjunto de estrategias externas e internas, y 
-                comprendiendo los diversos algoritmos que Google constantemente brinda, consigue que tu página 
-                web o tienda en línea obtenga un dominio de autoridad progresivamente alto de esta manera tu 
-                empresa además de responder a los criterios de búsqueda de un potencial cliente aparecerá entre 
-                los primeros lugares de la primera página en Google o Google maps.
-            </P>
+            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
         </div>
-        <div class="div-bullets">
-            <input class="bullet" type="radio" name="bullet-slider-dos" id="bullet-1" checked><label for="bullet-1"></label>
-            <input class="bullet" type="radio" name="bullet-slider-dos" id="bullet-2"><label for="bullet-2"></label>
-        </div>  
     </div>
 </div>
-<div class="section-gray">
-    <h2 class="line-cian line-cian-mob pl-2 fs-medium-1 mg-subtitle FivoSans-Bold">SERVICIOS INCLUIDOS</h2>
-    <div class="wave display-max">
-        <div class="row">
-            <div class="circle-wave-cian postion-one">
-                <img class="icon-services" src="/assets/desk/seccion-seo/servicios/rompecabezas-icon.svg" alt="Icono de rompecabezas">
-                <div class="ballon-text">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Estrategia de posicionamiento <br class="display-max"> web
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-cian postion-two">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Análisis de posicionamiento <br> digital
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-seo/servicios/grafica-icon.svg" alt="Icono de grafica">
-            </div>
-            <div class="circle-wave-cian postion-three">
-                <img class="icon-services" src="/assets/desk/seccion-seo/servicios/ads-icon.svg" alt="Icono de ads">
-                <div class="ballon-text padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Planeación de <br> palabras clave
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-cian postion-four">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item padd-top-5 FivoSans-Bold">
-                        Optimización de <br> página web
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-seo/servicios/dinero-icon.svg" alt="Icono de dinero">
-            </div>
-            <div class="circle-wave-cian postion-five">
-                <img class="icon-services" src="/assets/desk/seccion-seo/servicios/like-icon.svg" alt="Icono de like">
-                <div class="ballon-text ballon-item">
-                    <div class="text-center mar-5-15 FivoSans-Bold">
-                        Redacción de <br> artículos blog
-                    </div>
-                </div>
-            </div>
-            <div class="circle-wave-cian postion-six">
-                <div class="ballon-text-invert">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Reporte de posicionamiento
-                    </div>
-                </div>
-                <img class="icon-services" src="/assets/desk/seccion-seo/servicios/flecha-icon.svg" alt="Icono de flecha">
-            </div>
-        </div>
-    </div>
-    <!-- SECTION SERVICES MOBILE -->
-    <div class="display-min">
-        <div class="d-flex-row display-min mt-4 ">
-            <div class="col-6 justify-content-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-seo/servicios/rompecabezas-icon.svg" alt="Icono de rompecabezas">
-                </div>
-                <div class="ballon-text-mob-cian padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                    Estrategia de posicionamiento web
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-seo/servicios/grafica-icon.svg" alt="Icono de grafica">
-                </div>
-                <div class="ballon-text-mob-cian padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Análisis de posicionamiento <br> digital
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">        
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-seo/servicios/ads-icon.svg" alt="Icono de ads">
-                </div>
-                <div class="ballon-text-mob-cian padd-top-35">
-                    <div class="text-center ballon-item FivoSans-Bold">
-                        Planeación de <br> palabras clave
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-seo/servicios/dinero-icon.svg" alt="Icono de dinero">
-                </div>
-                <div class="ballon-text-mob-cian padd-top-35">
-                    <div class="text-center ballon-item padd-top-5 FivoSans-Bold">
-                        Optimización de <br> página web
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-seo/servicios/like-icon.svg" alt="Icono de like">
-                </div>
-                <div class="ballon-text-mob-cian padd-top-35">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Redacción de <br> artículos blog
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 text-center">
-                <div class="circle-wave-mob">
-                    <img class="icon-services" src="/assets/desk/seccion-seo/servicios/flecha-icon.svg" alt="Icono de flecha">
-                </div>
-                <div class="ballon-text-mob-cian padd-top-35">
-                    <div class="text-center ballon-item padd-top-10 FivoSans-Bold">
-                        Reporte de posicionamiento
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- END SECTION SERVICES MOBILE -->
+
+<div class="content-page d-flex justify-center">
+    <img class="img-responsive display-min my-banner" src="/assets/img/servicio/banner-garantia-mobile.svg" alt="Banner de garantia huella digital">
+    <img class="img-responsive display-max my-banner" src="/assets/img/servicio/banner-garantia.svg" alt="Banner de garantia huella digital">
 </div>
-<div class="text-center">
-    <a href="{{url('/garantia')}}"><img class="stamp-pink" src="/assets/desk/general/sello-garantia.png" alt="Sello de garantia"></a>
-</div>
+
+<x-servicios-marketing-digital className="mb-80" service="web"/>
+
 @endsection
 

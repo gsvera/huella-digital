@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TokenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,9 +59,7 @@ Route::get('/uso-de-cookies',function(){
 Route::get('/glosario-inbound-marketing',function(){
     return view('glosary');
 });
-Route::get('/garantia',function(){
-    return view('warranty');
-});
+
 Route::get('/contacto',function(){
     return view('layouts.layout2');
 });
@@ -72,3 +71,15 @@ Route::get('/gracias',function(){
 Route::get('/correo', function(){
     return view('viewMail.sendMail');
 });
+
+Route::get('/cliente-1', function() {
+    return view('proyects.tecnicopy');
+});
+Route::get('/cliente-2', function() {
+    return view('proyects.bubble-bbq');
+});
+Route::get('/cliente-3', function() {
+    return view('proyects.ctr-international');
+});
+
+Route::get('/valid-password',[TokenController::class, 'ValidToken']);

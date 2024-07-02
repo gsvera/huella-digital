@@ -1,320 +1,243 @@
-@extends('layouts.layout2') @section('content')
-<div class="slide-home">
-    <div class="bg-gray">
-        <div class="div-home">
-            <p class="line-vertical pl-2 FivoSans-Regular p-banner">Nuestra pasión por los resultados <br> marca la diferencia</p>      
-            <h1 class="FivoSans-Heavy title-banner">AGENCIA DE <br class="display-min"> MARKETING DIGITAL <br class="display-min"> EN MÉXICO</h1>
-            <a href="#contact">
-                <button class="btn-asesoria btn-asesoria-white FivoSans-Bold">Solicitar Asesoría Gratuita</button>
-            </a>
-        </div>
-        <img class="img-slide-home display-max" src="/assets/desk/home/home/art-principal-agrupado.svg" alt="">
+@extends('layouts.layout-huella')
+@section('content')
+
+<div class="content-page d-flex-responsive p-0" style="align-items: center">
+    <div class="col-12 col-md-7 mb-5 p-0">
+        <span class="slogan">AGENCIA DE MARKETING DIGITAL EN MÉXICO</span>
+        <h1 class="title">Potencia tu presencia online y haz crecer tu marca en el mundo digital</h1>
+        <p>Con expertos en marketing digital, redes sociales, posicionamiento SEO, diseño web y publicidad digital. </p>
+        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
+    </div>
+    <div class="col-12 col-md-5 mb-5 p-0 d-flex justify-content-center">
+        <img class="img-responsive" src="/assets/img/home/servicios.svg" alt="Servicios de huella digital">
     </div>
 </div>
-<div class="section flex">
-    <div class="display-max">
-        <img class="img-2" src="/assets/desk/general/lines.png" alt="Lineas">
-    </div>
-    <div class="col-6 pr-5 display-max">
-        <img class="img-section" src="/assets/desk/home/primera-seccion.png" alt="Imagen seccion home">
-    </div>
-    <div class="col-xs-12 col-sm-12 col-m-5 col-xl-5 col-lg-5 pt-5">
-        <div class="display-max">
-            <img class="img-1" src="/assets/desk/general/circles.png" alt="Circulos">
-        </div>
-        <p class="line-vertical pl-2 color-pink FivoSans-Medium p-center">ACERCA DE</p>
-        <h2 class="p-center subtitle FivoSans-Bold">Huella Digital, la Agencia de Marketing Digital en México</h2>
-        <p class="FivoSans-Regular" style="text-align:justify;">Huella Digital, la Agencia de Marketing Digital en México, está formada por un colectivo multidisciplinario 
-        de jóvenes profesionales que cree en la transformación digital. Sabemos lo importante que es para tu empresa 
-        gestionar su presencia on line, destacar y ser rentable en el mercado.</p>
-        <div class="display-min justify-content-center display-mob-flex">
-            <img class="back-plane" src="/assets/desk/general/avion-left.svg" alt="Icono de avión">
-            <img class="img-section" src="/assets/desk/home/primera-seccion.png" alt="Imagen seccion home">
-        </div>
-        <p class="FivoSans-Regular"style="text-align:justify;"> En Huella Digital encontrarás el departamento externo de Mercadotecnia Digital que tu empresa necesita, 
-        nuestra experiencia abarca desde la administración de redes sociales corporativas, posicionamiento en motores 
-        de búsqueda para que aparezcas en los mejores lugares Google, diseño de páginas web, comercio electrónico, 
-        generación de nuevos clientes, estrategias de publicidad en Internet y estrategias de Marketing Digital, todo 
-        esto desarrollado con la creatividad e innovación que tu marca necesita.</p>
-        <a href="#contact">
-            <button class="btn-asesoria btn-asesoria-pink mt-4 FivoSans-Bold">Solicitar Asesoría Gratuita</button>
-        </a>
-    </div>
-</div>
-<div class="bck-section mg-top-100">
-    <img class="plane-left display-max" src="/assets/desk/general/avion-recortado.svg" alt="Icono avion">
-    <p class="ct-pink fs-medium text-center FivoSans-Medium">APROVECHA AL MÁXIMO LOS RECURSOS Y OPORTUNIDADES <br> QUE EL ESPACIO ONLINE OFRECE</p>
-    <h2 class="subtitle-big text-center FivoSans-Heavy">SERVICIOS DE MARKETING DIGITAL</h2>
-    <p class="paragraph FivoSans-Medium"style="text-align:justify;">Aplicamos estrategias de Inbound Marketing multi-canal, atraemos a tu prospecto mostrándole los beneficios 
-    de tu producto a través de redes sociales, estrategias de SEO usando las palabras clave con las que te pueden 
-    encontrar, estrategias SEM con campañas de pago en Google Adwords y diseño web que maximizan la visibilidad y 
-    competitividad de tu empresa en tu industria.</p>
-    <div class="d-flex-row">
-        <div class="col-1 display-max">
-            <img class="arrow-slide" id="arrow-left" src="assets/desk/iconos/arrow-left.svg" aria-hidden="true" alt="Flecha" style="float:right;">
-        </div>
-        <div class="contain-carrusel col-xs-12 col-sm-12 col-m-10 col-xl-10 col-lg-10" style="padding:0;">
-            <div class="aux-carr" id="aux-carr">
-                <ul id="carrusel" class="d-flex-carrusel carrusel">
-                    <li class="carrusel_item carrusel-contain-item select-one">
-                        <div class="mr-4 ml-4 slide-carrusel">
-                            <img class="icon-section" src="assets/desk/home/iconos-section/MKT-ICON.svg" alt="">
-                            <div class="pleca-morada text-center">
-                                <a class="non-decoration" href="{{url('/agencia-de-marketing-digital-cancun')}}">
-                                    <h3 class="text-white FivoSans-Bold title-pleca">MARKETING <br> DIGITAL</h3>
-                                </a>
-                                <a href="{{url('/agencia-de-marketing-digital-cancun')}}">
-                                    <button class="btn-ver FivoSans-Regular">VER MÁS</button>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carrusel-contain-item select-one">
-                        <div class="mr-4 ml-4 slide-carrusel">
-                            <img class="icon-section" src="assets/desk/home/iconos-section/REDES-ICON.svg" alt="">
-                            <div class="pleca-morada text-center">
-                                <a class="non-decoration" href="{{url('/agencia-de-redes-sociales-cancun')}}">                        
-                                    <h3 class="text-white FivoSans-Bold title-pleca">ADMINISTRACIÓN DE <br>REDES SOCIALES</h3>
-                                </a>
-                                <a href="{{url('/agencia-de-redes-sociales-cancun')}}">
-                                    <button class="btn-ver FivoSans-Regular">VER MÁS</button>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carrusel-contain-item select-two">
-                        <div class="mr-4 ml-4 slide-carrusel">
-                            <img class="icon-section" src="assets/desk/home/iconos-section/PUBLICIDAD-ICON.svg" alt="">
-                            <div class="pleca-morada text-center">
-                                <a class="non-decoration" href="{{url('/publicidad-digital-cancun')}}">
-                                    <h3 class="text-white FivoSans-Bold title-pleca">PUBLICIDAD <br> DIGITAL</h3>
-                                </a>
-                                <a href="{{url('/publicidad-digital-cancun')}}">
-                                    <button class="btn-ver FivoSans-Regular">VER MÁS</button>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carrusel-contain-item select-two">
-                        <div class="mr-4 ml-4 slide-carrusel" style="">
-                            <img class="icon-section" src="assets/desk/home/iconos-section/SEO-ICON.svg" alt="">
-                            <div class="pleca-morada text-center">
-                                <a class="non-decoration" href="{{url('/agencia-seo-posicionamiento-web-cancun')}}">
-                                    <h3 class="text-white FivoSans-Bold title-pleca">SEO</h3>
-                                </a>
-                                <br class="">
-                                <a href="{{url('/agencia-seo-posicionamiento-web-cancun')}}">
-                                    <button class="btn-ver FivoSans-Regular">VER MÁS</button>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="carrusel-contain-item select-three">
-                        <div class="mr-4 ml-4 slide-carrusel" style="">
-                            <img class="icon-section" src="assets/desk/home/iconos-section/WEB-ICON.svg" alt="">
-                            <div class="pleca-morada text-center">
-                                <a class="non-decoration" href="{{url('/diseño-de-paginas-web-cancun')}}">
-                                    <h3 class="text-white FivoSans-Bold title-pleca">DESARROLLO <br> WEB</h3>
-                                </a>
-                                <a href="{{url('/diseño-de-paginas-web-cancun')}}">
-                                    <button class="btn-ver FivoSans-Regular">VER MÁS</button>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+<div class="d-flex carrusel">
+    <div class="carrusel-container">
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Top 3</h5>
+            <div class="mini-card-text">
+                <p>Posicionado dentro del top 3 en su ciudad</p>
             </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/ctr.png" alt="Logo buble">
             </div>
-            <div class="col-1 display-max">
-                <img class="arrow-slide" id="arrow-right" src="assets/desk/iconos/arrow-right.svg" alt="Flecha">
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Presencia</h5>
+            <div class="mini-card-text">
+                <p>Notoriedad de marca contenido único y uso de influencers</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/buble-img.png" alt="Logo buble">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Top 3</h5>
+            <div class="mini-card-text">
+                <p>Posicionado dentro del top 3 en su ciudad</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/ecnicopy.png" alt="Logo Exnicopy">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Leads</h5>
+            <div class="mini-card-text">
+                <p>Mejora de leads calificados a través de publicidad pagada</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/leads.png" alt="Leads">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Top 3</h5>
+            <div class="mini-card-text">
+                <p>Posicionado dentro del top 3</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/digirey.png" alt="Dijirey">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Contenido</h5>
+            <div class="mini-card-text">
+                <p>Generación de contenidos para público nicho</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/homeopathy.png" alt="Homeopathy center">
             </div>
         </div>
     </div>
-    <div>
-        <img class="img-3 display-max" src="/assets/desk/general/lines.png" alt="Lineas decorativas">
-        <img class="img-4 display-max" src="/assets/desk/iconos/circle-decor.svg" alt="Circulo decorativo">
+    <div class="carrusel-container" id="carrusel-container">
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Top 3</h5>
+            <div class="mini-card-text">
+                <p>Posicionado dentro del top 3 en su ciudad</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/ctr.png" alt="Logo buble">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Presencia</h5>
+            <div class="mini-card-text">
+                <p>Notoriedad de marca contenido único y uso de influencers</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/buble-img.png" alt="Logo buble">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Top 3</h5>
+            <div class="mini-card-text">
+                <p>Posicionado dentro del top 3 en su ciudad</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/ecnicopy.png" alt="Logo Exnicopy">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Leads</h5>
+            <div class="mini-card-text">
+                <p>Mejora de leads calificados a través de publicidad pagada</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/leads.png" alt="Leads">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Top 3</h5>
+            <div class="mini-card-text">
+                <p>Posicionado dentro del top 3</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/digirey.png" alt="Dijirey">
+            </div>
+        </div>
+        <div class="mini-card mini-card-carrusel">
+            <h5 class="font-weight-bold">Contenido</h5>
+            <div class="mini-card-text">
+                <p>Generación de contenidos para público nicho</p>
+            </div>
+            <div class="mini-card-img">
+                <img src="/assets/logo/homeopathy.png" alt="Homeopathy center">
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="section text-center">
-    <img class="plane-right display-max" src="/assets/desk/general/avion-right.svg" alt="Icono avion">
-    <p class="ct-pink fs-medium text-center FivoSans-Medium">SOLUCIONES TECNOLÓGICAS PARA <br class="display-min"> UN MUNDO DIGITAL</p>
-    <h2 class="subtitle-big text-center FivoSans-Heavy">ARTÍCULOS SOBRE MARKETING DIGITAL</h2>
-    <p class="paragraph FivoSans-Regular">En nuestro blog encontrarás diversos recursos y herramientas que nuestro colectivo escribe para ayudarte a 
-    aprender y comprender mejor las ventajas de aplicar Mercadotecnia Digital.</p>
-    <div class="flex-row justify-content-center">
-        <div class="">
-            <div class="contain-blog">
-                <img class="img-blog" src="/assets/desk/home/ventas-facebook.jpg" alt="Blog de facebook">
-                <p class="by-blog text-left mt-3 FivoSans-Medium">17 Agosto-Por Paola Pacheco</p>
-                <h3 class="title-blog text-left size-text-blog FivoSans-Medium">CÓMO MEJORAR MIS VENTAS CON FACEBOOK</h3>
-                <a href="/blog/como-mejorar-mis-ventas-con-facebook/" class="non-decoration">
-                    <p class="text-left text-more-blog FivoSans-Bold">LEER MÁS</p>
-                </a>
-                <div class="line-blog"></div>
+<!-- COMPONENTE DE SERVICIOS DE MARKETING DIGITAL -->
+<x-servicios-marketing-digital className="mb-80" service="marketing"/>
+
+<div class="content-page">
+    <h3 class="mb-5">Casos de éxito</h3>
+    <div class="mb-100">
+        <div class="d-flex-responsive-reverse">
+            <div class="col-md-6 p-0">
+                <p class="text-color-purple font-weight-bold">TECNICOPY</p>
+                <h5 class="font-weight-bold">Tecnicopy, empresa especializada en renta y venta de multifuncionales en Ciudad de México</h5>
+                <p class="my-4">
+                    Huella Digital tiene el privilegio de colaborar, desde hace más de cuatro años, con una empresa dedicada al alquiler de impresoras para grandes oficinas y empresas ubicada en la Ciudad de México. Su principal desafío era aumentar su visibilidad en línea e impulsar sus ventas a través de estrategias digitales efectivas.
+                </p>
+                <button type="button" class="btn-menu-pink" onclick="viewProyect('1')">Ver proyecto completo <img src="/assets/icon/arrow-right-white.svg" alt="Flecha derecha"></button>
             </div>
-        </div>
-        <div class="ml-4 mr-4 display-max">
-            <div class="contain-blog">
-                <img class="img-blog" src="/assets/desk/home/blog-marketing.png" alt="Blog de facebook">
-                <p class="by-blog text-left mt-3 FivoSans-Medium">23 Agosto-Por Paola Pacheco</p>
-                <h3 class="title-blog text-left size-text-blog FivoSans-Medium">UNA EMPRESA SIN MARKETING DIGITAL</h3>
-                <a href="/blog/que-hace-una-agencia-de-marketing-digital/" class="non-decoration">
-                    <p class="text-left text-more-blog FivoSans-Bold">LEER MÁS</p>
-                </a>
-                <div class="line-blog"></div>
-            </div>
-        </div>
-        <div class=" display-max">
-            <div class="contain-blog">
-                <img class="img-blog" src="/assets/desk/home/blog-seo.jpg" alt="Blog de facebook">
-                <p class="by-blog text-left mt-3 FivoSans-Medium">4 Septiembre-Por Paola Pacheco</p>
-                <h3 class="title-blog text-left size-text-blog FivoSans-Medium">CONECTA CON TUS CLIENTES</h3>
-                <a href="/blog/mi-empresa-necesita-posicionamiento-seo/" class="non-decoration">
-                    <p class="text-left text-more-blog FivoSans-Bold">LEER MÁS</p>
-                </a>
-                <div class="line-blog"></div>
-            </div>
-        </div>
-    </div>
-    <a href="{{route('blog')}}">
-        <button class="btn-blog FivoSans-Regular">VER MÁS</button>
-    </a>
-</div>
-<div class="section-quar-gray">
-        <p class="ct-pink fs-big text-center FivoSans-Medium">NUESTROS CLIENTES</p>
-        <h2 class="subtitle-big text-center FivoSans-Heavy">ELLOS ESTÁN DEJANDO SU HUELLA DIGITAL</h2>
-        <p class="paragraph FivoSans-Medium">Ellos son algunos de los clientes que nos han confiado su crecimiento y presencia de marca digital ¡Nosotros más que contentos 
-        con los resultados!</p>
-        <div class="box-client justify-content-center">
-            <div class="aux-cont-client">
-                <div class="cont-client" id="cont-client">
-                    <a href="https://santisoluciones.com/" class="carrusel_client item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/santi-c.png" alt="Logo Santi">
-                    </a>
-                    <a href="https://www.ctr-international.com.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/ctr-c.png" alt="Logo CTR International">
-                    </a>
-                    <a href="https://tecnicopy.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/tecnicopy-c.png" alt="Logo Tecnicopy">
-                    </a>
-                    <a href="https://www.facebook.com/homeopathycenterqroo" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/homeopathy-c.png" alt="Logo Homeopathy center">
-                    </a>
-                    <a href="http://www.artigas.com.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/artigas-c.png" alt="Logo Artigas">
-                    </a>
-                    <a href="https://boutiqueinmobiliaria.com.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/bi-c.png" alt="Logo Boutique inmobiliaria">
-                    </a>
-                    <a href="https://cluby.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/cluby-c.png" alt="Logo Cluby">
-                    </a>
-                    <a href="https://www.digirey.com/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/digirey-c.png" alt="Logo Digirey">
-                    </a>
-                    <a href="https://www.foldio.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/foldio-c.png" alt="Logo Foldio">
-                    </a>
-                    <a href="http://www.itsallaboutlocation.com.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/its-all-about-location-c.png" alt="Logo It´s all about location">
-                    </a>
-                    <a href="https://multimach.mx/" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/mm-c.png" alt="Logo Multimatch">
-                    </a>
-                    <a href="https://www.facebook.com/nngroup.inc" class="item-client" rel="nofollow" target="_blank">
-                        <img class="turn-color" src="/assets/desk/home/clientes/nn-group-c.png" alt="Logo NN group">
-                    </a>
+            <div class="col-md-6 p-0 container-case-exit mb-r-4">
+                <div class="cont-img-case">
+                    <img class="img-responsive" src="/assets/img/home/caso-tecnicopy.svg" alt="Caso tecnicopy">
                 </div>
             </div>
         </div>
-        <div class="justify-content-center flex-row">
-            <img class="arrow-slide-client m-3 display-max" id="sliClient1" src="assets/desk/iconos/arrow-left.svg" alt="Flecha">
-            <img class="arrow-slide-client m-3 display-max" id="sliClient2" src="assets/desk/iconos/arrow-right.svg" alt="Flecha">
+    </div>
+    <div class="mb-100">
+        <div class="d-flex-responsive-reverse">
+            <div class="col-md-6 p-0">
+                <p class="text-color-purple font-weight-bold">BUBBLE BBQ BOATS</p>
+                <h5 class="font-weight-bold">Bubble BBQ Boats: Tour Operadora en Cancún</h5>
+                <p class="my-4">
+                    Nuestra agencia tiene el privilegio de colaborar con una naciente tour operadora con sede en el paradisíaco destino turístico de Cancún. Su principal desafío era destacarse en un mercado altamente competitivo e impulsar las ventas de sus tours en la región. Nuestro enfoque se centró en la creación de contenido de calidad y campañas publicitarias efectivas en redes sociales.
+                </p>
+                <button type="button" class="btn-menu-pink" onclick="viewProyect('2')">Ver proyecto completo <img src="/assets/icon/arrow-right-white.svg" alt="Flecha derecha"></button>
+            </div>
+            <div class="col-md-6 p-0 container-case-exit mb-r-4">
+                <div class="cont-img-case">
+                    <img class="img-responsive" src="/assets/img/home/caso-bubble-bbq.svg" alt="Caso Bubble BBQ BOATS">
+                </div>
+            </div>
         </div>
-    <img class="i-body-right display-max" src="/assets/desk/iconos/circle-decor.svg" alt="Icono semi-circle">
-</div>
-@endsection
-@push('scripts')
-<script type="text/javascript">
-
-    let countService = 0
-    $('#bullet-service1').click(function(){
-        if(countService == 1){
-            $('.select-two').animate({"margin-left":"+=50%"})
-            setTimeout(function(){
-                $('.select-two').css({"margin":"0","display":"none"})
-                $('.select-one').show()
-            },600)
-            countService = 0
-        }
-        if(countService == 2){
-            $('.select-three').animate({"margin-left":"+=50%"})
-            setTimeout(function(){
-                $('.select-three').css({"margin":"0","display":"none"})
-                $('.select-one').show()
-            },600)
-            countService = 0
-        }
-    })
-    $('#bullet-service2').click(function(){
-        if(countService == 0){
-            $('.select-one').animate({"margin-left":"-=50%"})
-            setTimeout(function(){
-                $('.select-one').css({"margin":"0","display":"none"})
-                $('.select-two').show()
-            },600)
-            countService = 1
-        }
-        if(countService == 2){
-            $('.select-three').animate({"margin-left":"+=50%"})
-            setTimeout(function(){
-                $('.select-three').css({"margin":"0","display":"none"})
-                $('.select-two').show()
-            },600)
-            countService = 1
-        }
-    })
-    $('#bullet-service3').click(function(){
-        if(countService == 1){
-            $('.select-two').animate({"margin-left":"-=50%"})
-            setTimeout(function(){
-                $('.select-two').css({"margin":"0","display":"none"})
-                $('.select-three').show()
-            },600)
-            countService = 2
-        }
-        if(countService == 0){
-            $('.select-one').animate({"margin-left":"-=50%"})
-            setTimeout(function(){
-                $('.select-one').css({"margin":"0","display":"none"})
-                $('.select-three').show()
-            },600)
-            countService = 2
-        }
-    })
-    let itemClient = document.getElementsByClassName('item-client'),
-    countClient = 0
+    </div>
+    <div class="mb-100">
+        <div class="d-flex-responsive-reverse">
+            <div class="col-md-6 p-0">
+                <p class="text-color-purple font-weight-bold">CTR INTERNATIONAL</p>
+                <h5 class="font-weight-bold">CTR International, distribuidor de Refacciones para Multifuncionales en Ciudad de México</h5>
+                <p class="my-4">
+                    Colaboramos con un distribuidor de refacciones y consumibles para multifuncionales con sede en Ciudad de México. Uno de los principales desafíos que enfrentaba la marca era la escasa presencia en línea y la falta de información sobre esta industria en internet. Nuestro objetivo era mejorar su visibilidad y posicionamiento en los motores de búsqueda mediante una estrategia SEO efectiva.
+                </p>
+                <button type="button" class="btn-menu-pink" onclick="viewProyect('3')">Ver proyecto completo <img src="/assets/icon/arrow-right-white.svg" alt="Flecha derecha"></button>
+            </div>
+            <div class="col-md-6 p-0 container-case-exit mb-r-4">
+                <div class="cont-img-case">
+                    <img class="img-responsive" src="/assets/img/home/caso-ctr-international.svg" alt="Caso CTR international">
+                </div>
+            </div>
+        </div>
+    </div>
     
-    $('#sliClient1').click(function(){
-        if(countClient < itemClient.length-1){
-            if(screen.width >= 1400){
-                $('.carrusel_client').animate({"margin-left":"-=230px"})
-            }else if(screen.width < 1400 && screen.width > 450){
-                $('.carrusel_client').animate({"margin-left":"-=250px"})
-            }
-            countClient = countClient + 1
-        }
-    })
-    $('#sliClient2').click(function(){
-        if(countClient > 0){
-            if(screen.width >= 1400){
-                $('.carrusel_client').animate({"margin-left":"+=230px"})
-            }else if(screen.width < 1400 && screen.width > 450){
-                $('.carrusel_client').animate({"margin-left":"+=250px"})
-            }
-            countClient = countClient - 1
-        }
-    })
-</script>
+    
+</div>
+
+<div class="content-page">
+    <div class="text-center">
+        <h3 class="mb-3">Ellos están dejando Huella Digital</h3>
+        <p>
+        Ellos son algunos de los clientes que nos han confiado su crecimiento y presencia 
+        <br />
+        de marca digital ¡Nosotros más que contentos con los resultados!
+        </p>
+    </div>
+</div>
+    
+<!-- <div class="carrusel-container">
+    <div class="card-coments mini-card-carrusel">
+        <img src="/assets/img/home/people-1.svg" alt="Persona">    
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tenetur doloremque enim laboriosam eum, nam a, minus ipsa nostrum, harum voluptas tempore facilis. Voluptate, at earum sequi dolor aliquid ipsam?</p>
+
+        </div>
+    </div>
+    <div class="card mini-card-carrusel">
+        elemento 1
+    </div>
+    <div class="card mini-card-carrusel">
+        elemento 1
+    </div>
+    <div class="card mini-card-carrusel">
+        elemento 1
+    </div>
+</div> -->
+
+<div class="content-page">
+    <div class="d-flex-responsive" style="align-items:center;">
+        <div class="col-md-6 pt-3">
+            <h3 class="mb-4">Huella digital, la Agencia de Marketing Digital en México</h3>
+            <p class="mb-3">
+                En Huella Digital, hallarás el departamento externo de <span class="font-weight-bold">Mercadotecnia Digital</span> que tu empresa necesita. Ofrecemos experiencia en la gestión de redes sociales corporativas, <span class="font-weight-bold">SEO para destacar en Google, diseño web,</span> comercio electrónico, captación de clientes, <span class="font-weight-bold">publicidad online</span> y estrategias de <span class="font-weigth-bold">Marketing Digital.</span> Todo esto con la creatividad e innovación que tu marca necesita.
+            </p>
+            <button type="button" class="btn-menu-pink">Asesoría gratuita <img src="/assets/icon/arrow-right-white.svg" alt="Flecha derecha"></button>
+        </div>
+        <div class="col-md-6 text-center">
+            <img class="img-responsive" src="/assets/img/home/peoples.svg" alt="Personas">
+        </div>
+    </div>
+</div>
+    
+<x-modal-login-proyects />
+
+@endsection
+
+@push('scripts')
+    <script type="text/javascript">
+        
+    </script>
 @endpush

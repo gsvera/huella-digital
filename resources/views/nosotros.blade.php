@@ -1,294 +1,290 @@
-@extends('layouts.layout')
+@extends('layouts.layout-huella')
 @section('content')
-<div class="cont-sli-head">
-    <div class="content-slider flex-banner">
-        <div class="flex head-sli-item banner-mob-us">
-            <div class="col h1-absolute">
-                <p class="line-vertical line-vertical-white pl-2 FivoSans-Regular">Nuestra pasión por los resultados <br> marca la diferencia</p>
-                <h1 class="title-us fs-banner FivoSans-Heavy">HUELLA DIGITAL</h1>
-            </div>
-            <img class="slider-header col display-max" src="/assets/desk/seccion-nosotros/slider/icono-sliderprincipal.svg" alt="Slider principal">
-        </div>
-        <div class="flex slide-home-two banner-home" style="display:none;">
-            <div class="h1-absolute-m text-center-desk">
-                <p class="text-white size-text FivoSans-Light">Brindamos soluciones digitales</p>
-                <h1 class="text-white FivoSans-Bold fs-banner">Páginas web, redes sociales, <br class="display-max"> Inbound Marketing, SEO y SEM</h1>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="text-center">
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider1" checked><label for="bullet-slider1"></label>
-    <input class="bullet" type="radio" name="bullet-slider" id="bullet-slider2"><label for="bullet-slider2"></label>
-</div>
-<div class="section">
-    <p class="ct-pink fs-medium text-center FivoSans-Medium">JUNTOS HACEMOS MÁS</p>
-    <h2 class="subtitle-big text-center FivoSans-Heavy">NUESTRO PROCESO DE TRABAJO</h2>
-    <div class="slide-work display-max">
-        <div class="slide-work-item mt-5" id="item-work-one">
-            <div class="row col justify-content-center">
-                <img class="icon-work" src="/assets/desk/seccion-nosotros/proceso-trabajo/reconocimiento-icon.svg" alt="icono de reconocimiento">
-                <div class="trazo mt-3">
-                    <h3 class="title-work mt-4 FivoSans-Heavy">Reconocimiento</h3>
-                    <p class="mt-3 FivoSans-Regular text-justify">
-                    Realizamos estudio de competencia digital, tomamos una capacitación de tu cultura empresarial, estudiamos 
-                    las fortalezas y debilidades de tu marca e identificamos las áreas de oportunidad que hay que atender.
-                    </p>
-                </div>
-            </div>
-            <div class="row col justify-content-center"> 
-                <img class="icon-work" src="/assets/desk/seccion-nosotros/proceso-trabajo/estrategias-icon.svg" alt="icono de estrategias">
-                <div class="trazo mt-3">
-                    <h3 class="title-work mt-4 FivoSans-Heavy">Estrategia digital</h3>
-                    <p class="mt-3 FivoSans-Regular text-justify">
-                    Desarrollamos una planeación digital personalizada según las necesidades de tu empresa, lo que nos permitirá alcanzar 
-                    los objetivos marcados unificando técnicas de Marketing Digital, publicidad y diseño gráfico creativo.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="slide-work-item mt-5" id="item-work-two" style="display:none;">
-            <div class="row col justify-content-center">
-                <img class="icon-work" src="/assets/desk/seccion-nosotros/proceso-trabajo/accion-icon.svg" alt="icono de acción">
-                <div class="trazo mt-3">
-                    <h3 class="title-work mt-4 FivoSans-Heavy">Acción</h3>
-                    <p class="mt-3 FivoSans-Regular text-justify">
-                    Aprobada la estrategia... ¡Comenzamos a dejar huella! llevando a la práctica lo previamente desarrollado para mejorar tu presencia 
-                    de marca y construir una fuerte reputación en internet de manera orgánica.    
-                    </p>
-                </div>
-            </div>
-            <div class="row col justify-content-center"> 
-                <img class="icon-work" src="/assets/desk/seccion-nosotros/proceso-trabajo/analisis-icon.svg" alt="icono de analisis">
-                <div class="trazo mt-3">
-                    <h3 class="title-work mt-4 FivoSans-Heavy">Análisis</h3>
-                    <p class="mt-3 FivoSans-Regular text-justify">
-                    Medimos el comportamiento de los usuarios, realizamos los ajustes necesarios en tiempo real y revisamos datos recopilados para 
-                    medir la eficiencia de la campaña.           
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="slide-work-item mt-5" id="item-work-three" style="display:none;">
-            <div class="row col justify-content-center">
-                <img class="icon-work" src="/assets/desk/seccion-nosotros/proceso-trabajo/resultados-icon.svg" alt="icono de resultados">
-                <div class="trazo mt-3">
-                    <h3 class="title-work mt-4 FivoSans-Heavy">Resultados</h3>
-                    <p class="mt-3 FivoSans-Regular text-justify">
-                    Entregamos un informe de los resultados obtenidos para que estés al día sobre el desarrollo digital de tu empresa y mantener 
-                    una mejora contínua.    
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-<!-- SCTION WORK MOBILE -->
-<div class="display-min">
-    <div class="slide-work-mob d-flex-row">
-        <div class="row slide-work-item-mob justify-content-center">
-            <img class="icon-work-mob" src="/assets/desk/seccion-nosotros/proceso-trabajo/reconocimiento-icon.svg" alt="icono de reconocimiento">
-            <div class="trazo-mob mt-3">
-                <h3 class="title-work mt-4 FivoSans-Heavy">Reconocimiento</h3>
-                <p class="mt-3 FivoSans-Regular text-mobile text-justify">
-                Realizamos estudio de competencia digital, tomamos una capacitación de tu cultura empresarial, estudiamos 
-                las fortalezas y debilidades de tu marca e identificamos las áreas de oportunidad que hay que atender.
+<div class="content-page">
+    <div class="col-md-7 text-center mx-auto">
+        <span class="slogan">HUELLA DIGITAL</span>
+        <h1 class="title">Nuestra pasión por los resultados marca la diferencia</h1>
+        <p>Brindamos soluciones digitales. Páginas web, redes sociales, Inbound Marketing, SEO y SEM</p>
+    </div>
+    <div class="content-img-nosotros">
+        <img class="img-responsive-nosotros" src="/assets/img/nosotros/banner-title.svg" alt="Imagen nosotros">
+    </div>
+</div>
+<div class="content-page">
+    <div class="mx-auto text-center mtsc-80">
+        <span class="text-secondary">JUNTOS HACEMOS MÁS</span>
+        <h3 class="font-weight-bold">Nuestro proceso de trabajo</h3>
+    </div>
+    <div class="content-proccess">
+        <div class="d-flex-responsive ptproc-5 px-0">
+            <div class="col-12 col-md-5 text-center pbimg-4">
+                <img class="img-responsive" src="/assets/img/nosotros/img-reconocimiento.svg" alt="Reconocimiento">
+            </div>
+            <div class="col-md-2 p-0 display-max">
+                <div class="col-md-12 justify-center d-flex mb-1 p-0">
+                    <div class="vertical-number">1</div>
+                </div>
+                <div class="col-md-12 justify-center d-flex p-0 ht-bar-uno">
+                    <div class="line-background"></div>
+                    <div class="line-fill"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 p-0">
+                <h5>Reconocimiento</h5>
+                <p>
+                    Realizamos estudio de competencia digital, tomamos una capacitación de tu cultura empresarial, estudiamos las fortalezas y debilidades de tu marca e identificamos las áreas de oportunidad que hay que atender.
                 </p>
             </div>
         </div>
-        <div class="row slide-work-item-mob justify-content-center" style="display:none;"> 
-            <img class="icon-work-mob" src="/assets/desk/seccion-nosotros/proceso-trabajo/estrategias-icon.svg" alt="icono de estrategias">
-            <div class="trazo-mob mt-3">
-                <h3 class="title-work mt-4 FivoSans-Heavy">Estrategia digital</h3>
-                <p class="mt-3 FivoSans-Regular text-justify">
-                Desarrollamos una planeación digital personalizada según las necesidades de tu empresa, lo que nos permitirá alcanzar 
-                los objetivos marcados unificando técnicas de Marketing Digital, publicidad y diseño gráfico creativo.
+        <div class="d-flex-responsive-reverse mt-3 ptproc-5 px-0">
+            <div class="col-12 col-md-5 p-0">
+                <h5>Estrategia digital</h5>
+                <p>
+                    Desarrollamos una planeación digital personalizada según las necesidades de tu empresa, lo que nos permitirá alcanzar los objetivos marcados unificando técnicas de Marketing Digital, publicidad y diseño gráfico creativo.
                 </p>
             </div>
-        </div>    
-        <div class="row slide-work-item-mob justify-content-center" style="display:none;">
-            <img class="icon-work-mob" src="/assets/desk/seccion-nosotros/proceso-trabajo/accion-icon.svg" alt="icono de acción">
-            <div class="trazo-mob mt-3">
-                <h3 class="title-work mt-4 FivoSans-Heavy">Acción</h3>
-                <p class="mt-3 FivoSans-Regular text-justify">
-                Aprobada la estrategia... ¡Comenzamos a dejar huella! llevando a la práctica lo previamente desarrollado para mejorar tu presencia 
-                de marca y construir una fuerte reputación en internet de manera orgánica.    
+            <div class="col-md-2 p-0 display-max">
+                <div class="col-md-12 justify-center d-flex mb-1 p-0">
+                    <div class="vertical-number">2</div>
+                </div>
+                <div class="col-md-12 justify-center d-flex p-0 ht-bar-dos">
+                    <div class="line-background"></div>
+                    <div class="line-fill"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 text-center pbimg-4">
+                <img class="img-responsive" src="/assets/img/nosotros/img-estrategia.svg" alt="Estrategia digital">
+            </div>            
+        </div>
+        <div class="d-flex-responsive ptproc-5 px-0">
+            <div class="col-12 col-md-5 text-center pbimg-4">
+                <img class="img-responsive" src="/assets/img/nosotros/img-accion.svg" alt="Accion">
+            </div>
+            <div class="col-md-2 p-0 display-max">
+                <div class="col-md-12 justify-center d-flex mb-1 p-0">
+                    <div class="vertical-number">3</div>
+                </div>
+                <div class="col-md-12 justify-center d-flex p-0 ht-bar-uno">
+                    <div class="line-background"></div>
+                    <div class="line-fill"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 p-0">
+                <h5>Acción</h5>
+                <p>
+                    Aprobada la estrategia... ¡Comenzamos a dejar huella! llevando a la práctica lo previamente desarrollado para mejorar tu presencia de marca y construir una fuerte reputación en internet de manera orgánica.
                 </p>
             </div>
         </div>
-        <div class="row slide-work-item-mob justify-content-center" style="display:none;"> 
-            <img class="icon-work-mob" src="/assets/desk/seccion-nosotros/proceso-trabajo/analisis-icon.svg" alt="icono de analisis">
-            <div class="trazo-mob mt-3">
-                <h3 class="title-work mt-4 FivoSans-Heavy">Análisis</h3>
-                <p class="mt-3 FivoSans-Regular text-justify">
-                Medimos el comportamiento de los usuarios, realizamos los ajustes necesarios en tiempo real y revisamos datos recopilados para 
-                medir la eficiencia de la campaña.           
+        <div class="d-flex-responsive-reverse mt-3 ptproc-5 px-0">
+            <div class="col-12 col-md-5 p-0">
+                <h5>Análisis</h5>
+                <p>
+                    Medimos el comportamiento de los usuarios, realizamos los ajustes necesarios en tiempo real y revisamos datos recopilados para medir la eficiencia de la campaña.
                 </p>
             </div>
+            <div class="col-md-2 p-0 display-max">
+                <div class="col-md-12 justify-center d-flex mb-1 p-0">
+                    <div class="vertical-number">4</div>
+                </div>
+                <div class="col-md-12 justify-center d-flex p-0 ht-bar-dos">
+                    <div class="line-background"></div>
+                    <div class="line-fill"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 text-center pbimg-4">
+                <img class="img-responsive" src="/assets/img/nosotros/img-analisis.svg" alt="Analisis">
+            </div>            
         </div>
-        <div class="row slide-work-item-mob justify-content-center" style="display:none;">
-            <img class="icon-work-mob" src="/assets/desk/seccion-nosotros/proceso-trabajo/resultados-icon.svg" alt="icono de resultados">
-            <div class="trazo-mob mt-3">
-                <h3 class="title-work mt-4 FivoSans-Heavy">Resultados</h3>
-                <p class="mt-3 FivoSans-Regular text-justify">
-                Entregamos un informe de los resultados obtenidos para que estés al día sobre el desarrollo digital de tu empresa y mantener 
-                una mejora contínua.    
+        <div class="d-flex-responsive ptproc-5 px-0">
+            <div class="col-12 col-md-5 text-center pbimg-4">
+                <img class="img-responsive" src="/assets/img/nosotros/img-resultados.svg" alt="Resultados">
+            </div>
+            <div class="col-md-2 p-0 display-max">
+                <div class="col-md-12 justify-center d-flex mb-1 p-0">
+                    <div class="vertical-number">5</div>
+                </div>
+                <div class="col-md-12 justify-center d-flex p-0 ht-bar-dos">
+                    <div class="line-background"></div>
+                    <div class="line-fill"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 p-0">
+                <h5>Resultados</h5>
+                <p>
+                    Entregamos un informe de los resultados obtenidos para que estés al día sobre el desarrollo digital de tu empresa y mantener una mejora contínua.
                 </p>
             </div>
         </div>
     </div>
 </div>
-<!-- END SCTION WORK MOBILE -->
-<!-- controlls desk -->
-    <div class="text-center display-max">
-        <input class="" type="radio" name="bullet-slider-work" id="bullet-slider-work1" checked><label for="bullet-slider-work1"></label>
-        <input class="" type="radio" name="bullet-slider-work" id="bullet-slider-work2"><label for="bullet-slider-work2"></label>
-        <input class="" type="radio" name="bullet-slider-work" id="bullet-slider-work3"><label for="bullet-slider-work3"></label>
-    </div>
-<!-- end controlls desk -->
-<!-- controlls mobile -->
-    <div class="text-center display-min">
-        <input onclick="itemWork(0)" class="" type="radio" name="bullet-slider-work-mob" id="bullet-slider-work-mob1" checked><label for="bullet-slider-work-mob1"></label>
-        <input onclick="itemWork(1)" class="" type="radio" name="bullet-slider-work-mob" id="bullet-slider-work-mob2"><label for="bullet-slider-work-mob2"></label>
-        <input onclick="itemWork(2)" class="" type="radio" name="bullet-slider-work-mob" id="bullet-slider-work-mob3"><label for="bullet-slider-work-mob3"></label>
-        <input onclick="itemWork(3)" class="" type="radio" name="bullet-slider-work-mob" id="bullet-slider-work-mob4"><label for="bullet-slider-work-mob4"></label>
-        <input onclick="itemWork(4)" class="" type="radio" name="bullet-slider-work-mob" id="bullet-slider-work-mob5"><label for="bullet-slider-work-mob5"></label>
-    </div>
-<!-- end controlls mobile -->
-</div>
-<div class="section">
-    <h2 class="subtitle-big text-center FivoSans-Heavy">SOLUCIONES CLARAS,<br class="display-min"> PRECISAS Y <br class="display-max"> CREATIVAS</h2>
-    <img class="img-5 display-max" src="/assets/desk/general/lines.png" alt="Lineas decorativas">
-    <img class="img-6 display-max" src="/assets/desk/general/circles.png" alt="Circulos decorativos">
-    <p class="ct-pink fs-medium text-center FivoSans-Medium text-mobile">EN HUELLA DIGITAL NO SOLO NOS ENFOCAMOS EN QUE TU NEGOCIO SEA ACEPTADO <br> EN EL MERCADO, SINO QUE TAMBIÉN SEA RENTABLE.</p>
-</div>
-<div class="back-mision-vision">
-    <div class="col-2 text-center">
-        <img id="arrow-vm-right" class="arrow-invert mrt arrow-mob" src="/assets/desk/iconos/arrow-white-left.svg" alt="Flecha izquierda">
-    </div>
-    <div class="contain-ms text-center">
-        <div class="item-mv item-mv-one">
-            <h3 class="text-white title-work FivoSans-Heavy">Nuestra Visión</h3>
-            <p class="text-white mg-desk-mv FivoSans-Regular text-mobile text-justify">Ser una agencia de Marketing Digital que brinde y ejecute estrategias de comunicación online efectivas a través de la creatividad, calidad y responsabilidad.</p>
-        </div>
-        <div class="item-mv item-mv-two" style="display:none;">
-            <h3 class="text-white title-work FivoSans-Heavy">Nuestra Misión</h3>
-            <p class="text-white mg-desk-mv FivoSans-Regular text-mobile text-justify">Ser la primera recomendación y una de las agencias de Marketing Digital líder en México, reconocidos por proporcionar alto valor a nuestros clientes, socios de negocio y colaboradores.</p>
-        </div>
-        <div class="item-mv item-mv-three" style="display:none;">
-            <h3 class="text-white title-work FivoSans-Heavy">Nuestro Compromiso</h3>
-            <p class="text-white mg-desk-mv FivoSans-Regular text-mobile text-justify">Tratamos a todos nuestros clientes, pequeños y grandes negocios, como nos gustaría ser tratados: buscamos una relación estrecha, de confianza y sobre todo transparente.</p>
-        </div>
-    </div>
-    <div class="col-2">
-        <img id="arrow-vm-left" class="arrow-invert mrt arrow-mob" src="/assets/desk/iconos/arrow-white-rigth.svg" alt="Flecha derecha">
-    </div>
-</div>
-<div class="section">
-    <p class="ct-pink fs-medium text-center FivoSans-Medium">IMPULSAMOS TU EMPRESA</p>
-    <h2 class="subtitle-big text-center FivoSans-Heavy">VENTAJAS DEL MARKETING DIGITAL</h2>
-    <p class="text-center FivoSans-Medium text-mobile">El Internet nos brinda un sinfín de beneficios, entre los que destacan las ventas OnLine, <br> dejando atrás al Marketing tradicional.</p>
-    <img class="img-7 display-max" src="/assets/desk/general/lines.png" alt="Lineas decorativas">
-    <!-- section advantage desk -->
-    <div class="display-max">
-        <div class="row">
-            <div class="col-3 text-center">
-                <div class="item-advantage fs-medium pt-2 FivoSans-Bold">Permite <br> medir</div>
-                <p class="text-advantage Helvetica text-justify">
-                    Podemos conocer los resultados de cada
-                    estrategia aplicada y tener un control total de
-                    cada peso invertido, conservamos lo que funciona
-                    y mejoramos lo que no, en tiempo real.					
-                </p>
-                <div class="item-advantage-second fs-medium pt-2 FivoSans-Bold">Permite <br> segmentar</div>
-                <p class="text-advantage Helvetica text-justify">
-                    Lo que nos permite dirigirnos a un mercado
-                    potencial para tu empresa, e inclusive, por cada
-                    producto que ofreces de manera: geográfica,
-                    demográfica, psicográfica y conductual.
-                </p>
-            </div>
-            <div class="col-6 text-center">
-                <img class="line-point-left" src="/assets/desk/general/linea-punteada-izquierda.svg" alt="Linea punteada">
-                <img class="line-point-l" src="/assets/desk/general/linea-punteada.svg" alt="Linea punteada">
-                <img class="img-advantage" src="/assets/desk/seccion-nosotros/ventajas/ventajas-agrupado.svg" alt="Imangen de ventajas">
-                <img class="line-point-right" src="/assets/desk/general/linea-punteada-derecha.svg" alt="Linea punteada">
-                <img class="line-point-d" src="/assets/desk/general/linea-punteada-d.svg" alt="Linea punteada">
-                <img class="line-point-b" src="/assets/desk/general/linea-punteada-b.svg" alt="Linea punteada">
-            </div>
-            <div class="col-3">
-                <div class="item-advantage fs-medium FivoSans-Bold" style="padding-top:10px;">Sirve para construir reputación</div>
-                <p class="text-advantage Helvetica text-justify">
-                    A través del desarrollo de contenido relevante
-                    creamos comunidad que con el tiempo será una
-                    herramienta valiosa de datos, así como para
-                    mejorar tu atención al cliente.
-                </p>
-                <div class="item-advantage-second fs-medium FivoSans-Bold" style="padding-top:10px;">Tiene el mejor <br class="display-max"> costo – beneficio</div>
-                <p class="text-advantage Helvetica text-justify">
-                    No es necesario hacer grandes inversiones en
-                    publicidad, la combinación de buenas estrategias
-                    y la comprensión de tu marca son un gran dueto.						
+
+<div class="content-page mtsc-80">
+    <h5 class="font-weight-bold">Soluciones claras, precisas y creativas</h5>
+    <p>
+        En Huella Digital no solo nos enfocamos en que tu negocio se aceptado <br> en el mercado, sino que también sea rentable. 
+    </p>
+    <div class="d-flex-responsive">
+        <div class="col-6 col-md-6 p-0 pr-2 mb-3">
+            <div class="card-nosotros">
+                <h5 class="text-c-pink">Nuestra visión</h5>
+                <p>
+                    Ser una agencia de Marketing Digital que brinde y ejecute estrategias de comunicación online efectivas a través de la creatividad, calidad y responsabilidad.
                 </p>
             </div>
         </div>
-        <div>
-            <div class="item-advantage fs-medium FivoSans-Bold" style="padding-top:10px;">Permite atraer clientes a bajo costo</div>
-            <p class="text-advange-bt Helvetica text-justify" style="width:250px;margin:0 auto;">
-                Parte del crecimiento de tu marca en línea será
-                orgánico, lo que quiere decir, que tendrá el
-                costo más bajo posible.
-            </p>
+        <div class="col-6 col-md-6 p-0 pl-2 mb-3">
+            <div class="card-nosotros">
+                <h5 class="text-c-pink">Nuestra misión</h5>
+                <p>
+                    Ser la primera recomendación y una de las agencias de Marketing Digital líder en México, reconocidos por proporcionar alto valor a nuestros clientes, socios de negocio y colaboradores.
+                </p>
+            </div>
         </div>
     </div>
-    <!-- end section advantage desk -->
-<!-- section advantage mobile -->
-<div class="display-min">
-    <div class="bkg-advantage-mob" id="bkg-advantage-mob">
-        <div class="item-advantage-mob fs-medium pt-2 FivoSans-Bold itemAdv">Permite <br> medir</div>
-        <p class="text-advantage-mob display-max text-center Helvetica text-mobile">
-            Podemos conocer los resultados de cada
-            estrategia aplicada y tener un control total de
-            cada peso invertido, conservamos lo que funciona
-            y mejoramos lo que no, en tiempo real.					
-        </p>
-        <div class="item-advantage-mob fs-medium pt-2 FivoSans-Bold itemAdv">Permite <br> segmentar</div>
-        <p class="text-advantage-mob display-max text-center Helvetica text-mobile">
-            Lo que nos permite dirigirnos a un mercado
-            potencial para tu empresa, e inclusive, por cada
-            producto que ofreces de manera: geográfica,
-            demográfica, psicográfica y conductual.
-        </p>
-        <div class="item-advantage-mob fs-medium FivoSans-Bold itemAdv" >Sirve para <br> construir reputación</div>
-        <p class="text-advantage-mob display-max text-center Helvetica text-mobile">
-            A través del desarrollo de contenido relevante
-            creamos comunidad que con el tiempo será una
-            herramienta valiosa de datos, así como para
-            mejorar tu atención al cliente.
-        </p>
-        <div class="item-advantage-mob fs-medium FivoSans-Bold itemAdv">Tiene el mejor <br> costo – beneficio</div>
-        <p class="text-advantage-mob display-max text-center Helvetica text-mobile">
-            No es necesario hacer grandes inversiones en
-            publicidad, la combinación de buenas estrategias
-            y la comprensión de tu marca son un gran dueto.						
-        </p>
-        <div class="item-advantage-mob fs-medium FivoSans-Bold itemAdv" >Permite atraer clientes <br> a bajo costo</div>
-        <p class="text-advantage-mob display-max text-center Helvetica text-mobile">
-            Parte del crecimiento de tu marca en línea será
-            orgánico, lo que quiere decir, que tendrá el
-            costo más bajo posible.
+    <div class="d-flex-responsive">
+        <div class="col-12 col-md-6 p-0 pr-2">
+            <div class="card-nosotros">
+                <h5 class="text-c-pink">Nuestro compromiso</h5>
+                <p>
+                    Tratamos a todos nuestros clientes, pequeños y grandes negocios, como nos gustaría ser tratados: buscamos una relación estrecha, de confianza y sobre todo transparente.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-page mtsc-80 mtm-50">
+    <div class="text-center col-md-7 mx-auto">
+        <span class="text-c-pink">IMPULSAMOS TU EMPRESA</span>
+        <h5>Ventajas del Marketing Digital</h5>
+        <p>
+            El Internet nos brinda un sinfín de beneficios, entre los que destacan las ventas Online, dejando atrás al Marketing tradicional.
         </p>
     </div>
+    <div class="d-flex-responsive mt-5">
+        <div class="col-12 col-md-6 prm-2 mb-3">
+            <div class="card-nosotros">
+                <img src="/assets/icon/nosotros/icon-window.svg" alt="Icono window">
+                <h5 class="font-weight-bold">Permite medir</h5>
+                <p>
+                    Podemos conocer los resultados de cada estrategia aplicada y tener un control total de cada peso invertido, conservando lo que funciona y mejoramos lo que no, en tiempo real. 
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 plm-2 mb-3">
+            <div class="card-nosotros">
+                <img src="/assets/icon/nosotros/icon-people.svg" alt="Icono de personas">
+                <h5 class="font-weight-bold">Sirve para construir reputación</h5>
+                <p>
+                    A través de desarrollo de contenido relevante creamos comunidad que con el tiempo será una herramienta valiosa de datos, así como para mejorar tu atención al cliente.  
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex-responsive">
+        <div class="col-12 col-md-6 prm-2 mb-3">
+            <div class="card-nosotros">
+                <img src="/assets/icon/nosotros/icon-target.svg" alt="Icono objetivo">
+                <h5 class="font-weight-bold">Permite segmentar</h5>
+                <p>
+                    Lo que nos permite dirigirnos a un mercado potencial para tu empresa, e inclusive por cada producto que ofreces de manera: geográfica, demográfica, psicográfica y conductual. 
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 plm-2 mb-3">
+            <div class="card-nosotros">
+                <img src="/assets/icon/nosotros/icon-balanza.svg" alt="Icono balanza">
+                <h5 class="font-weight-bold">Tiene el mejor costo- beneficio</h5>
+                <p>
+                    No es necesario hacer grandes inversiones en publicidad, la combinación de buenas estrategias y la comprensión de tu marca son un gran dueto.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex-responsive">
+        <div class="col-12 col-md-6 prm-2 mb-3">
+            <div class="card-nosotros">
+                <img src="/assets/icon/nosotros/icon-hand-money.svg" alt="Icono mano con dinero">
+                <h5 class="font-weight-bold">Permite atraer clientes a bajo costo</h5>
+                <p>
+                    Parte del crecimiento de tu marca en línea será orgánico, lo que quiere decir, que tendrá el costo más bajo posible. 
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- end section advantage mobile -->
+
+<div class="content-page mtsc-80 mtm-50">
+    <div class="back-mejores-resultados">
+        <div class="col-md-6">
+            <h2 class="font-weight-bold">Mejora los resultados de tu <br> empresa con Marketing <br> Digital</h2>
+            <button type="button" class="btn-menu-pink mt-4">Asesoría gratuita</button>
+        </div>
+    </div>
 </div>
-<div class="back-pink text-white text-center fs-medium-1 pt-3">
-    <span class="FivoSans-Regular">Mejora los resultados <br class="display-min"> de tu empresa con </span><br><strong class="FivoSans-Bold">Marketing Digital</strong>
-</div>
+
+<x-servicios-marketing-digital className="mb-80 mtsc-80 mtm-50" service="marketing"/>
 @endsection
 
 @push('scripts')
-   <script type="text/javascript">
+<script type="text/javascript">
+window.addEventListener('scroll', function() {
+    const lineFill = document.querySelectorAll('.line-fill');
+    const documentHeight = document.querySelectorAll('.line-background');
+    const verticalNumber = document.querySelectorAll('.vertical-number');
+    
+    for(let i = 0; i < lineFill.length; i++) {
+        
+        var scrollTop = window.scrollY - 550;
+        if(window.innerWidth > 1400) {
+            switch(i){
+                case 1:
+                    scrollTop = window.scrollY - 900;
+                    break;
+                case 2:
+                   scrollTop = window.scrollY - 1200;
+                break;
+                case 3:
+                   scrollTop = window.scrollY - 1550;
+                break;
+                case 4:
+                   scrollTop = window.scrollY - 1850;
+                break;
+            }
+        }
+        else {
+            switch(i){
+                case 1:
+                    scrollTop = window.scrollY - 800;
+                    break;
+                case 2:
+                   scrollTop = window.scrollY - 1000;
+                break;
+                case 3:
+                   scrollTop = window.scrollY - 1250;
+                break;
+                case 4:
+                   scrollTop = window.scrollY - 1450;
+                break;
+            }
+        }
+        const scrollPercentage = scrollTop / documentHeight[i].clientHeight;
+        const scrollNumber = (scrollTop) / verticalNumber[i].clientHeight;
+        const fillHeight = scrollPercentage * 100;
+
+        if(scrollNumber > 0) verticalNumber[i].style.background = 'var(--c-pink)';
+        else verticalNumber[i].style.background = 'gray';
+
+        if(fillHeight < 0) lineFill[i].style.height = `0%`;
+        else if(fillHeight <= 100) lineFill[i].style.height = `${fillHeight}%`;
+        else if(fillHeight > 100) lineFill[i].style.height = `100%`;
+    }
+});
+
+</script>
+   <!-- <script type="text/javascript">
     
 
 // SLIDER MOBILE
@@ -437,6 +433,6 @@
                 },300)   
             }
         }
-    </script>
+    </script> -->
 
 @endpush
