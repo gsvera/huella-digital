@@ -63,4 +63,5 @@
         por lo que podrá consultar el sitio web www.inai.org.mx para mayor información.
     </p>
 </div>
+<x-box-contact />
 @endsection

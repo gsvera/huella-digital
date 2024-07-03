@@ -2,6 +2,12 @@ let auxMenuShow = false;
 let auxSubMenuShow = false;
 let auxSubMenuShowPort = false;
 
+const headConexion = {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    "X-CSRF-TOKEN": window.CSRF_TOKEN, //the token is create in head html
+};
+
 function switchService(btn, idElement) {
     var contentServiceItems = document.querySelectorAll(".content-service");
     var btnService = document.querySelectorAll(".btn-service");
@@ -101,9 +107,68 @@ function showSubMenuMobilePortafolio(element) {
     }
 }
 
-function viewProyect(proyect) {
-    $("#modalLoginProyects").modal("show");
-    // window.location.href = `/cliente-${proyect}`;
+function generateCurrentDate() {
+    var fulldate = new Date();
+    var day = fulldate.getDate();
+    var month = fulldate.getMonth() + 1;
+    var year = fulldate.getFullYear();
+
+    if (day < 10) day = "0" + day;
+
+    if (month < 10) month = "0" + month;
+
+    return year + "-" + month + "-" + day;
 }
 
-// CREAR FUNCION PARA ENVIAR EL PASSWORD Y VALIDAR SESSION ACTIVA
+function viewProyect(proyect) {
+    if (sessionStorage.getItem("permission-proyect"))
+        validExpiredToken(proyect);
+    else {
+        $("#id-proyect").val(proyect);
+        $("#modalLoginProyects").modal("show");
+    }
+}
+
+function sendPassProyect() {
+    var objPassword = {
+        token: $("#password").val(),
+        currentDate: generateCurrentDate(),
+    };
+    fetch(`/valid-password`, {
+        method: "POST",
+        headers: headConexion,
+        body: JSON.stringify(objPassword),
+    })
+        .then((res) => res.json())
+        .then((result) => {
+            if (!result.error) {
+                sessionStorage.setItem("permission-proyect", result.data.token);
+                window.location.href = `/cliente-${$("#id-proyect").val()}`;
+            } else {
+                $("#error-text").text(result.message);
+            }
+        });
+}
+
+function validExpiredToken(proyect) {
+    var objPassword = {
+        token: sessionStorage.getItem("permission-proyect"),
+        currentDate: generateCurrentDate(),
+    };
+
+    fetch(`/valid-password`, {
+        method: "POST",
+        headers: headConexion,
+        body: JSON.stringify(objPassword),
+    })
+        .then((res) => res.json())
+        .then((result) => {
+            if (result.error) {
+                sessionStorage.removeItem("permission-proyect");
+                window.location.href = "/";
+            }
+            if (proyect !== undefined) {
+                window.location.href = `/cliente-${proyect}`;
+            }
+        });
+}

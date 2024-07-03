@@ -100,8 +100,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>Contacto</li>
-                            <li><button type="button" class="btn-menu-pink">Asesoría gratuita</button></li>
+                            <li><a class="menu-link" href="#form-contact">Contacto</a></li>
+                            <li><a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Asesoría gratuita</a></li>
                         </ul>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                         </a>
                     </div>
                     <div>
-                        <button type="button" class="btn-menu-pink" id="btn-contact-mobile">Asesoría gratuita</button>
+                        <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink" id="btn-contact-mobile">Asesoría gratuita</a>
                         <button onclick="showMenuMobile(this)" type="button" class="btn-menu-mobile"><img src="/assets/icon/icon-menu-hamburguesa.svg" alt="Icono Menu"></button>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                         <a class="font-weight-bold" href="#">Contacto</a>
                     </div>
                     <div class="menu-link-mobile">
-                        <button type="button" style="width: 100%;" class="btn-menu-pink">Asesoría gratuita</button>
+                        <a rel="nofollow" href="https://wa.me/9981539626" style="width:100%; display: block;" class="btn-menu-pink">Asesoría gratuita</a>
                     </div>
                 </div>
             </div>
@@ -252,7 +252,7 @@
         <!-- Footer Section -->
 		<!-- WhatsApp -->
         <a rel="nofollow" style="text-decoration:none;" href="https://wa.me/9981539626">
-            <img class="chat-icon" src="/assets/desk/iconos/whatsapp-icon.png" alt="icono chat whatsapp">
+            <img class="chat-icon" src="/assets/icon/whatsapp-icon.png" alt="icono chat whatsapp">
         </a>
         <!-- WhatsApp -->
         <!-- recaptcha -->

@@ -22,6 +22,7 @@ class TokenProyects extends Model
                 if($currentDateParse->lessThanOrEqualTo($dateToken)){
                     $resp->error = false; 
                     $resp->message = 'Correcto';
+                    $resp->data = $objToken;
                 }
                 else {
                     $resp->error = true;
@@ -29,7 +30,7 @@ class TokenProyects extends Model
                 }
             } else {
                 $resp->error = true;
-                $resp->message = 'Contraseña incorrecta';
+                $resp->message = 'Por favor ingresa la contraseña corecta';
             }
         } catch(Exception $e) {
             $resp->error = true;

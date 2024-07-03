@@ -146,3 +146,9 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+<script type="text/javascript">
+    validExpiredToken()
+</script>
+@endpush

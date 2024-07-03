@@ -5,7 +5,7 @@
         <span class="slogan">AGENCIA DE REDES SOCIALES EN CANCÚN</span>
         <h1 class="title">Sacamos el máximo provecho de tus medios digitales</h1>
         <p>Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
-        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
+        <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
     <div class="col-12 col-md-5 mb-5 p-0">
         <img class="img-responsive" src="/assets/img/servicio/servicio-redes-sociales.svg" alt="Servicio de redes sociales">

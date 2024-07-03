@@ -35,9 +35,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="icon" type="image/png" href="/favicon.png">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="https://www.jqueryscript.net/demo/Carousel-Style-Content-Ticker-Plugin-with-jQuery-Carousel-Ticker/javascripts/jquery.carousel-ticker.js"></script>
-        <script src="https://use.fontawesome.com/9d99f6b907.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- <script src="https://www.jqueryscript.net/demo/Carousel-Style-Content-Ticker-Plugin-with-jQuery-Carousel-Ticker/javascripts/jquery.carousel-ticker.js"></script> -->
+        <!-- <script src="https://use.fontawesome.com/9d99f6b907.js"></script> -->
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,6 +45,10 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MF7W7QX');</script>
 		<!-- End Google Tag Manager -->
+
+        <script type="text/javascript">
+            window.CSRF_TOKEN = '{{ csrf_token() }}';
+        </script>
 
     </head>
     <body>
@@ -100,8 +104,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>Contacto</li>
-                            <li><button type="button" class="btn-menu-pink">Asesoría gratuita</button></li>
+                            <li><a class="menu-link" href="#form-contact">Contacto</a></li>
+                            <li><a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Asesoría gratuita</a></li>
                         </ul>
                     </div>
                 </div>
@@ -114,7 +118,7 @@
                         </a>
                     </div>
                     <div>
-                        <button type="button" class="btn-menu-pink" id="btn-contact-mobile">Asesoría gratuita</button>
+                        <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink" id="btn-contact-mobile">Asesoría gratuita</a>
                         <button onclick="showMenuMobile(this)" type="button" class="btn-menu-mobile"><img src="/assets/icon/icon-menu-hamburguesa.svg" alt="Icono Menu"></button>
                     </div>
                 </div>
@@ -175,10 +179,10 @@
                         </div>
                     </div>
                     <div class="menu-link-mobile">
-                        <a class="font-weight-bold" href="#">Contacto</a>
+                        <a class="font-weight-bold" href="#form-contact">Contacto</a>
                     </div>
                     <div class="menu-link-mobile">
-                        <button type="button" style="width: 100%;" class="btn-menu-pink">Asesoría gratuita</button>
+                        <a rel="nofollow" href="https://wa.me/9981539626" style="width:100%; display: block;" class="btn-menu-pink">Asesoría gratuita</a>
                     </div>
                 </div>
                 <!-- END MENU MOBILE -->
@@ -193,7 +197,8 @@
                 "Haciendo historia online, somos Huella Digital, <br />
                 la Agencia de Marketing digital en México."
             </h4>
-            <button type="button" class="btn-white">Asesoría gratuita</button>
+            <!-- <button type="button" class="btn-white">Asesoría gratuita</button> -->
+            <a rel="nofollow" href="https://wa.me/9981539626" class="btn-white">Asesoría gratuita</a>
         </div>
         <div class="content-page">
             <h2>Artículos sobre Marketing Digital</h2>
@@ -242,88 +247,7 @@
                 </div>
             </div>
         </div>
-        <div class="back-contact-us">
-            <div class="content-page">
-                <div class="d-flex-responsive">
-                    <div class="col-md-6 p-0">
-                        <h4 class="font-weight-bold">Llegó el momento de tomar una decisión</h4>
-                        <p>
-                            ¿Hacemos crecer tu empresa?
-                        </p>
-                        <p>
-                            En Huella Digital encontrarás el departamento externo de Mercadotecnia Digital que complementa a tu empresa ¡Contáctanos ahora!
-                        </p>
-                    </div>
-                    <div class="col-md-6 p-0">
-                        @if(session('messageError'))
-                            <div class="errorDiv" id="messageError">
-                                {{session('messageError')}}
-                            </div>
-                        @endif
-                        @if ($errors->any())
-                            @foreach($errors->all() as $error)
-                                <div class="errorDiv" id="messageError">
-                                    {{$error}}
-                                </div>
-                            @endforeach
-                        @endif
-                        <form id="form-contact" action="{{url('/gracias')}}" method="post">
-                            {{@csrf_field()}}
-                            <div class="d-flex-reponsive">
-                                <div class="col-12 col-md-6 p-0">
-                                    <div class="form-group">
-                                        <label for="name">Nombre</label>
-                                        <input type="text" class="form-control" id="name" name="name">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 p-0">
-                                    <div class="form-group">
-                                        <label for="email">Correo electrónico</label>
-                                        <input type="email" class="form-control" id="email" name="email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex-responsive">
-                                <div class="col-12 col-md-6 p-0">
-                                    <div class="form-group">
-                                        <label for="servicio">Servicio</label>
-                                        <select class="form-control select-service" id="service" name="service">
-                                            <option class="option-select" value="Marketing digital">Marketing digital</option>
-                                            <option class="option-select" value="Redes sociales">Redes sociales</option>
-                                            <option class="option-select" value="Publicidad digital">Publicidad digital</option>
-                                            <option class="option-select" value="Posicionamiento SEO">Posicionamiento SEO</option>
-                                            <option class="option-select" value="Páginas web">Páginas web</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 p-0">
-                                    <div class="form-group">
-                                        <label for="celphone">Número celular</label>
-                                        <input type="text" class="form-control" id="celphone" name="celphone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex-responsive">
-                                <div class="col-md-12 p-0">
-                                    <div class="form-group">
-                                        <label for="description">Cuentanos como te podemos ayudar</label>
-                                        <textarea class="form-control" id="message" name="message" style="height: 150px"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 mb-3 p-0">
-                                <div class="text-right">
-                                    <div class="g-recaptcha" data-sitekey="6LcvUZgaAAAAAJpJkaAHegjjCf47KrYc_TliU5gm"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 p-0">
-                                <button type="submit" onclick="sendBoxContact()" class="btn-menu-pink" style="width: 100%">Enviar mensaje</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <x-box-contact />
 
         <!-- Footer Section -->
         <footer>
@@ -391,14 +315,16 @@
         <!-- Footer Section -->
 		<!-- WhatsApp -->
         <a rel="nofollow" style="text-decoration:none;" href="https://wa.me/9981539626">
-            <img class="chat-icon" src="/assets/desk/iconos/whatsapp-icon.png" alt="icono chat whatsapp">
+            <img class="chat-icon" src="/assets/icon/whatsapp-icon.png" alt="icono chat whatsapp">
         </a>
         <!-- WhatsApp -->
         <!-- recaptcha -->
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
         <!-- end recaptcha -->
-        <script src="js/main-huella.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+        <script src="js/main-huella.js"></script>        
         <script type="application/ld+json">
             {
                 "@context": "http://schema.org",

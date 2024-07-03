@@ -129,4 +129,5 @@
         </p>
     </div>
 </div>
+<x-box-contact />
 @endsection

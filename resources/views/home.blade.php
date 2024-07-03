@@ -224,7 +224,7 @@
             <p class="mb-3">
                 En Huella Digital, hallarás el departamento externo de <span class="font-weight-bold">Mercadotecnia Digital</span> que tu empresa necesita. Ofrecemos experiencia en la gestión de redes sociales corporativas, <span class="font-weight-bold">SEO para destacar en Google, diseño web,</span> comercio electrónico, captación de clientes, <span class="font-weight-bold">publicidad online</span> y estrategias de <span class="font-weigth-bold">Marketing Digital.</span> Todo esto con la creatividad e innovación que tu marca necesita.
             </p>
-            <button type="button" class="btn-menu-pink">Asesoría gratuita <img src="/assets/icon/arrow-right-white.svg" alt="Flecha derecha"></button>
+            <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Asesoría gratuita <img src="/assets/icon/arrow-right-white.svg" alt="Flecha derecha"></a>
         </div>
         <div class="col-md-6 text-center">
             <img class="img-responsive" src="/assets/img/home/peoples.svg" alt="Personas">

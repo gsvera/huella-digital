@@ -5,7 +5,7 @@
         <span class="slogan">AGENCIA DE SEO- POSICIONAMIENTO EN CANCÚN</span>
         <h1 class="title">La estrategia digital perfecta para aumentar tu alcance y lograr que más prospectos te encuentren</h1>
         <p>Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
-        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
+        <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
     <div class="col-12 col-md-5 mb-5 p-0">
         <img class="img-responsive" src="/assets/img/servicio/servicio-posicionamiento-seo.svg" alt="Servicio de posicionamiento seo">

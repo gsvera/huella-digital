@@ -82,4 +82,4 @@ Route::get('/cliente-3', function() {
     return view('proyects.ctr-international');
 });
 
-Route::get('/valid-password',[TokenController::class, 'ValidToken']);
+Route::post('/valid-password',[TokenController::class, 'ValidToken']);

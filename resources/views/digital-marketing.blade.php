@@ -4,8 +4,8 @@
     <div class="col-12 col-md-7 mb-5 only-pr-3">
         <span class="slogan">AGENCIA DE MARKETING DIGITAL EN CANCÚN</span>
         <h1 class="title">Impulsa tu presencia online con nuestro expertise en Marketing Digital</h1>
-        <p>Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
-        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
+        <p>Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>        
+        <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
     <div class="col-12 col-md-5 mb-5 p-0">
         <img class="img-responsive" src="/assets/img/servicio/servicio-marketing-digital.svg" alt="Servicio de marketing digital">

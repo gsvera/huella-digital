@@ -220,7 +220,10 @@
     <div class="back-mejores-resultados">
         <div class="col-md-6">
             <h2 class="font-weight-bold">Mejora los resultados de tu <br> empresa con Marketing <br> Digital</h2>
-            <button type="button" class="btn-menu-pink mt-4">Asesoría gratuita</button>
+            <!-- <button type="button" class="btn-menu-pink mt-4">Asesoría gratuita</button> -->
+             <div class="mt-4">
+                 <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Asesoría gratuita</a>
+             </div>
         </div>
     </div>
 </div>
