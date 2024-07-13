@@ -1,4 +1,7 @@
 @extends('layouts.layout-huella-2')
+@section('meta')
+    <meta name="robots" content="noindex,nofollow">
+@endsection
 @section('content')
 <div class="content-page text-center">
     <div class="col-md-7 text-center mx-auto">

@@ -29,15 +29,15 @@
             <meta name="twitter:image" content="https://huella-digital.mx/images/slider/slider.png"/>
             <meta name="twitter:domain" content="https://huella-digital.mx/"/>
         @endif
+        @yield('meta')
 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="icon" type="image/png" href="/favicon.png">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="https://www.jqueryscript.net/demo/Carousel-Style-Content-Ticker-Plugin-with-jQuery-Carousel-Ticker/javascripts/jquery.carousel-ticker.js"></script>
-        <script src="https://use.fontawesome.com/9d99f6b907.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,6 +45,10 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MF7W7QX');</script>
 		<!-- End Google Tag Manager -->
+
+        <script type="text/javascript">
+            window.CSRF_TOKEN = '{{ csrf_token() }}';
+        </script>
 
     </head>
     <body>
@@ -59,7 +63,7 @@
                 <div class="content-page row content-menu">
                     <div class="col-md-3 content-logo">
                         <a href="{{url('/')}}">
-                            <img class="" src="/assets/logo/logo-huella-digital.png" alt="Logo huella digital">
+                            <img class="logo-fs" src="/assets/logo/logo-huella-digital.svg" alt="Logo huella digital">
                         </a>
                     </div>
                     <div class="col-md-9">
@@ -106,11 +110,11 @@
                     </div>
                 </div>
             </div>
-            <div class="header-menu-mobile display-min">
+            <div class="header-menu-mobile display-min" id="header-mobile">
                 <div class="content-menu-mobile">
                     <div class="content-logo">
                         <a href="{{url('/')}}">
-                            <img class="" src="/assets/logo/logo-huella-digital.png" alt="Logo huella digital">
+                            <img class="" src="/assets/logo/logo-huella-digital.svg" alt="Logo huella digital">
                         </a>
                     </div>
                     <div>
@@ -118,7 +122,7 @@
                         <button onclick="showMenuMobile(this)" type="button" class="btn-menu-mobile"><img src="/assets/icon/icon-menu-hamburguesa.svg" alt="Icono Menu"></button>
                     </div>
                 </div>
-                <div class="d-none" id="menu-mobile">
+                <div class="d-none menu-mobile" id="menu-mobile">
                     <div class="menu-link-mobile">
                         <a class="font-weight-bold" href="{{url('/nosotros')}}">Nosotros</a>
                     </div>
@@ -224,7 +228,7 @@
                         <h5>Contáctanos</h5>
                         <p class="mb-2">
                             <a href="mailto:hola@huella-digital.mx" class="link-footer" id="icon-footer-email">
-                                <img src="/assets/icon/icon-email-black.svg" style="width: 24px; height: 24px;" alt="Icono de email"> @hola@huella-digital.mx
+                                <img src="/assets/icon/icon-email-black.svg" style="width: 24px; height: 24px;" alt="Icono de email"> hola@huella-digital.mx
                             </a>
                         </p>
                         <p class="mb-2">
@@ -250,6 +254,11 @@
             <!-- Back To Top -->
         </footer>
         <!-- Footer Section -->
+
+        <!-- MODAL PARA LOGIN DE PROYECTOS -->
+        <x-modal-login-proyects />
+        <!-- END MODAL PARA LOGIN DE PROYECTOS -->
+
 		<!-- WhatsApp -->
         <a rel="nofollow" style="text-decoration:none;" href="https://wa.me/9981539626">
             <img class="chat-icon" src="/assets/icon/whatsapp-icon.png" alt="icono chat whatsapp">
@@ -259,6 +268,8 @@
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
         <!-- end recaptcha -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/main-huella.js"></script>
         <script type="application/ld+json">
@@ -328,6 +339,16 @@
                         }
                         else if($(window).scrollTop() < 100){
                             $('#header').css({'position': 'relative'});
+                        }
+                    })
+                }
+                if(screen.width < 520){                    
+                    $(window).scroll(function(){
+                        if($(window).scrollTop() > 100){
+                            $('#header-mobile').css({'position': 'fixed'});
+                        }
+                        else if($(window).scrollTop() < 100){
+                            $('#header-mobile').css({'position': 'relative'});
                         }
                     })
                 }

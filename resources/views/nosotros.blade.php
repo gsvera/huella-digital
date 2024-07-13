@@ -12,12 +12,12 @@
     </div>
 </div>
 <div class="content-page">
-    <div class="mx-auto text-center mtsc-80">
+    <div class="mx-auto text-center mtsc-80 mbsc-50 mtmb-50">
         <span class="text-secondary">JUNTOS HACEMOS MÁS</span>
         <h3 class="font-weight-bold">Nuestro proceso de trabajo</h3>
     </div>
     <div class="content-proccess">
-        <div class="d-flex-responsive ptproc-5 px-0">
+        <div class="d-flex-responsive ptproc-5 px-0 mbsc-75">
             <div class="col-12 col-md-5 text-center pbimg-4">
                 <img class="img-responsive" src="/assets/img/nosotros/img-reconocimiento.svg" alt="Reconocimiento">
             </div>
@@ -37,7 +37,7 @@
                 </p>
             </div>
         </div>
-        <div class="d-flex-responsive-reverse mt-3 ptproc-5 px-0">
+        <div class="d-flex-responsive-reverse mt-3 ptproc-5 px-0 mbsc-75">
             <div class="col-12 col-md-5 p-0">
                 <h5>Estrategia digital</h5>
                 <p>
@@ -57,7 +57,7 @@
                 <img class="img-responsive" src="/assets/img/nosotros/img-estrategia.svg" alt="Estrategia digital">
             </div>            
         </div>
-        <div class="d-flex-responsive ptproc-5 px-0">
+        <div class="d-flex-responsive ptproc-5 px-0 mbsc-75">
             <div class="col-12 col-md-5 text-center pbimg-4">
                 <img class="img-responsive" src="/assets/img/nosotros/img-accion.svg" alt="Accion">
             </div>
@@ -77,7 +77,7 @@
                 </p>
             </div>
         </div>
-        <div class="d-flex-responsive-reverse mt-3 ptproc-5 px-0">
+        <div class="d-flex-responsive-reverse mt-3 ptproc-5 px-0 mbsc-75">
             <div class="col-12 col-md-5 p-0">
                 <h5>Análisis</h5>
                 <p>
@@ -97,7 +97,7 @@
                 <img class="img-responsive" src="/assets/img/nosotros/img-analisis.svg" alt="Analisis">
             </div>            
         </div>
-        <div class="d-flex-responsive ptproc-5 px-0">
+        <div class="d-flex-responsive ptproc-5 px-0 mbsc-75">
             <div class="col-12 col-md-5 text-center pbimg-4">
                 <img class="img-responsive" src="/assets/img/nosotros/img-resultados.svg" alt="Resultados">
             </div>
@@ -105,7 +105,7 @@
                 <div class="col-md-12 justify-center d-flex mb-1 p-0">
                     <div class="vertical-number">5</div>
                 </div>
-                <div class="col-md-12 justify-center d-flex p-0 ht-bar-dos">
+                <div class="col-md-12 justify-center d-flex p-0 ht-bar-dos" style="overflow:hidden;">
                     <div class="line-background"></div>
                     <div class="line-fill"></div>
                 </div>
@@ -120,12 +120,12 @@
     </div>
 </div>
 
-<div class="content-page mtsc-80">
+<div class="content-page mtsc-150">
     <h5 class="font-weight-bold">Soluciones claras, precisas y creativas</h5>
     <p>
         En Huella Digital no solo nos enfocamos en que tu negocio se aceptado <br> en el mercado, sino que también sea rentable. 
     </p>
-    <div class="d-flex-responsive">
+    <div class="d-flex-responsive mt-5">
         <div class="col-6 col-md-6 p-0 pr-2 mb-3">
             <div class="card-nosotros">
                 <h5 class="text-c-pink">Nuestra visión</h5>
@@ -144,7 +144,7 @@
         </div>
     </div>
     <div class="d-flex-responsive">
-        <div class="col-12 col-md-6 p-0 pr-2">
+        <div class="col-12 col-md-6 pflr-2">
             <div class="card-nosotros">
                 <h5 class="text-c-pink">Nuestro compromiso</h5>
                 <p>
@@ -155,7 +155,7 @@
     </div>
 </div>
 
-<div class="content-page mtsc-80 mtm-50">
+<div class="content-page mtsc-80 mtmb-70">
     <div class="text-center col-md-7 mx-auto">
         <span class="text-c-pink">IMPULSAMOS TU EMPRESA</span>
         <h5>Ventajas del Marketing Digital</h5>
@@ -164,7 +164,7 @@
         </p>
     </div>
     <div class="d-flex-responsive mt-5">
-        <div class="col-12 col-md-6 prm-2 mb-3">
+        <div class="col-12 col-md-6 prm-2 mb18">
             <div class="card-nosotros">
                 <img src="/assets/icon/nosotros/icon-window.svg" alt="Icono window">
                 <h5 class="font-weight-bold">Permite medir</h5>
@@ -173,7 +173,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-12 col-md-6 plm-2 mb-3">
+        <div class="col-12 col-md-6 plm-2 mb18">
             <div class="card-nosotros">
                 <img src="/assets/icon/nosotros/icon-people.svg" alt="Icono de personas">
                 <h5 class="font-weight-bold">Sirve para construir reputación</h5>
@@ -184,7 +184,7 @@
         </div>
     </div>
     <div class="d-flex-responsive">
-        <div class="col-12 col-md-6 prm-2 mb-3">
+        <div class="col-12 col-md-6 prm-2 mb18">
             <div class="card-nosotros">
                 <img src="/assets/icon/nosotros/icon-target.svg" alt="Icono objetivo">
                 <h5 class="font-weight-bold">Permite segmentar</h5>
@@ -193,7 +193,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-12 col-md-6 plm-2 mb-3">
+        <div class="col-12 col-md-6 plm-2 mb18">
             <div class="card-nosotros">
                 <img src="/assets/icon/nosotros/icon-balanza.svg" alt="Icono balanza">
                 <h5 class="font-weight-bold">Tiene el mejor costo- beneficio</h5>
@@ -204,7 +204,7 @@
         </div>
     </div>
     <div class="d-flex-responsive">
-        <div class="col-12 col-md-6 prm-2 mb-3">
+        <div class="col-12 col-md-6 prm-2 mb18">
             <div class="card-nosotros">
                 <img src="/assets/icon/nosotros/icon-hand-money.svg" alt="Icono mano con dinero">
                 <h5 class="font-weight-bold">Permite atraer clientes a bajo costo</h5>
@@ -218,9 +218,8 @@
 
 <div class="content-page mtsc-80 mtm-50">
     <div class="back-mejores-resultados">
-        <div class="col-md-6">
-            <h2 class="font-weight-bold">Mejora los resultados de tu <br> empresa con Marketing <br> Digital</h2>
-            <!-- <button type="button" class="btn-menu-pink mt-4">Asesoría gratuita</button> -->
+        <div class="col-md-6 p-0">
+            <h2 class="font-weight-bold h1">Mejora los resultados de tu <br class="display-max"> empresa con Marketing <br class="display-max"> Digital</h2>
              <div class="mt-4">
                  <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Asesoría gratuita</a>
              </div>
@@ -240,36 +239,37 @@ window.addEventListener('scroll', function() {
     
     for(let i = 0; i < lineFill.length; i++) {
         
-        var scrollTop = window.scrollY - 550;
+        var scrollTop = window.scrollY - 450;
         if(window.innerWidth > 1400) {
             switch(i){
                 case 1:
                     scrollTop = window.scrollY - 900;
                     break;
                 case 2:
-                   scrollTop = window.scrollY - 1200;
+                   scrollTop = window.scrollY - 1300;
                 break;
                 case 3:
-                   scrollTop = window.scrollY - 1550;
+                   scrollTop = window.scrollY - 1700;
                 break;
                 case 4:
-                   scrollTop = window.scrollY - 1850;
+                   scrollTop = window.scrollY - 2100;
                 break;
             }
         }
         else {
+            scrollTop = window.scrollY - 500;
             switch(i){
                 case 1:
                     scrollTop = window.scrollY - 800;
                     break;
                 case 2:
-                   scrollTop = window.scrollY - 1000;
+                   scrollTop = window.scrollY - 1100;
                 break;
                 case 3:
-                   scrollTop = window.scrollY - 1250;
+                   scrollTop = window.scrollY - 1450;
                 break;
                 case 4:
-                   scrollTop = window.scrollY - 1450;
+                   scrollTop = window.scrollY - 1750;
                 break;
             }
         }
@@ -281,8 +281,8 @@ window.addEventListener('scroll', function() {
         else verticalNumber[i].style.background = 'gray';
 
         if(fillHeight < 0) lineFill[i].style.height = `0%`;
-        else if(fillHeight <= 100) lineFill[i].style.height = `${fillHeight}%`;
-        else if(fillHeight > 100) lineFill[i].style.height = `100%`;
+        else if(fillHeight <= 120) lineFill[i].style.height = `${fillHeight}%`;
+        else if(fillHeight > 120) lineFill[i].style.height = `120%`;
     }
 });
 

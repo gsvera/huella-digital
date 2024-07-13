@@ -29,6 +29,7 @@
             <meta name="twitter:image" content="https://huella-digital.mx/images/slider/slider.png"/>
             <meta name="twitter:domain" content="https://huella-digital.mx/"/>
         @endif
+        @yield('meta')
 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -36,8 +37,7 @@
         <link rel="icon" type="image/png" href="/favicon.png">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- <script src="https://www.jqueryscript.net/demo/Carousel-Style-Content-Ticker-Plugin-with-jQuery-Carousel-Ticker/javascripts/jquery.carousel-ticker.js"></script> -->
-        <!-- <script src="https://use.fontawesome.com/9d99f6b907.js"></script> -->
+        
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -63,7 +63,7 @@
                 <div class="content-page row content-menu">
                     <div class="col-md-3 content-logo">
                         <a href="{{url('/')}}">
-                            <img class="" src="/assets/logo/logo-huella-digital.png" alt="Logo huella digital">
+                            <img class="logo-fs" src="/assets/logo/logo-huella-digital.svg" alt="Logo huella digital">
                         </a>
                     </div>
                     <div class="col-md-9">
@@ -110,11 +110,11 @@
                     </div>
                 </div>
             </div>
-            <div class="header-menu-mobile display-min">
+            <div class="header-menu-mobile display-min" id="header-mobile">
                 <div class="content-menu-mobile">
                     <div class="content-logo">
                         <a href="{{url('/')}}">
-                            <img class="" src="/assets/logo/logo-huella-digital.png" alt="Logo huella digital">
+                            <img class="" src="/assets/logo/logo-huella-digital.svg" alt="Logo huella digital">
                         </a>
                     </div>
                     <div>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <!-- MENU MOBILE -->
-                <div class="d-none" id="menu-mobile">
+                <div class="d-none menu-mobile" id="menu-mobile">
                     <div class="menu-link-mobile">
                         <a class="font-weight-bold" href="{{url('/nosotros')}}">Nosotros</a>
                     </div>
@@ -194,7 +194,7 @@
         <div class="back-degrade-purple">
             <img src="/assets/img/layout/huella.svg" alt="Huella digital">
             <h4 class="text-white my-4">
-                "Haciendo historia online, somos Huella Digital, <br />
+                "Haciendo historia online, somos Huella Digital, <br class="display-max"/>
                 la Agencia de Marketing digital en México."
             </h4>
             <!-- <button type="button" class="btn-white">Asesoría gratuita</button> -->
@@ -208,43 +208,39 @@
                 para ayudarte a aprender y comprender mejor las ventajas de aplicar Mercadotecnia Digital.
             </p>
             <div class="d-flex-responsive">
-                <div class="col-12 col-md-4 p-0">
-                    <img class="mb-r-4 img-responsive" src="/assets/img/layout/ventas-facebook.svg" alt="Ventas facebook">
-                    <div>
+                <div class="col-12 col-md-4 padd-cont-blog">
+                    <a class="text-art-blog" href="/blog/como-mejorar-mis-ventas-con-facebook/">
+                        <img class="mb-r-4 img-responsive" src="/assets/img/layout/ventas-facebook.svg" alt="Ventas facebook">
+                        <div>
+                            <h4>
+                                Cómo mejorar mis ventas con Facebook
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 padd-cont-blog">
+                    <a class="text-art-blog" href="/blog/que-hace-una-agencia-de-marketing-digital/">
+                        <img class="mb-r-4 img-responsive" src="/assets/img/layout/empresa-sin-marketing.svg" alt="Ventas facebook">
+                        <div>
+                            <h4>
+                                Una empresa sin Marketing Digital
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 padd-cont-blog">
+                    <a class="text-art-blog" href="/blog/mi-empresa-necesita-posicionamiento-seo/">
+                        <img class="mb-r-4 img-responsive" src="/assets/img/layout/conecta-clientes.svg" alt="Ventas facebook">
                         <h4>
-                            Cómo mejorar mis ventas con Facebook
+                            Conecta con tus clientes
                         </h4>
-                    </div>
-                    <div class="text-center mb-r-4">
-                        <a class="see-more-service font-weight-bold" href="/blog/como-mejorar-mis-ventas-con-facebook/">
-                            ver más <img src="/assets/icon/arrow-right.svg" alt="Flecha derecha">
-                        </a>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-12 col-md-4 p-0">
-                    <img class="mb-r-4 img-responsive" src="/assets/img/layout/empresa-sin-marketing.svg" alt="Ventas facebook">
-                    <div>
-                        <h4>
-                            Una empresa sin Marketing Digital
-                        </h4>
-                    </div>
-                    <div class="text-center mb-r-4">
-                        <a class="see-more-service font-weight-bold" href="/blog/que-hace-una-agencia-de-marketing-digital/">
-                            ver más <img src="/assets/icon/arrow-right.svg" alt="Flecha derecha">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 p-0">
-                    <img class="mb-r-4 img-responsive" src="/assets/img/layout/conecta-clientes.svg" alt="Ventas facebook">
-                    <h4>
-                        Conecta con tus clientes
-                    </h4>
-                    <div class="text-center mb-r-4 mt-fs-35">
-                        <a class="see-more-service font-weight-bold" href="/blog/mi-empresa-necesita-posicionamiento-seo/">
-                            ver más <img src="/assets/icon/arrow-right.svg" alt="Flecha derecha">
-                        </a>
-                    </div>
-                </div>
+            </div>
+            <div class="my-5 text-center contet-see-more">
+                <a class="see-more-service font-weight-bold" href="/blog">
+                    ver más <img src="/assets/icon/arrow-right.svg" alt="Flecha derecha">
+                </a>
             </div>
         </div>
         <x-box-contact />
@@ -270,31 +266,37 @@
                 </div>
                 <div class="d-flex-responsive mb-3">
                     <div class="col-12 col-md-3 mb-4 pl-sl-0">
-                        <h5>¿Quiénes somos?</h5>
-                        <p>Somos una agencia de Marketing Digital en México, desarrollamos distintas estrategias de Inbound Marketing encaminadas a vender más y mejorar el posicionamiento de nuestros clientes en Internet.</p>
+                        <div class="wd-90">
+                            <h5>¿Quiénes somos?</h5>
+                            <p>Somos una agencia de Marketing Digital en México, desarrollamos distintas estrategias de Inbound Marketing encaminadas a vender más y mejorar el posicionamiento de nuestros clientes en Internet.</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-3 mb-4 pl-sl-0">
-                        <h5>Servicios de Marketing Digital </h5>
-                        <ul class="pl-4">
-                            <li class="mb-2"><a href="{{url('/agencia-de-marketing-digital-cancun')}}" class="link-footer">Estrategias de Marketing Digital</a></li>
-                            <li class="mb-2"><a href="{{url('/agencia-de-redes-sociales-cancun')}}" class="link-footer">Administración de Redes Sociales</a></li>
-                            <li class="mb-2"><a href="{{url('/publicidad-digital-cancun')}}" class="link-footer">Publicidad en Internet</a></li>
-                            <li class="mb-2"><a href="{{url('/agencia-seo-posicionamiento-web-cancun')}}" class="link-footer">Posicionamiento SEO</a></li>
-                            <li class="mb-2"><a href="{{url('/diseño-de-paginas-web-cancun')}}" class="link-footer">Páginas Web</a></li>
-                        </ul>
+                    <div class="col-12 col-md-4 mb-4 pl-sl-0 d-flex justify-end">
+                        <div class="wd-90">
+                            <h5>Servicios de Marketing Digital </h5>
+                            <ul class="pl-4">
+                                <li class="mb-2"><a href="{{url('/agencia-de-marketing-digital-cancun')}}" class="link-footer">Estrategias de Marketing Digital</a></li>
+                                <li class="mb-2"><a href="{{url('/agencia-de-redes-sociales-cancun')}}" class="link-footer">Administración de Redes Sociales</a></li>
+                                <li class="mb-2"><a href="{{url('/publicidad-digital-cancun')}}" class="link-footer">Publicidad en Internet</a></li>
+                                <li class="mb-2"><a href="{{url('/agencia-seo-posicionamiento-web-cancun')}}" class="link-footer">Posicionamiento SEO</a></li>
+                                <li class="mb-2"><a href="{{url('/diseño-de-paginas-web-cancun')}}" class="link-footer">Páginas Web</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-12 col-md-3 mb-4">
-                        <h5>Contáctanos</h5>
-                        <p class="mb-2">
-                            <a href="mailto:hola@huella-digital.mx" class="link-footer" id="icon-footer-email">
-                                <img src="/assets/icon/icon-email-black.svg" style="width: 24px; height: 24px;" alt="Icono de email"> @hola@huella-digital.mx
-                            </a>
-                        </p>
-                        <p class="mb-2">
-                            <a href="tel:+9981539626" class="link-footer" id="icon-footer-phone">
-                                <img src="/assets/icon/icon-phone-black.svg" style="width: 24px; height: 24px;" alt="Icono de telefono"> +52 (998) 153 9626
-                            </a>
-                        </p>
+                        <div style="width: 80%">
+                            <h5>Contáctanos</h5>
+                            <p class="mb-2">
+                                <a href="mailto:hola@huella-digital.mx" class="link-footer" id="icon-footer-email">
+                                    <img src="/assets/icon/icon-email-black.svg" style="width: 24px; height: 24px;" alt="Icono de email"> hola@huella-digital.mx
+                                </a>
+                            </p>
+                            <p class="mb-2">
+                                <a href="tel:+9981539626" class="link-footer" id="icon-footer-phone">
+                                    <img src="/assets/icon/icon-phone-black.svg" style="width: 24px; height: 24px;" alt="Icono de telefono"> +52 (998) 153 9626
+                                </a>
+                            </p>
+                        </div>
                     </div>
                     <div class="col-12 col-md-3 mb-4">
                         <h5>Recursos</h5>
@@ -313,6 +315,11 @@
             <!-- Back To Top -->
         </footer>
         <!-- Footer Section -->
+
+        <!-- MODAL PARA LOGIN DE PROYECTOS -->
+        <x-modal-login-proyects />
+        <!-- END MODAL PARA LOGIN DE PROYECTOS -->
+
 		<!-- WhatsApp -->
         <a rel="nofollow" style="text-decoration:none;" href="https://wa.me/9981539626">
             <img class="chat-icon" src="/assets/icon/whatsapp-icon.png" alt="icono chat whatsapp">
@@ -392,6 +399,16 @@
                         }
                         else if($(window).scrollTop() < 100){
                             $('#header').css({'position': 'relative'});
+                        }
+                    })
+                }
+                if(screen.width < 520){                    
+                    $(window).scroll(function(){
+                        if($(window).scrollTop() > 100){
+                            $('#header-mobile').css({'position': 'fixed'});
+                        }
+                        else if($(window).scrollTop() < 100){
+                            $('#header-mobile').css({'position': 'relative'});
                         }
                     })
                 }

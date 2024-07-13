@@ -27,7 +27,12 @@
     --c-gray: #D2D9E0;
 }
 
-
+@font-face{
+    font-family: 'Outfit';
+    src: url(/assets/fonts/Outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 /* ------------------------------------------------------------------- */
 
 
@@ -42,7 +47,12 @@
 
 
 /* ------------------------------------------------------------------- */
-
+.outfit{
+    font-family: Outfit;
+}
+h1, h2, h3, h4, h5 {
+    font-family: Outfit;
+}
 .content-logo{
     display: flex;
     justify-content: space-between;
@@ -131,7 +141,7 @@
         padding-top: 3rem;
     }
     .pbimg-4{
-        padding: 0 0 1.5rem 0;
+        padding: 0 0 1.5rem 0 !important;
     }
     .link-icon{
         width: 22px;
@@ -143,7 +153,7 @@
         display: flex;
     }
     .card-proyects{
-        padding: 10px;
+        padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.7);
         height: 100%;
@@ -172,6 +182,21 @@
     .pxfs-2{
         padding: 0 !important;
     }
+    .p-title-r{
+        padding: 0 !important;
+    }
+    .padd-cont-blog{
+        padding: 0 !important;
+    }
+    .mtsc-150{
+        margin-top: 50px;
+    }
+    .padd-r-age, .padd-l-age{
+        padding: 0 !important;
+    }
+    .mb18{
+        margin-bottom: 15px;
+    }
 }
 @media(min-width:520px){
     .content-page, .content-footer-page{
@@ -190,7 +215,7 @@
         display: flex;
     }
     .carrusel{
-        margin: 75px 0;
+        margin: 75px 0 100px ;
     }
     .mini-card{
         width: 290px;
@@ -212,20 +237,32 @@
         margin: 0 auto;
         text-align: center;
     }
+    .mtsc-150{
+        margin-top: 150px;
+    }
     .mtsc-80{
         margin-top: 100px;
     }
+    .mbsc-75{
+        margin-bottom: 75px;
+    }
+    .mbsc-50{
+        margin-bottom: 50px;
+    }
     .prm-2{
-        padding: 0 .5rem 0 0 !important; 
+        padding: 0 9px 0 0 !important; 
     }
     .plm-2 {
-        padding: 0 0 0 .5rem !important;
+        padding: 0 0 0 9px !important;
+    }
+    .mb18{
+        margin-bottom: 18px;
     }
     .pbimg-4{
         padding: 0 !important;
     }
     .card-proyects{
-        padding: 20px;
+        padding: 36px;
         border-radius: 5px;
         box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.7);
         height: 100%;
@@ -241,6 +278,9 @@
     }
     .mlmb-5{
         margin-left: 3rem;
+    }
+    .mlctr-des{
+        margin-left: 1rem;
     }
     .pl-fs-15{
         padding: 0 0 0 15px !important;
@@ -260,6 +300,21 @@
     .pxfs-2{
         padding: 0 0.5rem !important;
     }
+    .p-title-r{
+        padding: 0 3rem 0 0!important;
+    }
+    .logo-fs{
+        width: 75px;
+    }
+    .padd-cont-blog{
+        padding: 0.5rem !important;
+    }
+    .padd-r-age{
+        padding: 0 2rem 0 0 !important;
+    }
+    .padd-l-age{
+        padding: 0 0 0 2rem !important;
+    }
 }
 @media(min-width: 520px) and (max-width: 1400px) {
     .img-responsive-reverse{
@@ -271,20 +326,21 @@
     .link-icon{
         width: 20px;
     }
-    .ht-bar-uno{
-        height: 93%;
+    .ht-bar-uno, .ht-bar-dos{
+        height: 99%;
     }
-    .ht-bar-dos{
-        height: 85%;
+    .content-img-descript{
+        max-height: 240px;
+    }    
+    .content-img-descript-ctr{
+        max-height: 210px;
     }
 }
 @media(min-width: 1400px) {
-    .ht-bar-uno{
+    .ht-bar-uno, .ht-bar-dos{
         height: 94%;   
     }
-    .ht-bar-dos{
-        height: 89%;
-    }
+    
     h1{
         font-size: 3rem !important;
     }
@@ -294,7 +350,7 @@
     h5{
         font-size: 1.7rem !important;
     }
-    p, li{
+    p, li, a{
         font-size: 1.5rem !important;
     }
     button{
@@ -316,6 +372,12 @@
     .link-icon{
         width: 27px;
     }
+    .logo-fs{
+        width: 100px;
+    }
+    .mlctr-des{
+        margin-left: 5rem;
+    }
 }
 .mtres-100{
     margin-top: 100px;
@@ -333,6 +395,17 @@
 .header-menu-mobile{
     width: 100%;
     padding: 15px;
+    background-color: white;
+    z-index: 999;
+    margin-bottom: 23px;
+}
+.menu-mobile{
+    position: absolute;
+    width: 100%;
+    background: white;
+    padding: 10px 15px;
+    margin-left: -17px;
+    z-index:99;
 }
 .content-menu-mobile{
     display: flex;
@@ -359,7 +432,7 @@
     font-weight: 500;
 }
 .content-menu{
-    height: 100px;
+    height: 160px;
     width: 80%;
 }
 .btn-menu-pink{
@@ -405,8 +478,8 @@
     background: transparent;
     font-size: 1em;
     color: black;
-    box-shadow: 0 -1px 1px -1px rgba(0, 0, 0, 0.7);
-    margin-top: 10px;
+    border-top: 1px outset;
+    margin-top: 20px;
     padding-top: 10px;
 }
 .menu-link-mobile > a{
@@ -474,11 +547,6 @@
     opacity:1;
     top:65px;
 }
-
-.slogan{
-    color: var(--c-purple);
-    font-weight: bold;
-}
 .title{
     font-weight: bold;
 }
@@ -509,7 +577,7 @@
     background-size: cover;
     text-align: center;
     padding: 80px 0;
-    margin: 70px 0;
+    margin: 100px 0;
 }
 .back-contact-us{
     background-image: url(/assets/img/layout/back-contac-us.png);
@@ -565,10 +633,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: center;
-        padding: 300px 0 20px;
+        padding: 300px 20px 40px;
     }
     .back-mejores-resultados > div >  h2 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 
@@ -646,6 +714,9 @@
     padding: 7px 20px;
     color: var(--c-pink);
 }
+.contet-see-more{
+    margin: 75px 0 100px;
+}
 .see-more-service, .see-more-service:hover{
     text-decoration: none;
     color: var(--c-pink);
@@ -683,34 +754,6 @@
 .link-footer:hover{
     color: var(--c-pink);
 }
-/* .select-service:hover{ */
-    /* background-color: red; */
-/* }
-select.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: #fff;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    padding: .375rem 1.75rem .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    /* background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 4 5" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M2 0L0 2h4z" fill="%23000" fill-rule="nonzero"/%3E%3C/svg%3E'); */
-    /* background-repeat: no-repeat;
-    background-position: right .75rem center;
-    background-size: 8px 10px; */
-/* } */
-
-/* select.form-control:focus > option {
-    padding: 10px;
-    font-size: 16px;
-}
-select.form-control:focus {
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
-} */
 .option-select-hover{
     background-color: red;
 }
@@ -738,7 +781,7 @@ select.form-control:focus {
 }
 .line-background {
     width: 5px;
-    height: 100%;
+    height: 120%;
     background-color: lightgray;
     position: absolute;
 }
@@ -806,4 +849,88 @@ select.form-control:focus {
 }
 .item-option:hover {
     background: var(--c-gray);
+}
+.hover-pink:hover{
+    color: var(--c-pink);
+}
+.text-art-blog, .text-art-blog:hover{
+    color: black;
+    text-decoration: none;
+}
+.slogan{
+    color: var(--c-purple);
+    font-weight: bold;
+}
+@media(max-width: 520px) {
+    .wd-90{
+        width: 100%;
+    }
+    .mtmb-50{
+        margin-top: 50px;
+    }
+    .mtmb-70{
+        margin-top: 70px;
+    }
+    .pflr-2{
+        padding: 0 !important;
+    }
+    .img-responsive-service-banner{
+        width: 100%;
+    }
+    .content-page-service{
+        margin: 0 15px;
+    }
+    .errorDiv{
+        background-color: var(--color-pink);
+        color: white;
+        border-radius: 5px;
+        width: 70%;
+        height: 40px;
+        text-align: center;
+        margin: 20px auto;
+        padding-top: 10px;
+        font-family: FivoSans-Regular;
+        font-size: 1em;
+    }
+}
+@media(min-width: 520px) {
+    .wd-90{
+        width: 90%;
+    }
+    .content-page-service{
+        margin: 50px 10%;
+    }
+    .img-responsive-service-banner{
+        width: 90%;
+    }
+    .pflr-2{
+        padding: 0 0.5rem 0 0 !important;
+    }
+    .errorDiv{
+        background-color: var(--color-pink);
+        color: white;
+        border-radius: 5px;
+        width: 70%;
+        height: 40px;
+        text-align: center;
+        margin: 20px auto;
+        padding-top: 5px;
+        font-family: FivoSans-Regular;
+        font-size: 1.5em;
+        
+    }
+}
+@media(min-width: 1400px) {
+    .icon-service{
+        width: 37px;
+    }
+    .content-page-service{
+        margin: 75px 10%;
+    }
+    .t-size-25{
+        font-size: 2.5rem;
+    }
+    .slogan{
+        font-size: 1.5rem;
+    }
 }

@@ -4,7 +4,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="justify-end pt-3 pr-3">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-proyect-login">
                         <img src="/assets/icon/icon-close.svg" alt="Icono de cierre">
                     </button>
                 </div>
@@ -16,13 +16,13 @@
                         </p>
                         <div>
                             <input type="hidden" id="id-proyect">
-                            <input class="input-password" type="password" id="password">
+                            <input class="input-password" type="password" id="password" placeholder="Contraseña">
                             <p class="text-danger" id="error-text"></p>
                         </div>
                         <div class="my-5">
                             <button type="button" class="btn-menu-pink" onclick="sendPassProyect()">Vamos</button>
                         </div>
-                        <p class="text-color-gray">¿No tienes la contraseña? <span class="text-color-pink">contáctanos</span> </p>
+                        <p class="text-color-gray">¿No tienes la contraseña? <a rel="nofollow" style="text-decoration:none;" href="https://wa.me/9981539626" class="text-color-pink hover-pink">contáctanos</a> </p>
                     </div>
                 </div>
             </div>

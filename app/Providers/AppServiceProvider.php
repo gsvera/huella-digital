@@ -13,10 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // DESCOMENTAR ESTAS LINES CUANDO SE VAYA A DEPLOYAR
-        // $this->app->bind('path.public',function(){
-        //     return'/domains/huella-digital.mx/public_html';
-        // });
+        $this->app->bind('path.public',function(){
+            return'/domains/huella-digital.mx/public_html';
+        });
     }
 
     /**

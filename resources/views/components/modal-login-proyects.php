@@ -8,8 +8,9 @@ class ComponentModalLoginProyects extends Component
 {
     public $className;
 
-    public function __construct()
+    public function __construct($redirect)
     {
+        $this->redirect = $redirect;
     }
 
     public function render()

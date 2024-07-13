@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="content-page d-flex-responsive p-0" style="align-items: center">
-    <div class="col-12 col-md-7 mb-5 p-0">
+    <div class="col-12 col-md-7 mb-5 p-title-r">
         <span class="slogan">AGENCIA DE MARKETING DIGITAL EN MÉXICO</span>
         <h1 class="title">Potencia tu presencia online y haz crecer tu marca en el mundo digital</h1>
         <p>Con expertos en marketing digital, redes sociales, posicionamiento SEO, diseño web y publicidad digital. </p>
@@ -131,7 +131,7 @@
 <x-servicios-marketing-digital className="mb-80" service="marketing"/>
 
 <div class="content-page">
-    <h3 class="mb-5">Casos de éxito</h3>
+    <h3 class="mb-5 t-size-25 font-weight-bold">Casos de éxito</h3>
     <div class="mb-100">
         <div class="d-flex-responsive-reverse">
             <div class="col-md-6 p-0">
@@ -187,7 +187,7 @@
     
 </div>
 
-<div class="content-page">
+<!-- <div class="content-page">
     <div class="text-center">
         <h3 class="mb-3">Ellos están dejando Huella Digital</h3>
         <p>
@@ -196,7 +196,7 @@
         de marca digital ¡Nosotros más que contentos con los resultados!
         </p>
     </div>
-</div>
+</div> -->
     
 <!-- <div class="carrusel-container">
     <div class="card-coments mini-card-carrusel">
@@ -227,12 +227,10 @@
             <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Asesoría gratuita <img src="/assets/icon/arrow-right-white.svg" alt="Flecha derecha"></a>
         </div>
         <div class="col-md-6 text-center">
-            <img class="img-responsive" src="/assets/img/home/peoples.svg" alt="Personas">
+            <img class="img-responsive" style="margin-top: 30px;" src="/assets/img/home/peoples.svg" alt="Personas">
         </div>
     </div>
 </div>
-    
-<x-modal-login-proyects />
 
 @endsection
 

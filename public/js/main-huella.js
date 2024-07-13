@@ -143,7 +143,10 @@ function sendPassProyect() {
         .then((result) => {
             if (!result.error) {
                 sessionStorage.setItem("permission-proyect", result.data.token);
-                window.location.href = `/cliente-${$("#id-proyect").val()}`;
+                if (window.location.href.includes("/cliente"))
+                    window.location.reload();
+                else
+                    window.location.href = `/cliente-${$("#id-proyect").val()}`;
             } else {
                 $("#error-text").text(result.message);
             }
@@ -165,10 +168,8 @@ function validExpiredToken(proyect) {
         .then((result) => {
             if (result.error) {
                 sessionStorage.removeItem("permission-proyect");
-                window.location.href = "/";
+                viewProyect();
             }
-            if (proyect !== undefined) {
-                window.location.href = `/cliente-${proyect}`;
-            }
+            if (proyect) window.location.href = `/cliente-${proyect}`;
         });
 }

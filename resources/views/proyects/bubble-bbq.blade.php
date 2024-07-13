@@ -1,4 +1,7 @@
 @extends('layouts.layout-huella')
+@section('meta')
+    <meta name="robots" content="noindex,nofollow">
+@endsection
 @section('content')
 <div class="content-page">
     <div class="col-md-7 text-center mx-auto">
@@ -42,10 +45,10 @@
 </div>
 
 <div class="content-page mtsc-80 d-flex-full-sc">
-    <div class="d-flex justify-center mbmb-4">
-        <img class="img-responsive-reverse" src="/assets/img/proyectos/descript-bubble-bbq.svg" alt="facebook e instagram">
+    <div class="d-flex justify-center mbmb-4 content-img-descript">
+        <img class="img-responsive-reverse" src="/assets/img/proyectos/descript-bubble-bbq.svg" alt="facebook e instagram">        
     </div>
-    <div class="mlmb-5 contet-service-slice">
+    <div class="mlmb-5">
         <div>
             <p>
             Además, implementamos campañas de pago en redes sociales, con un enfoque particular en Facebook e Instagram, para aumentar el alcance y la visibilidad de la tour operadora entre su público objetivo. Utilizamos una combinación de anuncios de imagen, videos promocionales y publicaciones patrocinadas para llegar a una audiencia más amplia y generar interés en sus tours.
@@ -110,7 +113,7 @@
 
 
 <div class="content-page">
-    <h3 class="mb-5">Casos de éxito</h3>
+    <h3 class="mb-5 t-size-25 font-weight-bold">Casos de éxito</h3>
     <div class="mb-100">
         <div class="d-flex-responsive-reverse">
             <div class="col-md-6 p-0">
@@ -150,6 +153,24 @@
 
 @push('scripts')
 <script type="text/javascript">
-    validExpiredToken()
+    var closeProyectLogin = document.getElementById('close-proyect-login');
+    var modalLogin = document.getElementById('modalLoginProyects');
+
+    validExpiredToken();
+
+    if(!sessionStorage.getItem('permission-proyect')) {
+        closeProyectLogin.addEventListener('click', () => {
+            window.location.href = '/'
+        })
+        document.addEventListener('click', function(e) {
+            const isClickModal = modalLogin.contains(e.target);
+            if(!isClickModal) window.location.href = '/'
+        })
+        document.addEventListener('scroll', function(e) {
+            const isClickModal = modalLogin.contains(e.target);
+            window.scrollTo(0, 0);
+            if(!isClickModal) window.location.href = '/'
+        })
+    }
 </script>
 @endpush
