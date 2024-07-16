@@ -123,7 +123,7 @@
 <div class="content-page mtsc-150">
     <h5 class="font-weight-bold">Soluciones claras, precisas y creativas</h5>
     <p>
-        En Huella Digital no solo nos enfocamos en que tu negocio se aceptado <br> en el mercado, sino que también sea rentable. 
+        En Huella Digital no solo nos enfocamos en que tu negocio posicione <br class="display-max">dentro del mercado, sino que también sea rentable. 
     </p>
     <div class="d-flex-responsive mt-5">
         <div class="col-6 col-md-6 p-0 pr-2 mb-3">

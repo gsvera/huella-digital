@@ -22,7 +22,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de resultados">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Reporte de resultados</h5></div>
+                <div class="font-weight-bold ml-2"><h5>Creación de material gráfico</h5></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -30,7 +30,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-servicec-inbound.svg" alt="Icono estrategias inbound">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Estrategias inbound Marketing</h5></div>
+                <div class="font-weight-bold ml-2"><h5>Servicio de Community Manager</h5></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -89,7 +89,7 @@
             <p>
                 Además de estrategias creativas y datos analíticos, ofrecemos servicios de contenido basados en material gráfico y de video para lograr una correcta viralización de tus objetivos empresariales, <span class="text-c-pink">haciendo que más personas conozcan tu marca.</span>
             </p>
-            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
+            <img class="img-responsive" src="/assets/img/servicio-marketing/crecimiento.svg" alt="Personas">
         </div>
     </div>
 </div>

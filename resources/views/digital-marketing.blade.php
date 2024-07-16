@@ -71,7 +71,7 @@
 <div class="content-page mt-5">
     <div class="d-flex-responsive">
         <div class="col-12 col-md-6 padd-r-age">
-            <h4 class="mb-4">Agencia del crecimiento digital</h4>
+            <h4 class="mb-4">Agencia de crecimiento digital</h4>
             <p class="text-c-pink">
                 Vende más y posiciona tu marca
             </p>
@@ -93,7 +93,7 @@
             <p>
                 Utilizamos la experiencia y conocimiento de nuestros profesionales en Mercadotecnia Digital y Redes Sociales en Quintana Roo para desarrollar un plan de acción que defina la correcta comunicación de tu marca en Internet. Seremos tu departamento consultor de Mercadotecnia Digital, brindándote consultoría de marca, capacitación de personal y mejora de procesos internos para lograr el mejor retorno de inversión.
             </p>
-            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
+            <img class="img-responsive" src="/assets/img/servicio-marketing/crecimiento.svg" alt="Personas">
         </div>
     </div>
 </div>

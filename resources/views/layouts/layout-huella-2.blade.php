@@ -195,7 +195,7 @@
             <div class="content-footer-page mt-5">
                 <div class="footer-social">
                     <div class="mb-4">
-                        <img src="/assets/logo/logo-huella-digital.png" alt="Logo huella digital">
+                        <img src="/assets/logo/logo-huella-digital.svg" alt="Logo huella digital">
                     </div>
                     <div class="mb-4">
                         <a href="https://www.facebook.com/huelladigitalmex/" rel="nofollow" target="_blank" style="text-decoration: none;">
@@ -247,6 +247,7 @@
                 <div class="mb-end-foot">
                     <p>Hecho con <img src="/assets/icon/icon-heart-pink.svg" alt="Corazon"> en Cancún</p>
                     <p>© 2024 Huella Digital - Agencia de Marketing Digital  | Todos los derechos reservados</p>
+                    <a class="d-none" href="https://www.linkedin.com/in/guillermo-salvador-vera-morales-22712b192/">Created by Guillermo Vera</a>
                 </div>
             </div>            
             <!-- Back To Top -->

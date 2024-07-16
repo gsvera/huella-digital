@@ -131,7 +131,7 @@
             </div>
             <div class="col-md-6 p-0 container-case-exit mb-r-4">
                 <div class="cont-img-case">
-                    <img class="img-responsive" src="/assets/img/home/caso-bubble-bbq.svg" alt="Caso Bubble BBQ BOATS">
+                    <img class="img-responsive" src="/assets/img/home/caso-bubble-bbq.png" alt="Caso Bubble BBQ BOATS">
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
             </div>
             <div class="col-md-6 p-0 container-case-exit mb-r-4">
                 <div class="cont-img-case">
-                    <img class="img-responsive" src="/assets/img/home/caso-ctr-international.svg" alt="Caso CTR international">
+                    <img class="img-responsive" src="/assets/img/home/caso-ctr-international.png" alt="Caso CTR international">
                 </div>
             </div>
         </div>

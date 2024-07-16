@@ -2,7 +2,7 @@
     <div class="content-page">
         <div class="d-flex-responsive">
             <div class="col-md-6 p-0">
-                <h4 class="font-weight-bold">Llegó el momento de tomar una decisión</h4>
+                <h4 class="font-weight-bold text-c-pink">Llegó el momento de tomar una decisión</h4>
                 <p>
                     ¿Hacemos crecer tu empresa?
                 </p>
@@ -43,7 +43,10 @@
                         <div class="col-12 col-md-6 pxfs-2">
                             <div class="form-group">
                                 <label for="servicio">Servicio</label>
-                                <div class="form-control" id="div-select">Seleccione una opcion</div>
+                                <div class="form-control custom-select-h" id="div-select">
+                                    <span id="div-select-text">Seleccione una opcion</span>
+                                    <span><img id="row-select" src="/assets/img/row-down.svg" alt="Flecha abajo"></span>
+                                </div>
                                 <select class="form-control select-service d-none" id="service" name="service">
                                     <option class="d-none" value="Marketing digital">Marketing digital</option>
                                     <option class="d-none" value="Redes sociales">Redes sociales</option>
@@ -70,7 +73,7 @@
                     <div class="d-flex-responsive">
                         <div class="col-md-12 pxfs-2">
                             <div class="form-group">
-                                <label for="description">Cuentanos como te podemos ayudar</label>
+                                <label for="description">Cuéntanos como te podemos ayudar</label>
                                 <textarea class="form-control" id="message" name="message" style="height: 150px"></textarea>
                             </div>
                         </div>
@@ -93,26 +96,33 @@
     var divSelect = document.getElementById('div-select');
     var serviceSelect = document.getElementById('service');
     var selectOption = document.getElementById('select-option');
+    var rowSelect = document.getElementById('row-select');
+    var divSelectText = document.getElementById('div-select-text');
 
     divSelect.addEventListener('click', () => {
         console.log('clickss')
-        selectOption.classList.remove('d-none');
+        selectOption.classList.remove('d-none');  
+        rowSelect.setAttribute('src', rowSelect.src.replace('down', 'up'));
     })
 
     document.addEventListener('click', function(e) {
         const isClickSelect = divSelect.contains(e.target);
         const isClickOption = selectOption.contains(e.target);
-        if(!isClickSelect && !isClickOption) selectOption.classList.add('d-none');
+        if(!isClickSelect && !isClickOption) {
+            selectOption.classList.add('d-none');
+            rowSelect.setAttribute('src', rowSelect.src.replace('up', 'down'));
+        }
     })
 
     selectOption.addEventListener('click', function(e) {
         if (event.target.tagName === 'DIV') {
-                const value = event.target.getAttribute('data-value');
-                const text = event.target.textContent;
+            const value = event.target.getAttribute('data-value');
+            const text = event.target.textContent;
 
-                divSelect.textContent = text;
-                serviceSelect.value = value;
-                selectOption.classList.add('d-none');
-            }
+            divSelectText.textContent = text;
+            serviceSelect.value = value;
+            selectOption.classList.add('d-none');
+            rowSelect.setAttribute('src', rowSelect.src.replace('up', 'down'));
+        }
     })
 </script>

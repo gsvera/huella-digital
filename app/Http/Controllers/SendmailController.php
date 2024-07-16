@@ -44,7 +44,7 @@ class SendmailController extends Controller
                                 "service"=>$request->service,
                                 "message"=>$request->message];
                     Mail::send('viewMail.sendMail',['item'=>$datosMessage],function($mensaje){
-                    $mensaje->to("programacion@huella-digital.mx")->subject("Solicitud de información");
+                    $mensaje->to("paolap@huella-digital.mx")->subject("Solicitud de información");
                 });
                 return view('gracias');
             }else{

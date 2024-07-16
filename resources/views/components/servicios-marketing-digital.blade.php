@@ -1,7 +1,7 @@
 <div class="content-page {{ $className }}">
     <div class="text-center">
         <h3>Servicios de Marketing Digital</h3>
-        <p>Atraemos prospectos con inbound Marketing: redes sociales, SEO, SEM y diseño web.</p>
+        <p>Atraemos prospectos con Inbound Marketing: redes sociales, SEO, SEM y diseño web.</p>
     </div>
 
     

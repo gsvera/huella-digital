@@ -210,7 +210,7 @@
             <div class="d-flex-responsive">
                 <div class="col-12 col-md-4 padd-cont-blog">
                     <a class="text-art-blog" href="/blog/como-mejorar-mis-ventas-con-facebook/">
-                        <img class="mb-r-4 img-responsive" src="/assets/img/layout/ventas-facebook.svg" alt="Ventas facebook">
+                        <img class="mb-r-2 img-responsive" src="/assets/img/layout/ventas-facebook.svg" alt="Ventas facebook">
                         <div>
                             <h4>
                                 Cómo mejorar mis ventas con Facebook
@@ -220,7 +220,7 @@
                 </div>
                 <div class="col-12 col-md-4 padd-cont-blog">
                     <a class="text-art-blog" href="/blog/que-hace-una-agencia-de-marketing-digital/">
-                        <img class="mb-r-4 img-responsive" src="/assets/img/layout/empresa-sin-marketing.svg" alt="Ventas facebook">
+                        <img class="mb-r-2 img-responsive" src="/assets/img/layout/empresa-sin-marketing.svg" alt="Ventas facebook">
                         <div>
                             <h4>
                                 Una empresa sin Marketing Digital
@@ -230,14 +230,14 @@
                 </div>
                 <div class="col-12 col-md-4 padd-cont-blog">
                     <a class="text-art-blog" href="/blog/mi-empresa-necesita-posicionamiento-seo/">
-                        <img class="mb-r-4 img-responsive" src="/assets/img/layout/conecta-clientes.svg" alt="Ventas facebook">
+                        <img class="mb-r-2 img-responsive" src="/assets/img/layout/conecta-clientes.svg" alt="Ventas facebook">
                         <h4>
                             Conecta con tus clientes
                         </h4>
                     </a>
                 </div>
             </div>
-            <div class="my-5 text-center contet-see-more">
+            <div class="text-center contet-see-more">
                 <a class="see-more-service font-weight-bold" href="/blog">
                     ver más <img src="/assets/icon/arrow-right.svg" alt="Flecha derecha">
                 </a>
@@ -250,7 +250,7 @@
             <div class="content-footer-page">
                 <div class="footer-social">
                     <div class="mb-4">
-                        <img src="/assets/logo/logo-huella-digital.png" alt="Logo huella digital">
+                        <img src="/assets/logo/logo-huella-digital.svg" alt="Logo huella digital">
                     </div>
                     <div class="mb-4">
                         <a href="https://www.facebook.com/huelladigitalmex/" rel="nofollow" target="_blank" style="text-decoration: none;">
@@ -308,6 +308,7 @@
                 <div class="mb-end-foot">
                     <p>Hecho con <img src="/assets/icon/icon-heart-pink.svg" alt="Corazon"> en Cancún</p>
                     <p>© 2024 Huella Digital - Agencia de Marketing Digital  | Todos los derechos reservados</p>
+                    <a class="d-none" href="https://www.linkedin.com/in/guillermo-salvador-vera-morales-22712b192/">Created by Guillermo Vera</a>
                 </div>
             </div>
             <!-- Back To Top -->

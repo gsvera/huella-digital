@@ -73,7 +73,7 @@
         <div class="col-12 col-md-6 padd-r-age">
             <h4 class="mb-4">Publicidad en redes sociales y SEM</h4>
             <p>
-                Una agencia de publicidad digital en Cancún que te ofrece visibilidad inmediata y resultados a corto plazo. Gracias a la segmentación, las campañas en Internet atraen tráfico cualificado y amplían tus anuncios más allá del mercado local. 
+                Somos una agencia de publicidad digital en Cancún que te ofrece visibilidad inmediata y resultados a corto plazo. Gracias a la segmentación, las campañas en Internet atraen tráfico cualificado y amplían tus anuncios más allá del mercado local. 
             </p>
             <p>
                 En Huella Digital, solo pagas cuando un cliente potencial interactúa con tu anuncio, <span class="text-c-pink">garantizando el mejor resultado por cada peso invertido.</span> 
@@ -89,7 +89,7 @@
             <p>
                 Todas tus campañas en línea están alineadas con los objetivos de tu empresa. Las campañas en redes sociales como Facebook, Twitter, Instagram, Linkedin, Pinterest, TikTok, Youtube y Google son efectivas para exponer tus productos y servicios a nichos de clientes potenciales, aumentar la presencia de tu marca y mejorar tu posicionamiento en Internet.
             </p>
-            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
+            <img class="img-responsive" src="/assets/img/servicio-marketing/crecimiento.svg" alt="Personas">
         </div>
     </div>
 </div>

@@ -4,7 +4,7 @@
     <div class="col-12 col-md-7 mb-5 only-pr-3">
         <span class="slogan">DISEÑO DE PÁGINAS WEB EN CANCÚN</span>
         <h1 class="title">Páginas a las medida de tus objetivos comerciales</h1>
-        <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
+        <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar a tu negocio al siguiente nivel en línea.</p>
         <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
     <div class="col-12 col-md-5 mb-5 p-0 justify-end d-flex">
@@ -92,7 +92,7 @@
             <p>
                 Como agencia de diseño web en Cancún, Quintana Roo, creamos sitios web escalables, seguros y optimizados para mejorar tu posicionamiento web orgánico.
             </p>            
-            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
+            <img class="img-responsive" src="/assets/img/servicio-marketing/crecimiento.svg" alt="Personas">
         </div>
     </div>
 </div>

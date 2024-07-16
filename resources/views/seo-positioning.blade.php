@@ -4,7 +4,7 @@
     <div class="col-12 col-md-7 mb-5 only-pr-3">
         <span class="slogan">AGENCIA DE SEO- POSICIONAMIENTO EN CANCÚN</span>
         <h1 class="title">La estrategia digital perfecta para aumentar tu alcance y lograr que más prospectos te encuentren</h1>
-        <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
+        <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar a tu negocio al siguiente nivel en línea.</p>
         <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
     <div class="col-12 col-md-5 mb-5 p-0 justify-end d-flex">
@@ -94,7 +94,7 @@
                 Además de estrategias creativas y datos analíticos, ofrecemos servicios de contenido basados en material gráfico y de video para lograr una correcta viralización de tus objetivos empresariales, <span class="text-c-pink">haciendo que más personas conozcan tu marca.</span>
 
             </p>
-            <img class="img-responsive-reverse" src="/assets/img/servicio-marketing/crecimiento.png" alt="Personas">
+            <img class="img-responsive" src="/assets/img/servicio-marketing/crecimiento.svg" alt="Personas">
         </div>
     </div>
 </div>

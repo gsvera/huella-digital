@@ -92,6 +92,9 @@ h1, h2, h3, h4, h5 {
     .mb-r-4{
         margin-bottom: 40px;
     }
+    .mb-r-2{
+        margin-bottom: 20px;
+    }
     .display-max-menu{
         display: none !important;
     }
@@ -187,6 +190,7 @@ h1, h2, h3, h4, h5 {
     }
     .padd-cont-blog{
         padding: 0 !important;
+        margin-bottom: 50px;
     }
     .mtsc-150{
         margin-top: 50px;
@@ -629,7 +633,7 @@ h1, h2, h3, h4, h5 {
         display: flex;
     }
     .back-mejores-resultados{
-        background-image: url(/assets/img/nosotros/background-mejores-resultados-mobile.svg);
+        background-image: url(/assets/img/nosotros/background-mejores-resultados-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: center;
@@ -706,6 +710,7 @@ h1, h2, h3, h4, h5 {
     border: 1px solid black;
     background: transparent;
     padding: 7px 20px;
+    color: black;
 }
 .btn-service-selected{
     border-radius: 30px;
@@ -713,9 +718,6 @@ h1, h2, h3, h4, h5 {
     background: transparent;
     padding: 7px 20px;
     color: var(--c-pink);
-}
-.contet-see-more{
-    margin: 75px 0 100px;
 }
 .see-more-service, .see-more-service:hover{
     text-decoration: none;
@@ -861,6 +863,10 @@ h1, h2, h3, h4, h5 {
     color: var(--c-purple);
     font-weight: bold;
 }
+.custom-select-h{
+    display: flex !important;
+    justify-content: space-between;
+}
 @media(max-width: 520px) {
     .wd-90{
         width: 100%;
@@ -892,6 +898,9 @@ h1, h2, h3, h4, h5 {
         font-family: FivoSans-Regular;
         font-size: 1em;
     }
+    .contet-see-more{
+        margin: 1.5rem 0;
+    }
 }
 @media(min-width: 520px) {
     .wd-90{
@@ -918,6 +927,9 @@ h1, h2, h3, h4, h5 {
         font-family: FivoSans-Regular;
         font-size: 1.5em;
         
+    }
+    .contet-see-more{
+        margin: 3rem 0;
     }
 }
 @media(min-width: 1400px) {
