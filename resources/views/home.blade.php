@@ -1,10 +1,11 @@
 @extends('layouts.layout-huella')
+
 @section('content')
 
 <div class="content-page d-flex-responsive p-0" style="align-items: center">
     <div class="col-12 col-md-7 mb-5 p-title-r">
-        <span class="slogan">AGENCIA DE MARKETING DIGITAL EN MÉXICO</span>
-        <h1 class="title">Potencia tu presencia online y haz crecer tu marca en el mundo digital</h1>
+        <h1 class="slogan slogan-size">AGENCIA DE MARKETING DIGITAL EN MÉXICO</h1>
+        <p class="title title-size">Potencia tu presencia online y haz crecer tu marca en el mundo digital</p>
         <p>Con expertos en marketing digital, redes sociales, posicionamiento SEO, diseño web y publicidad digital. </p>
         <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
     </div>
@@ -15,7 +16,7 @@
 <div class="d-flex carrusel">
     <div class="carrusel-container">
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Top 3</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Top 3</p>
             <div class="mini-card-text">
                 <p>Posicionado dentro del top 3 en su ciudad</p>
             </div>
@@ -24,7 +25,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Presencia</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Presencia</p>
             <div class="mini-card-text">
                 <p>Notoriedad de marca contenido único y uso de influencers</p>
             </div>
@@ -33,7 +34,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Top 3</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Top 3</p>
             <div class="mini-card-text">
                 <p>Posicionado dentro del top 3 en su ciudad</p>
             </div>
@@ -42,7 +43,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Leads</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Leads</p>
             <div class="mini-card-text">
                 <p>Mejora de leads calificados a través de publicidad pagada</p>
             </div>
@@ -51,7 +52,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Top 3</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Top 3</p>
             <div class="mini-card-text">
                 <p>Posicionado dentro del top 3</p>
             </div>
@@ -60,7 +61,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Contenido</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Contenido</p>
             <div class="mini-card-text">
                 <p>Generación de contenidos para público nicho</p>
             </div>
@@ -71,7 +72,7 @@
     </div>
     <div class="carrusel-container" id="carrusel-container">
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Top 3</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Top 3</p>
             <div class="mini-card-text">
                 <p>Posicionado dentro del top 3 en su ciudad</p>
             </div>
@@ -80,7 +81,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Presencia</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Presencia</p>
             <div class="mini-card-text">
                 <p>Notoriedad de marca contenido único y uso de influencers</p>
             </div>
@@ -89,7 +90,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Top 3</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Top 3</p>
             <div class="mini-card-text">
                 <p>Posicionado dentro del top 3 en su ciudad</p>
             </div>
@@ -98,7 +99,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Leads</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Leads</p>
             <div class="mini-card-text">
                 <p>Mejora de leads calificados a través de publicidad pagada</p>
             </div>
@@ -107,7 +108,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Top 3</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Top 3</p>
             <div class="mini-card-text">
                 <p>Posicionado dentro del top 3</p>
             </div>
@@ -116,7 +117,7 @@
             </div>
         </div>
         <div class="mini-card mini-card-carrusel">
-            <h5 class="font-weight-bold">Contenido</h5>
+            <p class="font-weight-bold title-minicard-carrusel">Contenido</p>
             <div class="mini-card-text">
                 <p>Generación de contenidos para público nicho</p>
             </div>
@@ -131,12 +132,12 @@
 <x-servicios-marketing-digital className="mb-80" service="marketing"/>
 
 <div class="content-page">
-    <h3 class="mb-5 t-size-25 font-weight-bold">Casos de éxito</h3>
+    <h2 class="mb-5 t-size-25 font-weight-bold title-cases">Casos de éxito</h2>
     <div class="mb-100">
         <div class="d-flex-responsive-reverse">
             <div class="col-md-6 p-0">
                 <p class="text-color-purple font-weight-bold">TECNICOPY</p>
-                <h5 class="font-weight-bold">Tecnicopy, empresa especializada en renta y venta de multifuncionales en Ciudad de México</h5>
+                <p class="font-weight-bold subtitle-case">Tecnicopy, empresa especializada en renta y venta de multifuncionales en Ciudad de México</p>
                 <p class="my-4">
                     Huella Digital tiene el privilegio de colaborar, desde hace más de cuatro años, con una empresa dedicada al alquiler de impresoras para grandes oficinas y empresas ubicada en la Ciudad de México. Su principal desafío era aumentar su visibilidad en línea e impulsar sus ventas a través de estrategias digitales efectivas.
                 </p>
@@ -153,7 +154,7 @@
         <div class="d-flex-responsive-reverse">
             <div class="col-md-6 p-0">
                 <p class="text-color-purple font-weight-bold">BUBBLE BBQ BOATS</p>
-                <h5 class="font-weight-bold">Bubble BBQ Boats: Tour Operadora en Cancún</h5>
+                <p class="font-weight-bold subtitle-case">Bubble BBQ Boats: Tour Operadora en Cancún</p>
                 <p class="my-4">
                     Nuestra agencia tiene el privilegio de colaborar con una naciente tour operadora con sede en el paradisíaco destino turístico de Cancún. Su principal desafío era destacarse en un mercado altamente competitivo e impulsar las ventas de sus tours en la región. Nuestro enfoque se centró en la creación de contenido de calidad y campañas publicitarias efectivas en redes sociales.
                 </p>
@@ -170,7 +171,7 @@
         <div class="d-flex-responsive-reverse">
             <div class="col-md-6 p-0">
                 <p class="text-color-purple font-weight-bold">CTR INTERNATIONAL</p>
-                <h5 class="font-weight-bold">CTR International, distribuidor de Refacciones para Multifuncionales en Ciudad de México</h5>
+                <p class="font-weight-bold subtitle-case">CTR International, distribuidor de Refacciones para Multifuncionales en Ciudad de México</p>
                 <p class="my-4">
                     Colaboramos con un distribuidor de refacciones y consumibles para multifuncionales con sede en Ciudad de México. Uno de los principales desafíos que enfrentaba la marca era la escasa presencia en línea y la falta de información sobre esta industria en internet. Nuestro objetivo era mejorar su visibilidad y posicionamiento en los motores de búsqueda mediante una estrategia SEO efectiva.
                 </p>
@@ -187,40 +188,10 @@
     
 </div>
 
-<!-- <div class="content-page">
-    <div class="text-center">
-        <h3 class="mb-3">Ellos están dejando Huella Digital</h3>
-        <p>
-        Ellos son algunos de los clientes que nos han confiado su crecimiento y presencia 
-        <br />
-        de marca digital ¡Nosotros más que contentos con los resultados!
-        </p>
-    </div>
-</div> -->
-    
-<!-- <div class="carrusel-container">
-    <div class="card-coments mini-card-carrusel">
-        <img src="/assets/img/home/people-1.svg" alt="Persona">    
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tenetur doloremque enim laboriosam eum, nam a, minus ipsa nostrum, harum voluptas tempore facilis. Voluptate, at earum sequi dolor aliquid ipsam?</p>
-
-        </div>
-    </div>
-    <div class="card mini-card-carrusel">
-        elemento 1
-    </div>
-    <div class="card mini-card-carrusel">
-        elemento 1
-    </div>
-    <div class="card mini-card-carrusel">
-        elemento 1
-    </div>
-</div> -->
-
 <div class="content-page">
     <div class="d-flex-responsive" style="align-items:center;">
         <div class="col-md-6 pt-3">
-            <h3 class="mb-4">Huella digital, la Agencia de Marketing Digital en México</h3>
+            <h2 class="title-huella">La Agencia de Marketing Digital en México</h2>
             <p class="mb-3">
                 En Huella Digital, hallarás el departamento externo de <span class="font-weight-bold">Mercadotecnia Digital</span> que tu empresa necesita. Ofrecemos experiencia en la gestión de redes sociales corporativas, <span class="font-weight-bold">SEO para destacar en Google, diseño web,</span> comercio electrónico, captación de clientes, <span class="font-weight-bold">publicidad online</span> y estrategias de <span class="font-weigth-bold">Marketing Digital.</span> Todo esto con la creatividad e innovación que tu marca necesita.
             </p>

@@ -2,7 +2,7 @@
     <div class="content-page">
         <div class="d-flex-responsive">
             <div class="col-md-6 p-0">
-                <h4 class="font-weight-bold text-c-pink">Llegó el momento de tomar una decisión</h4>
+                <p class="font-weight-bold text-c-pink title-contact">Llegó el momento de tomar una decisión</p>
                 <p>
                     ¿Hacemos crecer tu empresa?
                 </p>

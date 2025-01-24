@@ -2,8 +2,8 @@
 @section('content')
 <div class="content-page d-flex-responsive p-0" style="align-items: center">
     <div class="col-12 col-md-7 mb-5 only-pr-3">
-        <span class="slogan">AGENCIA DE MARKETING DIGITAL EN CANCÚN</span>
-        <h1 class="title">Impulsa tu presencia online con nuestro expertise en Marketing Digital</h1>
+        <h1 class="slogan slogan-size">AGENCIA DE MARKETING DIGITAL EN CANCÚN</h1>
+        <p class="title title-size">Impulsa tu presencia online con nuestro expertise en Marketing Digital</p>
         <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>        
         <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
@@ -14,7 +14,7 @@
 
 <div class="content-page-service">
     <div class="mb-4 text-center">
-        <h4>Servicios incluidos</h4>
+        <h2 class="title-card-service">Servicios incluidos</h2>
     </div>
     <div class="row m-0">
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -22,7 +22,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de evaluacion">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Reporte de evaluación</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Reporte de evaluación</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -30,7 +30,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-servicec-inbound.svg" alt="Icono estrategias marketing">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Estrategias Inbound Marketing</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Estrategias Inbound Marketing</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -38,7 +38,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-produccion.svg" alt="Icono produccion de contenido">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Producción de contenido creativo</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Producción de contenido creativo</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -46,7 +46,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-posicionamiento.svg" alt="Icono posicionamiento">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Posicionamiento en internet</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Posicionamiento en internet</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -54,7 +54,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-park-outline_check-one.svg" alt="Icono de publicidad">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Publicidad en Google y redes sociales</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Publicidad en Google y redes sociales</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -62,7 +62,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-analitica.svg" alt="Icono de analitica">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Analítica web</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Analítica web</h3></div>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
 <div class="content-page mt-5">
     <div class="d-flex-responsive">
         <div class="col-12 col-md-6 padd-r-age">
-            <h4 class="mb-4">Agencia de crecimiento digital</h4>
+            <h2 class="mb-4 title-resumen-service">Agencia de crecimiento digital</h2>
             <p class="text-c-pink">
                 Vende más y posiciona tu marca
             </p>

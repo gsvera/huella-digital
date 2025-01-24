@@ -15,38 +15,41 @@ use App\Http\Controllers\TokenController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = "Agencia de Marketing Digital en México – Huella digital ®";
+    $description = "Agencia de marketing digital en México, especializados en Ventas y Publicidad: Google, Redes Sociales y Posicionamiento SEO";
+    $keywords = "agencia de marketing digital en México, posicionamiento web en México, agencia de redes sociales en México, agencian de publicidad en México, agencia de mercadotecnia digital en México, agencia de publicidad digital en México, agencia de marketing en México";
+    return view('home')->with("title", $title)->with("description", $description)->with("keywords", $keywords);
 });
 Route::get('/nosotros', function (){
     return view('nosotros');
 });
 Route::get('/agencia-de-marketing-digital-cancun',function(){
-    $title = "Agencia de marketing digital #1 en Cancún – Huella Digital ®";
-    $description = "10 años de experiencia como Agencia de marketing digital en Cancún, mejora tus ventas con estrategias de inbound efectivas";
+    $title = "Agencia de Marketing Digital en Cancún – Huella Digital ®";
+    $description = "Con 10 años de experiencia, hemos ayudado a empresa de Cancún a convertir seguidores en clientes ¡Conoce nuestra metodología!";
     $keywords = "agencia de marketing digital en Cancún, posicionamiento web en Cancún, agencia de redes sociales en Cancún, publicidad en internet, agencia de mercadotecnia digital en Cancún, agencia de publicidad digital en Cancún, agencia de marketing en Cancún";
     return view('digital-marketing')->with("title", $title)->with("description", $description)->with("keywords", $keywords);
 });
 Route::get('/agencia-de-redes-sociales-cancun', function(){
-    $title = "Agencia de redes sociales en Cancún – Huella digital ®";
-    $description = "Tu empresa obtendrá mejores clientes en Redes sociales✔️Servicio de community manager y publicidad ¡Contácta ahora!";
+    $title = "Agencia de Redes Sociales en Cancún – Huella digital ® ";
+    $description = "Consigue clientes con contenido atractivo en tus redes sociales. Servicio de Community manager y publicidad digital ¡Contáctanos!";
     $keywords = "agencia de redes sociales en Cancún, publicidad en redes sociales, Community manager cancun, administración de redes sociales en Cancún, cursos de redes sociales  en cancún";
     return view('rrss')->with("title", $title)->with("description", $description)->with("keywords", $keywords);
 });
 Route::get('/publicidad-digital-cancun', function(){
     $title = "Agencia de Publicidad Digital en Cancún – Huella digital ®";
-    $description = "Certificados en: Facebook Ads, Google Ads y PPC. Además de branding y publicidad tradicional ¡Cotiza ahora!";
+    $description = "Desarrollamos anuncios en Facebook, Google, TikTok y más para conectar con tu audiencia en Cancún. Potencia tu marca. ¡Contáctanos ahora!";
     $keywords = "agencia de publicidad en Cancún, publicidad en redes sociales, agencia de publicidad digital en Cancún, publicidad digital en Cancún, SEM Cancún";
     return view('digital-advertising')->with("title", $title)->with("description", $description)->with("keywords", $keywords);
 });
 Route::get('/agencia-seo-posicionamiento-web-cancun', function(){
-    $title = "Agencia SEO | Posicionamiento web Cancún – Huella digital ®";
-    $description = "✓Colocamos tu sitio en las primeras posiciones ☝ Servicio para empresas en Cancún. Contenidos » Analítica web ¡Conócenos!";
+    $title = "Agencia de posicionamiento web, SEO en Cancún – Huella digital ®";
+    $description = "Posicionaremos tu página web en los primeros lugares. Servicio de contenidos, analítica web y conversiones ¡Conócenos!";
     $keywords = "agencia de posicionamiento web en Cancún, agencia SEO en Cancún, SEO Cancún, especialista SEO Cancún, posicionamiento web en Cancún, SEO en Cancún";
     return view('seo-positioning')->with("title", $title)->with("description", $description)->with("keywords", $keywords);
-});
+}); 
 Route::get('/diseño-de-paginas-web-cancun', function(){
     $title = "Diseño de páginas web en Cancún – Huella digital ®";
-    $description = "Desarrollamos sitios web en wordpress o código con pasarelas de pago, tienda en línea, adaptable a celular y posicionables en Google";
+    $description = "Desarollo de sitios web profesionales y tiendas en línea. Diseño adaptado a celular ¡Mejora  tu presencia digital ahora!";
     $keywords = "Desarrollo de páginas web, páginas web en Cancún, diseño de páginas web en Cancún, desarrollo de sitios web en Cancún, comercio electrónico en Cancún";
     return view('web-desing')->with("title", $title)->with("description", $description)->with("keywords", $keywords);
 });

@@ -1,6 +1,6 @@
 <div class="content-page {{ $className }}">
     <div class="text-center">
-        <h3>Servicios de Marketing Digital</h3>
+        <h2 class="title-services">Servicios de Marketing Digital</h2>
         <p>Atraemos prospectos con Inbound Marketing: redes sociales, SEO, SEM y diseño web.</p>
     </div>
 
@@ -31,7 +31,7 @@
             </div>
             <div class="col-12 col-md-6 p-0 contet-service-slice">
                 <div class="col p-0">
-                    <h4>Marketing Digital</h4>
+                    <h3 class="title-service-carrusel">Marketing Digital</h3>
                     <p> 
                         Vende más y posiciona tu marca
                     </p>
@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-6 p-0 contet-service-slice">
                 <div class="col p-0">
-                    <h4>Redes sociales</h4>
+                    <h3 class="title-service-carrusel">Redes sociales</h3>
                     <p> 
                         Durante la administración de Redes Sociales en Huella Digital, expertos creativos desarrollan contenido que combina lazos emocionales y tácticas de venta digital para garantizar un retorno de inversión potencial. 
                         <span class="text-color-pink">En internet, el contenido es clave y generar conversación es fundamental.</span>
@@ -72,7 +72,7 @@
             </div>
             <div class="col-md-6 p-0 contet-service-slice">
                 <div class="col p-0">
-                    <h4>Publicidad digital</h4>
+                    <h3 class="title-service-carrusel">Publicidad digital</h3>
                     <p> 
                         Una agencia de publicidad digital en Cancún que te ofrece visibilidad inmediata y resultados a corto plazo. Gracias a la segmentación, las campañas en Internet atraen tráfico cualificado y amplían tus anuncios más allá del mercado local.                     
                     </p>
@@ -93,7 +93,7 @@
             </div>
             <div class="col-md-6 p-0 contet-service-slice">
                 <div class="col p-0">
-                    <h4>Posicionamiento SEO</h4>
+                    <h3 class="title-service-carrusel">Posicionamiento SEO</h3>
                     <p> 
                         Somos una agencia SEO especializada en posicionamiento web en Cancún, Quintana Roo. Nuestro equipo de expertos en SEO está comprometido en asesorarte para desarrollar una estrategia efectiva que te ayude a conseguir más visitas, atraer nuevos clientes y aumentar la rentabilidad de tu empresa en Internet.
                     </p>
@@ -114,7 +114,7 @@
             </div>
             <div class="col-md-6 p-0 contet-service-slice">
                 <div class="col p-0">
-                    <h4>Páginas web</h4>
+                    <h3 class="title-service-carrusel">Páginas web</h3>
                     <p> 
                         Hacemos diseño de páginas web en Cancún para empresas de todos los tamaños que buscan un proveedor serio y confiable. Desarrollamos sitios web modernos, atractivos y orientados según tus necesidades comerciales, desde páginas informativas en formato One Page hasta sitios web robustos para comercio electrónico con pasarelas de pago.
                     </p>

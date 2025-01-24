@@ -4,10 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
 		<meta name="facebook-domain-verification" content="9xhlb3pvdjvzitazhm9cpkcyo0uwmg" />
-
-        <title>➝ Agencia de Marketing Digital México – Huella digital ®</title>
-        <meta name="description" content="Agencia de marketing digital líder en México, especializada en Ventas y Publicidad: Google, redes sociales y posicionamiento SEO"/>
-        <meta name="keywords" content="agencia de marketing digital en México, posicionamiento web en México, agencia de redes sociales en México, agencian de publicidad en México, agencia de mercadotecnia digital en México, agencia de publicidad digital en México, agencia de marketing en México" />
+        @isset($title)
+        <title>{{$title}}</title>
+        @endisset
+        @isset($description)
+        <meta name="description" content="{{$description}}"/>
+        @endisset
+        @isset($keywords)
+        <meta name="keywords" content="{{$keywords}}" />
+        @endisset
         <link rel="canonical" href="https://huella-digital.mx/" />
 
         @if (!isset($excludeOpenGraph))
@@ -193,10 +198,10 @@
         
         <div class="back-degrade-purple">
             <img src="/assets/img/layout/huella.svg" alt="Huella digital">
-            <h4 class="text-white my-4">
+            <p class="text-white my-4 banner-pink-title">
                 "Haciendo historia online, somos Huella Digital, <br class="display-max"/>
                 la Agencia de Marketing digital en México."
-            </h4>
+            </p>
             <!-- <button type="button" class="btn-white">Asesoría gratuita</button> -->
             <a rel="nofollow" href="https://wa.me/9981539626" class="btn-white">Asesoría gratuita</a>
         </div>
@@ -212,9 +217,9 @@
                     <a class="text-art-blog" href="/blog/como-mejorar-mis-ventas-con-facebook/">
                         <img class="mb-r-2 img-responsive" src="/assets/img/layout/ventas-facebook.svg" alt="Ventas facebook">
                         <div>
-                            <h4>
+                            <h3 class="title-blog">
                                 Cómo mejorar mis ventas con Facebook
-                            </h4>
+                            </h3>
                         </div>
                     </a>
                 </div>
@@ -222,18 +227,18 @@
                     <a class="text-art-blog" href="/blog/que-hace-una-agencia-de-marketing-digital/">
                         <img class="mb-r-2 img-responsive" src="/assets/img/layout/empresa-sin-marketing.svg" alt="Ventas facebook">
                         <div>
-                            <h4>
+                            <h3 class="title-blog">
                                 Una empresa sin Marketing Digital
-                            </h4>
+                            </h3>
                         </div>
                     </a>
                 </div>
                 <div class="col-12 col-md-4 padd-cont-blog">
                     <a class="text-art-blog" href="/blog/mi-empresa-necesita-posicionamiento-seo/">
                         <img class="mb-r-2 img-responsive" src="/assets/img/layout/conecta-clientes.svg" alt="Ventas facebook">
-                        <h4>
+                        <h3 class="title-blog">
                             Conecta con tus clientes
-                        </h4>
+                        </h3>
                     </a>
                 </div>
             </div>
@@ -267,13 +272,13 @@
                 <div class="d-flex-responsive mb-3">
                     <div class="col-12 col-md-3 mb-4 pl-sl-0">
                         <div class="wd-90">
-                            <h5>¿Quiénes somos?</h5>
+                            <p class="subtitle-footer">¿Quiénes somos?</p>
                             <p>Somos una agencia de Marketing Digital en México, desarrollamos distintas estrategias de Inbound Marketing encaminadas a vender más y mejorar el posicionamiento de nuestros clientes en Internet.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mb-4 pl-sl-0 d-flex justify-end">
                         <div class="wd-90">
-                            <h5>Servicios de Marketing Digital </h5>
+                            <p class="subtitle-footer">Servicios de Marketing Digital </p>
                             <ul class="pl-4">
                                 <li class="mb-2"><a href="{{url('/agencia-de-marketing-digital-cancun')}}" class="link-footer">Estrategias de Marketing Digital</a></li>
                                 <li class="mb-2"><a href="{{url('/agencia-de-redes-sociales-cancun')}}" class="link-footer">Administración de Redes Sociales</a></li>
@@ -285,7 +290,7 @@
                     </div>
                     <div class="col-12 col-md-3 mb-4">
                         <div style="width: 80%">
-                            <h5>Contáctanos</h5>
+                            <p class="subtitle-footer">Contáctanos</p>
                             <p class="mb-2">
                                 <a href="mailto:hola@huella-digital.mx" class="link-footer" id="icon-footer-email">
                                     <img src="/assets/icon/icon-email-black.svg" style="width: 24px; height: 24px;" alt="Icono de email"> hola@huella-digital.mx
@@ -299,7 +304,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3 mb-4">
-                        <h5>Recursos</h5>
+                        <p class="subtitle-footer">Recursos</p>
                         <p class="mb-2"><a href="{{('/glosario-inbound-marketing')}}" class="link-footer">Glosario Inbound Marketing</a></p>
                         <p class="mb-2"><a href="{{url('/aviso-de-privacidad')}}" class="link-footer">Aviso de privacidad</a></p>
                         <p class="mb-2"><a href="{{url('/uso-de-cookies')}}" class="link-footer">Uso de cookies</a></p>

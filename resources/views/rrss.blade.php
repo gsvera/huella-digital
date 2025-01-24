@@ -2,8 +2,8 @@
 @section('content')
 <div class="content-page d-flex-responsive p-0" style="align-items: center">
     <div class="col-12 col-md-7 mb-5 only-pr-3">
-        <span class="slogan">AGENCIA DE REDES SOCIALES EN CANCÚN</span>
-        <h1 class="title">Sacamos el máximo provecho de tus medios digitales</h1>
+        <h1 class="slogan slogan-size">AGENCIA DE REDES SOCIALES EN CANCÚN</h1>
+        <p class="title title-size">Sacamos el máximo provecho de tus medios digitales</p>
         <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
         <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
@@ -14,7 +14,7 @@
 
     <div class="content-page-service">
     <div class="mb-4 text-center">
-        <h4>Servicios incluidos</h4>
+        <h2 class="title-card-service">Servicios incluidos</h2>
     </div>
     <div class="row m-0">
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -22,7 +22,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de resultados">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Creación de material gráfico</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Creación de material gráfico</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -30,7 +30,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-servicec-inbound.svg" alt="Icono estrategias inbound">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Servicio de Community Manager</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Servicio de Community Manager</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -38,7 +38,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-produccion.svg" alt="Icono de desarrollo de contenido">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Desarrollo de contenido estratégico</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Desarrollo de contenido estratégico</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -46,7 +46,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-gestion-anuncio.svg" alt="Icono gestion de campañas">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Gestión de campañas de publicidad</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Gestión de campañas de publicidad</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -54,7 +54,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-comunidad.svg" alt="Icono comunidad">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Servicio de Community Manager</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Servicio de Community Manager</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -62,7 +62,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-mensaje.svg" alt="Icono de mensaje">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Atención a mensajes</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Atención a mensajes</h3></div>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
 <div class="content-page mt-5">
     <div class="d-flex-responsive">
         <div class="col-12 col-md-6 padd-r-age">
-            <h4 class="mb-4">Gestión de redes sociales</h4>
+            <h2 class="mb-4 title-resumen-service">Gestión de redes sociales</h2>
             <p>
                 Durante la administración de Redes Sociales en Huella Digital, expertos creativos desarrollan contenido que combina lazos emocionales y tácticas de venta digital para garantizar un retorno de inversión potencial. <span class="text-c-pink">En internet, el contenido es clave y generar conversación es fundamental.</span> El futuro digital es ahora, y en Huella Digital estamos creándolo. Vivimos en un mundo centrado en las redes sociales y el intercambio sin fronteras en Internet. 
             </p>

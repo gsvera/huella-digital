@@ -2,8 +2,8 @@
 @section('content')
 <div class="content-page d-flex-responsive p-0" style="align-items: center">
     <div class="col-12 col-md-7 mb-5 only-pr-3">
-        <span class="slogan">AGENCIA DE PUBLICIDAD DIGITAL EN CANCÚN</span>
-        <h1 class="title">La estrategia perfecta para potenciar tu alcance</h1>
+        <h1 class="slogan slogan-size">AGENCIA DE PUBLICIDAD DIGITAL EN CANCÚN</h1>
+        <p class="title title-size">La estrategia perfecta para potenciar tu alcance</p>
         <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar tu negocio al siguiente nivel en línea.</p>
         <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
@@ -14,7 +14,7 @@
 
 <div class="content-page-service">
     <div class="mb-4 text-center">
-        <h4>Servicios incluidos</h4>
+        <h2 class="title-card-service">Servicios incluidos</h2>
     </div>
     <div class="row m-0">
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -22,7 +22,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de resultados">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Informe de resultados</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Informe de resultados</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -30,7 +30,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-estrategia.svg" alt="Icono estrategias de publicidad">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Estrategias de desarrollo publicitario</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Estrategias de desarrollo publicitario</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -38,7 +38,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-analisis-competencia.svg" alt="Icono de analisis de competencia">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Análisis de competencia digital</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Análisis de competencia digital</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -46,7 +46,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-gestion-anuncio.svg" alt="Icono gestion de anuncios">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Gestión de anuncios en internet</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Gestión de anuncios en internet</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -54,7 +54,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-presupuesto.svg" alt="Icono presupuesto">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Desarrollo de presupuestos</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Desarrollo de presupuestos</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -62,7 +62,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-optimizacion.svg" alt="Icono de optimizacion">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Optimización de campañas</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Optimización de campañas</h3></div>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
 <div class="content-page mt-5">
     <div class="d-flex-responsive">
         <div class="col-12 col-md-6 padd-r-age">
-            <h4 class="mb-4">Publicidad en redes sociales y SEM</h4>
+            <h2 class="mb-4 title-resumen-service">Publicidad en redes sociales y SEM</h2>
             <p>
                 Somos una agencia de publicidad digital en Cancún que te ofrece visibilidad inmediata y resultados a corto plazo. Gracias a la segmentación, las campañas en Internet atraen tráfico cualificado y amplían tus anuncios más allá del mercado local. 
             </p>

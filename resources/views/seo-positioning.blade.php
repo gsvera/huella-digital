@@ -2,8 +2,8 @@
 @section('content')
 <div class="content-page d-flex-responsive p-0">
     <div class="col-12 col-md-7 mb-5 only-pr-3">
-        <span class="slogan">AGENCIA DE SEO- POSICIONAMIENTO EN CANCÚN</span>
-        <h1 class="title">La estrategia digital perfecta para aumentar tu alcance y lograr que más prospectos te encuentren</h1>
+        <h1 class="slogan slogan-size">AGENCIA DE SEO - POSICIONAMIENTO WEB EN CANCÚN</h1>
+        <p class="title title-size">La estrategia digital perfecta para aumentar tu alcance y lograr que más prospectos te encuentren</p>
         <p style="margin-bottom: 25px;">Descubre cómo nuestra agencia de marketing digital puede llevar a tu negocio al siguiente nivel en línea.</p>
         <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
@@ -14,7 +14,7 @@
 
 <div class="content-page-service">
     <div class="mb-4 text-center">
-        <h4>Servicios incluidos</h4>
+        <h2 class="title-card-service">Servicios incluidos</h2>
     </div>
     <div class="row m-0">
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -22,7 +22,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-evaluacion.svg" alt="Icono Reporte de posicionamiento">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Reporte de posicionamiento</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Reporte de posicionamiento</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -30,7 +30,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-estrategia.svg" alt="Icono estrategias posicionamiento web">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Estrategia de posicionamiento web</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Estrategia de posicionamiento web</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -38,7 +38,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-analisis-competencia.svg" alt="Icono analisis">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Análisis de posicionamiento digital</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Análisis de posicionamiento digital</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -46,7 +46,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-gestion-anuncio.svg" alt="Icono gestion de anuncio">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Planeación de palabras clave</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Planeación de palabras clave</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -54,7 +54,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-web.svg" alt="Icono de wen">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Optimización de página web</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Optimización de página web</h3></div>
             </div>
         </div>
         <div class="col-6 col-md-4 p-0 mb-card-service">
@@ -62,7 +62,7 @@
                 <div>
                     <img class="icon-service" src="/assets/icon/services/icon-service-redaccion.svg" alt="Icono de servicio de redaccion">
                 </div>
-                <div class="font-weight-bold ml-2"><h5>Redacción de artículos blog</h5></div>
+                <div class="font-weight-bold ml-2"><h3 class="text-service">Redacción de artículos blog</h3></div>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
 <div class="content-page mt-5">
     <div class="d-flex-responsive">
         <div class="col-12 col-md-6 padd-r-age">
-            <h4 class="mb-4">Especialistas en SEO</h4>
+            <h2 class="mb-4 title-resumen-service">Especialistas en SEO</h2>
             <p>
                 Somos una agencia SEO especializada en posicionamiento web en Cancún, Quintana Roo. Nuestro equipo de expertos en SEO está comprometido en asesorarte para desarrollar una estrategia efectiva que te ayude a conseguir más visitas, atraer nuevos clientes y aumentar la rentabilidad de tu empresa en Internet.
             </p>
