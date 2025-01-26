@@ -7,7 +7,7 @@
         <h1 class="slogan slogan-size">AGENCIA DE MARKETING DIGITAL EN MÉXICO</h1>
         <p class="title title-size">Potencia tu presencia online y haz crecer tu marca en el mundo digital</p>
         <p>Con expertos en marketing digital, redes sociales, posicionamiento SEO, diseño web y publicidad digital. </p>
-        <button type="button" class="btn-menu-pink">Obtener asesoría gratuita</button>
+        <a rel="nofollow" href="https://wa.me/9981539626" class="btn-menu-pink">Obtener asesoría gratuita</a>
     </div>
     <div class="col-12 col-md-5 mb-5 p-0 d-flex justify-content-center">
         <img class="img-responsive" src="/assets/img/home/servicios.svg" alt="Servicios de huella digital">
