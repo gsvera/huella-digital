@@ -1,4 +1,5 @@
 <div class="back-contact-us">
+    <div id="drcp" data-value=""></div>
     <div class="content-page">
         <div class="d-flex-responsive">
             <div class="col-md-6 p-0">
@@ -79,18 +80,23 @@
                         </div>
                     </div>
                     <div class="col-md-12 mb-3 pxfs-2">
-                        <div class="text-right">
-                            <div class="g-recaptcha" data-sitekey="6LcvUZgaAAAAAJpJkaAHegjjCf47KrYc_TliU5gm"></div>
-                        </div>
+                            <div class="captcha-box">
+                                <canvas id="captchaCanvas" width="150" height="50"></canvas>
+                                <button type="button" id="refreshCaptcha" class="btn-menu-pink">⟳</button>
+                            </div>
+                            <input type="text" class="form-control" id="captchaInput" placeholder="Ingrese el CAPTCHA" required>
+                            <p id="error-captcha" class="error-captcha mt-2"></p>
                     </div>
                     <div class="col-md-12 pxfs-2">
-                        <button type="submit" onclick="sendBoxContact()" class="btn-menu-pink" style="width: 100%">Enviar mensaje</button>
+                        <button type="button" id="btn-send-message" onclick="sendBoxContact()" class="btn-menu-pink" style="width: 100%">Enviar mensaje</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<script src="/js/contact-huella.js"></script>
 
 <script type="text/javascript">
     var divSelect = document.getElementById('div-select');

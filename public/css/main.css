@@ -998,3 +998,14 @@ h1, h2, h3, h4, h5, .banner-pink-title, .title-contact, .title-minicard-carrusel
 .banner-pink-title{
     font-weight: 500;
 }
+
+.captcha-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.error-captcha {
+    color: red;
+    font-size: 14px;
+}
