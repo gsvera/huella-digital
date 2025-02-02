@@ -12,25 +12,13 @@
                 </p>
             </div>
             <div class="col-md-6 p-0">
-                @if(session('messageError'))
-                    <div class="errorDiv" id="messageError">
-                        {{session('messageError')}}
-                    </div>
-                @endif
-                @if ($errors->any())
-                    @foreach($errors->all() as $error)
-                        <div class="errorDiv" id="messageError">
-                            {{$error}}
-                        </div>
-                    @endforeach
-                @endif
                 <form id="form-contact" action="{{url('/gracias')}}" method="post">
                     {{@csrf_field()}}
                     <div class="d-flex-responsive">
                         <div class="col-12 col-md-6 pxfs-2">
                             <div class="form-group">
                                 <label for="name">Nombre</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="nombre" name="nombre">
                             </div>
                         </div>
                         <div class="col-12 col-md-6 pxfs-2">
@@ -80,15 +68,32 @@
                         </div>
                     </div>
                     <div class="col-md-12 mb-3 pxfs-2">
-                            <div class="captcha-box">
-                                <canvas id="captchaCanvas" width="150" height="50"></canvas>
-                                <button type="button" id="refreshCaptcha" class="btn-menu-pink">⟳</button>
+                            <div class="no-boot">
+                                <div class="box-button-capt">
+                                    <img src="/assets/img/layout/huella.svg" class="img-box-button-capt" />
+                                </div>
+                                <div class="ml-3" style="font-weight: 500">
+                                    No soy un robot
+                                </div>
                             </div>
-                            <input type="text" class="form-control" id="captchaInput" placeholder="Ingrese el CAPTCHA" required>
                             <p id="error-captcha" class="error-captcha mt-2"></p>
                     </div>
                     <div class="col-md-12 pxfs-2">
                         <button type="button" id="btn-send-message" onclick="sendBoxContact()" class="btn-menu-pink" style="width: 100%">Enviar mensaje</button>
+                    </div>
+                    <div>
+                    @if(session('messageError'))
+                        <div class="errorDiv" id="messageError">
+                            {{session('messageError')}}
+                        </div>
+                    @endif
+                    @if ($errors->any())
+                        @foreach($errors->all() as $error)
+                            <div class="errorDiv" id="messageError">
+                                {{$error}}
+                            </div>
+                        @endforeach
+                    @endif
                     </div>
                 </form>
             </div>
@@ -106,7 +111,6 @@
     var divSelectText = document.getElementById('div-select-text');
 
     divSelect.addEventListener('click', () => {
-        console.log('clickss')
         selectOption.classList.remove('d-none');  
         rowSelect.setAttribute('src', rowSelect.src.replace('down', 'up'));
     })

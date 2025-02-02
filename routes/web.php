@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TokenController;
+use App\Http\Controllers\CaptchaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,3 +87,5 @@ Route::get('/cliente-3', function() {
 });
 
 Route::post('/valid-password',[TokenController::class, 'ValidToken']);
+Route::post('/checked-captcha', [CaptchaController::class, 'SaveCaptcha']);
+Route::delete('/remove-checked-captcha', [CaptchaController::class, 'RemoveCaptcha']);

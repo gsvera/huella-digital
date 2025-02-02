@@ -1009,3 +1009,29 @@ h1, h2, h3, h4, h5, .banner-pink-title, .title-contact, .title-minicard-carrusel
     color: red;
     font-size: 14px;
 }
+.no-boot{
+    height: 60px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px var(--c-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-button-capt {
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    border: solid 1px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-button-capt-select{
+    background-color: var(--c-purple);
+}
+.img-box-button-capt {
+    width: 24px;
+    height: 24px;
+}

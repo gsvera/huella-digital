@@ -55,7 +55,7 @@
             <h4 class="title-msg">Solicitud de información</h4>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong class="text-secondary">Nombre: {{$item['nombre']}}</strong><br>nombre de la</li>
+            <li class="list-group-item"><strong class="text-secondary">Nombre: </strong><br>{{$item['nombre']}}</li>
             <li class="list-group-item"><strong class="text-secondary">Email: </strong><br>{{$item['email']}}</li>
             <li class="list-group-item"><strong class="text-secondary">Telefono: </strong><br>{{$item['celPhone']}}</li>
             <li class="list-group-item"><strong class="text-secondary">Servicio: </strong><br>{{$item['service']}}</li>

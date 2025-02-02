@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Http;
 use App\Models\SettingRecaptcha;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactoMail;
+use App\Models\Captcha;
+
 use Exception;
 
 class SendmailController extends Controller
@@ -19,10 +21,16 @@ class SendmailController extends Controller
         // ],[
         //     'required' => 'El reCAPTCHA es inválido'
         // ]);
+        $captcha = new Captcha;
+        $isCaptcha =  $captcha->_GetCaptcha($request->code);
+// exit(dd($isCaptcha['error']));
+        if($isCaptcha['error'] == true) {
+            return back()->with('messageError','Capcha invalido')->withFragment('message');
+        }
      
         $regex = "/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/" ;
         
-        if($request->name != null && $request->celphone !=null && $request->message != null){
+        if($request->nombre != null && $request->celphone !=null && $request->message != null){
             if(preg_match($regex,$request->email)){
     
                 // $configCaptcha = new SettingRecaptcha();
@@ -47,11 +55,10 @@ class SendmailController extends Controller
                     $mensaje->to("paolap@huella-digital.mx")->subject("Solicitud de información");
                 });
                 return view('gracias');
-            }else{
-    
-                return back()->with('messageError','Debe escribir un correo valido');
+            }else{                
+                return back()->with('messageError','Debe llenar todos los campos')->withFragment('message');
             }
         }
-            return back()->with('messageError','Debe llenar todos los campos');
+        return back()->with('messageError','Debe escribir un correo valido')->withFragment('message');
     }
 }
