@@ -8,6 +8,7 @@ use App\Models\SettingRecaptcha;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactoMail;
 use App\Models\Captcha;
+use App\Models\Ip;
 
 use Exception;
 
@@ -22,16 +23,28 @@ class SendmailController extends Controller
         //     'required' => 'El reCAPTCHA es inválido'
         // ]);
         $captcha = new Captcha;
-        $isCaptcha =  $captcha->_GetCaptcha($request->code);
-// exit(dd($isCaptcha['error']));
-        if($isCaptcha['error'] == true) {
-            return back()->with('messageError','Capcha invalido')->withFragment('message');
-        }
+        $ip = new Ip;
+        $ipGet = file_get_contents("https://api64.ipify.org?format=json");
+        $currentIp = json_decode($ipGet);
      
         $regex = "/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/" ;
-        
         if($request->nombre != null && $request->celphone !=null && $request->message != null){
             if(preg_match($regex,$request->email)){
+
+                $validIp = $ip->_GetIp('2a02:4780:b:859:0:73d:c731:7');
+
+                if($validIp->getResult()['data'] != null) {
+                    // return back()->with('messageError',$validIp->getResult()['data']->ip)->withFragment('message');
+                    return view('gracias');
+                } else {
+                    $ip->_saveIp($currentIp->ip);
+                }
+
+                $isCaptcha =  $captcha->_GetCaptcha($request->code);
+
+                if($isCaptcha['error'] == true) {
+                    return back()->with('messageError','Capcha invalido')->withFragment('message');
+                }
     
                 // $configCaptcha = new SettingRecaptcha();
                 
@@ -56,9 +69,10 @@ class SendmailController extends Controller
                 });
                 return view('gracias');
             }else{                
-                return back()->with('messageError','Debe llenar todos los campos')->withFragment('message');
+                return back()->with('messageError','Debe escribir un correo valido')->withFragment('message');
             }
         }
-        return back()->with('messageError','Debe escribir un correo valido')->withFragment('message');
+        return back()->with('messageError','Debe llenar todos los campos')->withFragment('message');
+        
     }
 }

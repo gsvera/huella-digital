@@ -17,7 +17,7 @@ class Captcha extends Model
             $newCaptcha->active = true;
             $newCaptcha->save();
             $resp->error = false;
-            $resp->Message = "success";
+            $resp->message = "success";
         } catch(Exception $ex) {
             $resp->error = true;
             $resp->message = "Ocurrio un error, intentelo mas tarde";
