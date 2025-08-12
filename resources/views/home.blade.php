@@ -1,5 +1,8 @@
 @extends('layouts.layout-huella')
 
+@section('meta')
+<link rel="canonical" href="https://huella-digital.mx/" />
+@endsection
 @section('content')
 
 <div class="content-page d-flex-responsive p-0" style="align-items: center">

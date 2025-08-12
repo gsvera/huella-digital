@@ -13,7 +13,6 @@
         @isset($keywords)
         <meta name="keywords" content="{{$keywords}}" />
         @endisset
-        <link rel="canonical" href="https://huella-digital.mx/" />
 
         @if (!isset($excludeOpenGraph))
             <meta property="og:url" content="https://huella-digital.mx/" />

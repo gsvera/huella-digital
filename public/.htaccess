@@ -21,4 +21,8 @@ print 'php_value allow_url_fopen On';
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    <FilesMatch "\.(txt|xml)$">
+        Require all granted
+    </FilesMatch>
 </IfModule>

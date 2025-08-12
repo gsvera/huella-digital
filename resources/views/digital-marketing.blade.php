@@ -1,4 +1,7 @@
 @extends('layouts.layout-huella')
+@section('meta')
+<link rel="canonical" href="https://huella-digital.mx/agencia-de-marketing-digital-cancun" />
+@endsection
 @section('content')
 <div class="content-page d-flex-responsive p-0" style="align-items: center">
     <div class="col-12 col-md-7 mb-5 only-pr-3">

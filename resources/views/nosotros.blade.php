@@ -1,4 +1,7 @@
 @extends('layouts.layout-huella')
+@section('meta')
+<meta name="robots" content="noindex, follow" />
+@endsection
 @section('content')
 
 <div class="content-page">
