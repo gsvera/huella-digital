@@ -173,3 +173,14 @@ function validExpiredToken(proyect) {
             if (proyect) window.location.href = `/cliente-${proyect}`;
         });
 }
+
+function agreeAdvertisement() {
+    sessionStorage.setItem("agree-advertisement", true);
+    $("#modalShowAdvertisement").modal("hide");
+}
+
+function showWarningAdvertisementHuella() {
+    var response = sessionStorage.getItem("agree-advertisement");
+    if (response !== "true") $("#modalShowAdvertisement").modal("show");
+}
+showWarningAdvertisementHuella();

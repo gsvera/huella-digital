@@ -325,6 +325,8 @@
         <x-modal-login-proyects />
         <!-- END MODAL PARA LOGIN DE PROYECTOS -->
 
+        <x-warning-huella />
+
 		<!-- WhatsApp -->
         <a rel="nofollow" style="text-decoration:none;" href="https://wa.me/9981539626">
             <img class="chat-icon" src="/assets/icon/whatsapp-icon.png" alt="icono chat whatsapp">
